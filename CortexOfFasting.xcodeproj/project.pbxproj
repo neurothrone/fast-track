@@ -17,6 +17,12 @@
 		2F1007E6291A02D0004CE72E /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
 		2F1007E8291A02D6004CE72E /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
 		2F1007EB291A02DC004CE72E /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
+		2F1007EE291A03A5004CE72E /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
+		2F1007F1291A03F2004CE72E /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
+		2F1007F4291A0451004CE72E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
+		2F1007F6291A0464004CE72E /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
+		2F1007F8291A047A004CE72E /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
+		2F1007FA291A0484004CE72E /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataProvider+Extensions.swift"; sourceTree = "<group>"; };
 		2F1007EA291A02DC004CE72E /* Entities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entities.xcdatamodel; sourceTree = "<group>"; };
+		2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastLog+Extensions.swift"; sourceTree = "<group>"; };
+		2F1007F3291A0451004CE72E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		2F1007F5291A0464004CE72E /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		2F1007F9291A0484004CE72E /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
+				2F1007F2291A044A004CE72E /* Extensions */,
 				2F1007E3291A02BD004CE72E /* Data */,
 				2F1007DC291A0239004CE72E /* UI */,
 				2F1007D2291A00C9004CE72E /* Preview Content */,
@@ -96,10 +109,10 @@
 		2F1007E3291A02BD004CE72E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2F1007E4291A02C4004CE72E /* Models */,
 				2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */,
 				2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */,
 				2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */,
+				2F1007E4291A02C4004CE72E /* Models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -107,8 +120,21 @@
 		2F1007E4291A02C4004CE72E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */,
+				2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2F1007F2291A044A004CE72E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F1007F3291A0451004CE72E /* Date+Extensions.swift */,
+				2F1007F5291A0464004CE72E /* Collection+Extensions.swift */,
+				2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */,
+				2F1007F9291A0484004CE72E /* URL+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +208,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1007CE291A00C8004CE72E /* ContentView.swift in Sources */,
+				2F1007FA291A0484004CE72E /* URL+Extensions.swift in Sources */,
+				2F1007F4291A0451004CE72E /* Date+Extensions.swift in Sources */,
+				2F1007EE291A03A5004CE72E /* FastLog+CoreDataClass.swift in Sources */,
 				2F1007CC291A00C8004CE72E /* CortexOfFastingApp.swift in Sources */,
 				2F1007EB291A02DC004CE72E /* Entities.xcdatamodeld in Sources */,
+				2F1007F6291A0464004CE72E /* Collection+Extensions.swift in Sources */,
+				2F1007F1291A03F2004CE72E /* FastLog+Extensions.swift in Sources */,
 				2F1007DE291A0244004CE72E /* ActiveWeekScreen.swift in Sources */,
 				2F1007E2291A024F004CE72E /* SettingsScreen.swift in Sources */,
+				2F1007F8291A047A004CE72E /* TimeInterval+Extensions.swift in Sources */,
 				2F1007E0291A0249004CE72E /* AllWeeksScreen.swift in Sources */,
 				2F1007E8291A02D6004CE72E /* CoreDataProvider+Extensions.swift in Sources */,
 				2F1007E6291A02D0004CE72E /* CoreDataProvider.swift in Sources */,
