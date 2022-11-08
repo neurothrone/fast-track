@@ -15,12 +15,20 @@ extension TimeInterval {
       formatter.unitsStyle = .abbreviated
       return formatter
     }()
+    
+    static let inHoursAndMinsDigitalClockStyleFormatter: DateComponentsFormatter = {
+      let formatter = DateComponentsFormatter()
+      formatter.allowedUnits = [.hour, .minute]
+      formatter.unitsStyle = .positional
+      formatter.zeroFormattingBehavior = .pad
+      return formatter
+    }()
   }
   
-  var toHoursAndMinutes: String {
+  var inHoursAndMinutes: String {
     guard !self.isNaN,
           !self.isInfinite,
-          let string = Formatter.hourAndMinFormatter.string(from: self)
+          let string = Formatter.inHoursAndMinsDigitalClockStyleFormatter.string(from: self)
     else { return "" }
     return string
   }

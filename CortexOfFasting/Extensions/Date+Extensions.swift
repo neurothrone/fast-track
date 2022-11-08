@@ -27,4 +27,17 @@ extension Date {
   func duration(to laterDate: Date) -> TimeInterval {
     self.distance(to: laterDate)
   }
+  
+  var inReadableFormat: String {
+    self.formatted(Date.FormatStyle()
+      .year(.defaultDigits)
+      .month(.abbreviated)
+      .day(.defaultDigits)
+      .hour(.twoDigits(amPM: .abbreviated))
+      .minute(.twoDigits))
+  }
+  
+  func startOfWeek(using calendar: Calendar = Calendar.current) -> Date {
+    calendar.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!
+  }
 }

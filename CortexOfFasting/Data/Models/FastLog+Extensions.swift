@@ -30,4 +30,20 @@ extension FastLog {
     request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]
     return request
   }
+  
+  static var allInCurrentWeek: NSFetchRequest<FastLog> {
+    let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
+    
+    request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]
+    
+    let calendar = Calendar.current
+    
+    let startOfWeek = Date.now.startOfWeek(using: calendar)
+    let endOfWeek = calendar.date(byAdding: .day, value: 7, to: startOfWeek) ?? .now
+    
+    request.predicate = NSPredicate(format: "startedDate >= %@ AND startedDate < %@", startOfWeek as CVarArg, endOfWeek as CVarArg)
+    
+    return request
+  }
 }
+
