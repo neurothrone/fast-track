@@ -52,7 +52,7 @@ struct ActiveLogView: View {
       
       Spacer()
       
-      Text(log.startedDate.duration(to: currentTime).inHoursAndMinutes)
+      Text(log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
         .frame(width: 75, height: 75)
         .overlay(
           Circle()

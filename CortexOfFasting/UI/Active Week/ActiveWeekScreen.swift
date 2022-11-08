@@ -11,7 +11,6 @@ struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
   @FetchRequest(fetchRequest: FastLog.allInCurrentWeek, animation: .default)
-//  @FetchRequest(fetchRequest: FastLog.all, animation: .default)
   private var fastLogs: FetchedResults<FastLog>
   
   private var hasPartialLog: Bool {
@@ -41,9 +40,9 @@ struct ActiveWeekScreen: View {
       )
       
       Text("Active Week")
-        .font(.largeTitle)
+        .font(.title)
       
-      Text("Progress Bar")
+      Text("Progress Bar Goal ->")
         .padding(.vertical)
         .frame(maxWidth: .infinity)
       
@@ -51,19 +50,9 @@ struct ActiveWeekScreen: View {
         ForEach(fastLogs) { log in
           FastLogsRowView(log: log)
         }
-        .onDelete(perform: delete)
-      }
-      
-      List {
-        Text("Day 1 Monday - 4h")
-        Text("Day 2 Tuesday - 3h")
       }
       
       Spacer()
-    }
-    .onAppear {
-      let startOfWeek = Date.now.startOfWeek()
-      print(startOfWeek)
     }
     .padding()
   }
@@ -81,12 +70,6 @@ extension ActiveWeekScreen {
     
     incompleteLog.stoppedDate = .now
     incompleteLog.save(using: viewContext)
-  }
-  
-  private func delete(atOffsets: IndexSet) {
-    guard let index = atOffsets.first else { return }
-    
-    fastLogs[index].delete(using: viewContext)
   }
 }
 

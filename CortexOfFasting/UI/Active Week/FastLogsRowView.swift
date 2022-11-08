@@ -30,26 +30,19 @@ struct FastLogsRowView: View {
         .foregroundColor(.orange)
       }
     }
-    
-//    VStack(alignment: .leading, spacing: 4) {
-//      HStack {
-////        Text(log.startedAt)
-//        Text(log.startedDate.formatted(Date.FormatStyle().year().month().day().hour().minute()))
-//          .foregroundColor(.blue)
-//        Spacer()
-//        Text(log.stoppedAt)
-//          .foregroundColor(.orange)
-//      }
-//
-//      Text(log.duration.toHoursAndMinutes)
-//        .font(.caption.bold())
-//        .foregroundColor(.secondary)
-//    }
   }
 }
 
-//struct FastLogsRowView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    FastLogsRowView(log: <#FastLog#>)
-//  }
-//}
+struct FastLogsRowView_Previews: PreviewProvider {
+  static var previews: some View {
+    let context = CoreDataProvider.preview.viewContext
+    let log = FastLog(context: context)
+    log.startedDate = .now.subtracting(minutes: 45)
+    log.stoppedDate = .now
+    log.save(using: context)
+    
+    return FastLogsRowView(log: log)
+      .environment(\.managedObjectContext, context)
+      .padding()
+  }
+}

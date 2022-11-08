@@ -15,6 +15,10 @@ public class FastLog: NSManagedObject {
     return NSFetchRequest<FastLog>(entityName: String(describing: FastLog.self))
   }
   
+  @objc var yearAndWeek: String {
+    startedDate.formatted(Date.FormatStyle().year().week())
+  }
+  
   @NSManaged public var id: String
   @NSManaged public var startedDate: Date
   @NSManaged public var stoppedDate: Date?
