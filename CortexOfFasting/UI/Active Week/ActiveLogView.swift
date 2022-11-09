@@ -41,8 +41,9 @@ struct ActiveLogView: View {
   
   private var content: some View {
     HStack {
-      VStack(alignment: .leading) {
+      VStack(alignment: .leading, spacing: 10) {
         Text("Started fasting")
+          .bold()
         Text(log.startedAt)
         
         Button("Stop", action: onStopTapped)
@@ -53,6 +54,7 @@ struct ActiveLogView: View {
       Spacer()
       
       Text(log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
+        .font(.title3.bold())
         .frame(width: 75, height: 75)
         .overlay(
           Circle()

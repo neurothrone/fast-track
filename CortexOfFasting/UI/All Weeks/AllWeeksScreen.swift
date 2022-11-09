@@ -23,40 +23,34 @@ struct AllWeeksScreen: View {
     NavigationStack {
       content
         .navigationTitle("All Weeks")
+        .navigationBarTitleDisplayMode(.inline)
     }
   }
   
   private var content: some View {
     List {
-      ForEach(logsPerWeek) { logsInWeek in
-        Section {
-          ForEach(logsInWeek) { log in
+      Section {
+        ForEach(logsPerWeek) { logsInWeek in
+          NavigationLink {
+            WeekDetailScreen(logs: logsInWeek)
+          } label: {
             HStack {
-              Text(log.startedDate.formatted(Date.FormatStyle()
-                .day()
-                .weekday()
-                .month())
-              )
+              Text(logsInWeek.id)
               
               Spacer()
               
-              Text(log.duration.inHoursAndMinutes)
+              Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / 24 h")
             }
+            .textCase(.none)
           }
-          .onDelete { indexSet in
-            deleteLog(atOffsets: indexSet, section: logsInWeek)
-          }
-        } header: {
-          HStack {
-            Text(logsInWeek.id)
-            
-            Spacer()
-            
-            Text("\(FastLog.totalFastedStateToHours(in: Array(fastLogs))) / 24 h")
-          }
-          .font(.headline)
-          .textCase(.none)
         }
+      } header: {
+        HStack {
+          Text("Week")
+          Spacer()
+          Text("Fasted state hours")
+        }
+        .textCase(.none)
       }
     }
   }

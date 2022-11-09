@@ -20,12 +20,12 @@ struct ProgressMeterView: View {
       Gauge(value: amount, in: 0...24) {
         Label(label, systemImage: systemImage)
       } currentValueLabel: {
-        Text(String(format: "%.1f", amount))
+        Text(amount.formatted(.number))
           .foregroundColor(.purple)
       } minimumValueLabel: {
-        Text(String(min.formatted(.number)))
+        Text(min.formatted(.number))
       } maximumValueLabel: {
-        Text(String(max.formatted(.number)))
+        Text(max.formatted(.number))
       }
       .font(.headline)
       .textCase(.none)
@@ -39,7 +39,7 @@ struct ProgressMeterView_Previews: PreviewProvider {
     ProgressMeterView(
       label: "Fasted state hours this week",
       systemImage: "gauge",
-      amount: 12,
+      amount: 12.1,
       min: .zero,
       max: 24
     )

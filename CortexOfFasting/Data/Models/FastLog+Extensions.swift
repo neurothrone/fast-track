@@ -6,6 +6,7 @@
 //
 
 import CoreData
+import SwiftUI
 
 extension FastLog {
   var startedAt: String {
@@ -22,9 +23,7 @@ extension FastLog {
     
     return startedDate.distance(to: stoppedDate)
   }
-}
-
-extension FastLog {
+  
   static var all: NSFetchRequest<FastLog> {
     let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
     request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]
@@ -63,12 +62,23 @@ extension FastLog {
   
   static func totalFastedStateToHours(in fastLogs: [FastLog]) -> Double {
     let totalFastedStateSeconds = FastLog.totalFastedStateSeconds(in: fastLogs)
-    return totalFastedStateSeconds / 60.0 / 60.0
+    let totalFastedStateHours = totalFastedStateSeconds / 60.0 / 60.0
+    return round(totalFastedStateHours * 10) / 10.0
   }
   
   static func totalFastedStateToHoursFormatted(in fastLogs: [FastLog]) -> String {
     let totalFastedStateHours = totalFastedStateToHours(in: fastLogs)
     return String(format: "%.1f", totalFastedStateHours)
+  }
+  
+  static func delete(
+    atOffsets: IndexSet,
+    section: SectionedFetchResults<String, FastLog>.Element,
+    using context: NSManagedObjectContext
+  ) {
+    guard let index = atOffsets.first else { return }
+    
+    section[index].delete(using: context)
   }
 }
 

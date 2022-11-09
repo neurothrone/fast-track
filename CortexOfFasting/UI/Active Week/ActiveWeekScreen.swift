@@ -23,10 +23,15 @@ struct ActiveWeekScreen: View {
   }
   
   var body: some View {
+    NavigationStack {
+      content
+        .navigationTitle("Active Week")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+  }
+  
+  private var content: some View {
     VStack(alignment: .leading) {
-      Text("Active Fast")
-        .font(.largeTitle)
-      
       Group {
         if hasPartialLog {
           ActiveLogView(log: fastLogs.first!, onStopTapped: completePartialFeedLog)
@@ -36,11 +41,8 @@ struct ActiveWeekScreen: View {
       }
       .background(
         RoundedRectangle(cornerRadius: 20)
-          .fill(.black.opacity(0.25))
+          .fill(.gray.opacity(0.75))
       )
-      
-      Text("Active Week")
-        .font(.title)
       
       ProgressMeterView(
         label: "Fasted state hours",
