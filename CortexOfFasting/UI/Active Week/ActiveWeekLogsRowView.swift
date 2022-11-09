@@ -13,8 +13,7 @@ struct ActiveWeekLogsRowView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 4) {
       HStack {
-        // TODO: Fatal error here sometimes when deleting logs on All Weeks Screen
-        Text(log.startedDate.inReadableFormat)
+        Label(log.startedDate.inReadableFormat, systemImage: "play.fill")
           .foregroundColor(.mint)
         
         Spacer()
@@ -27,7 +26,7 @@ struct ActiveWeekLogsRowView: View {
       }
       
       if let stoppedDate = log.stoppedDate {
-        Text(stoppedDate.inReadableFormat)
+        Label(stoppedDate.inReadableFormat, systemImage: "stop.fill")
           .foregroundColor(.mint.opacity(0.75))
       }
     }

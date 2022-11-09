@@ -65,6 +65,7 @@ struct ActiveWeekScreen: View {
               ActiveWeekLogsRowView(log: log)
             }
             .listRowBackground(Color.black)
+            .listRowSeparatorTint(.white.opacity(0.4))
           } header: {
             SectionHeaderView(leftText: "Fasting times", rightText: "Fasting duration")
           }
