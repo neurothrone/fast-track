@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
@@ -25,13 +27,14 @@ struct ActiveWeekScreen: View {
   var body: some View {
     NavigationStack {
       content
+        .linearBackground()
         .navigationTitle("Active Week")
         .navigationBarTitleDisplayMode(.inline)
     }
   }
   
   private var content: some View {
-    VStack(alignment: .leading) {
+    VStack(alignment: .leading, spacing: .zero) {
       Group {
         if hasPartialLog {
           ActiveLogView(log: fastLogs.first!, onStopTapped: completePartialFeedLog)
@@ -39,10 +42,9 @@ struct ActiveWeekScreen: View {
           InactiveLogView(onStartTapped: createPartialFeedLog)
         }
       }
-      .background(
-        RoundedRectangle(cornerRadius: 20)
-          .fill(.gray.opacity(0.75))
-      )
+      .background(.ultraThinMaterial)
+      .cornerRadius(20)
+      .padding(.horizontal)
       
       ProgressMeterView(
         label: "Fasted state hours",
@@ -51,12 +53,29 @@ struct ActiveWeekScreen: View {
         min: .zero,
         max: 24
       )
-      .padding(.vertical)
+      .padding()
+      .background(.ultraThinMaterial)
+      .cornerRadius(20)
+      .padding()
       
-      List {
-        ForEach(fastLogs) { log in
-          ActiveWeekLogsRowView(log: log)
+      if fastLogs.isNotEmpty {
+        List {
+          Section {
+            ForEach(fastLogs) { log in
+              ActiveWeekLogsRowView(log: log)
+            }
+          } header: {
+            HStack {
+              Text("Fasting times")
+              Spacer()
+              Text("Fasting duration")
+            }
+            .font(.headline)
+            .textCase(.none)
+            .foregroundColor(.black.opacity(0.75))
+          }
         }
+        .scrollContentBackground(.hidden)
       }
       
       Spacer()
@@ -84,5 +103,6 @@ struct ActiveWeekScreen_Previews: PreviewProvider {
   static var previews: some View {
     ActiveWeekScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      .preferredColorScheme(.dark)
   }
 }

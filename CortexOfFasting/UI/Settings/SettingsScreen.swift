@@ -11,6 +11,7 @@ struct SettingsScreen: View {
   var body: some View {
     NavigationStack {
       content
+        .linearBackground()
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
     }

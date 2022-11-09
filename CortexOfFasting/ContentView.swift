@@ -38,12 +38,16 @@ struct ContentView: View {
   
   var body: some View {
     TabView(selection: $selectedTab) {
-      ForEach(Tab.allCases) { tab in
-        tab.view
-          .tabItem {
-            Label(tab.rawValue, systemImage: tab.systemImage)
-          }
+      Group {
+        ForEach(Tab.allCases) { tab in
+          tab.view
+            .tabItem {
+              Label(tab.rawValue, systemImage: tab.systemImage)
+            }
+        }
       }
+      .toolbarBackground(.visible, for: .tabBar)
+      .toolbarBackground(.ultraThinMaterial, for: .tabBar)
     }
   }
 }
@@ -51,5 +55,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      .preferredColorScheme(.dark)
   }
 }

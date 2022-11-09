@@ -22,6 +22,7 @@ struct AllWeeksScreen: View {
   var body: some View {
     NavigationStack {
       content
+        .linearBackground()
         .navigationTitle("All Weeks")
         .navigationBarTitleDisplayMode(.inline)
     }

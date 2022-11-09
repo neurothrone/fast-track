@@ -29,7 +29,7 @@ extension FastLog {
       for startedDate in stride(from: startOfWeek, to: endOfWeek, by: dayDurationInSeconds) {
         let fastLog = FastLog(context: context)
         fastLog.startedDate = startedDate
-        fastLog.stoppedDate = startedDate.adding(minutes: Int.random(in: 1...59))
+        fastLog.stoppedDate = startedDate.adding(minutes: Int.random(in: 600...1_000))
         CoreDataProvider.save(using: context)
       }
     }
