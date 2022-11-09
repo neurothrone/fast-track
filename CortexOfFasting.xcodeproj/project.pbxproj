@@ -32,6 +32,7 @@
 		2F10080D291A3BCF004CE72E /* WeekDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10080C291A3BCF004CE72E /* WeekDetailScreen.swift */; };
 		2F100815291B5468004CE72E /* ActiveWeekLogsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* ActiveWeekLogsRowView.swift */; };
 		2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100817291BD0E2004CE72E /* ProgressMeterView.swift */; };
+		2F10081A291BF084004CE72E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		2F10080C291A3BCF004CE72E /* WeekDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDetailScreen.swift; sourceTree = "<group>"; };
 		2F100814291B5468004CE72E /* ActiveWeekLogsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekLogsRowView.swift; sourceTree = "<group>"; };
 		2F100817291BD0E2004CE72E /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
+		2F100819291BF084004CE72E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F10080F291A3D7F004CE72E /* Info */,
 				2F10080E291A3C41004CE72E /* Settings */,
+				2F100819291BF084004CE72E /* Tab.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				2F1007CE291A00C8004CE72E /* ContentView.swift in Sources */,
 				2F100802291A0FC7004CE72E /* FastLogsRowView.swift in Sources */,
 				2F100806291A1968004CE72E /* InactiveLogView.swift in Sources */,
+				2F10081A291BF084004CE72E /* Tab.swift in Sources */,
 				2F100815291B5468004CE72E /* ActiveWeekLogsRowView.swift in Sources */,
 				2F1007FA291A0484004CE72E /* URL+Extensions.swift in Sources */,
 				2F1007F4291A0451004CE72E /* Date+Extensions.swift in Sources */,

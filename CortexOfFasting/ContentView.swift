@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-enum Tab: String {
-  case activeWeek = "Active Week"
-  case allWeeks = "All Weeks"
-  case settings = "Settings"
-}
-
-extension Tab: Identifiable, CaseIterable {
-  var id: Self { self }
-}
-
 private extension Tab {
   @ViewBuilder
   var view: some View {
