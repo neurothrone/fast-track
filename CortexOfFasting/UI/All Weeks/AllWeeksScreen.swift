@@ -52,11 +52,7 @@ struct AllWeeksScreen: View {
             
             Spacer()
             
-            let totalSecondsOfWeek = logsInWeek.reduce(TimeInterval.zero) { partialResult, log in
-              return partialResult + log.duration
-            }
-            let shortHours = String(format: "%.1f", totalSecondsOfWeek / 60.0 / 60.0)
-            Text("\(shortHours) / 24 h")
+            Text("\(FastLog.totalFastedStateToHours(in: Array(fastLogs))) / 24 h")
           }
           .font(.headline)
           .textCase(.none)

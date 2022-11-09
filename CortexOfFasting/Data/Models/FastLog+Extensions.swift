@@ -45,5 +45,25 @@ extension FastLog {
     
     return request
   }
+  
+  static func totalFastedStateSeconds(in fastLogs: [FastLog]) -> TimeInterval {
+    let minHoursToFastedState: TimeInterval = 12 * 60 * 60
+    
+    let totalFastedStateSeconds = fastLogs.reduce(TimeInterval.zero) { partialResult, log in
+      if log.duration > minHoursToFastedState {
+        let fastedStateTime = log.duration - minHoursToFastedState
+        return partialResult + fastedStateTime
+      }
+      
+      return partialResult
+    }
+    
+    return totalFastedStateSeconds
+  }
+  
+  static func totalFastedStateToHours(in fastLogs: [FastLog]) -> String {
+    let totalFastedStateSeconds = FastLog.totalFastedStateSeconds(in: fastLogs)
+    return String(format: "%.1f", totalFastedStateSeconds / 60.0 / 60.0)
+  }
 }
 
