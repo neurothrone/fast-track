@@ -15,20 +15,20 @@ struct ActiveWeekLogsRowView: View {
       HStack {
         // TODO: Fatal error here sometimes when deleting logs on All Weeks Screen
         Text(log.startedDate.inReadableFormat)
-          .foregroundColor(.blue)
+          .foregroundColor(.mint)
         
         Spacer()
         
         if log.stoppedDate != nil {
           Text(log.duration.inHoursAndMinutes)
             .font(.callout.bold())
-            .foregroundColor(.secondary)
+            .foregroundColor(.purple)
         }
       }
       
       if let stoppedDate = log.stoppedDate {
         Text(stoppedDate.inReadableFormat)
-          .foregroundColor(.orange)
+          .foregroundColor(.mint.opacity(0.75))
       }
     }
   }

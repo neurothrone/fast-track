@@ -13,14 +13,26 @@ struct WeekDetailScreen: View {
   let logs: SectionedFetchResults<String, FastLog>.Element
   
   var body: some View {
-    VStack {
+    NavigationStack {
+      content
+    }
+    .linearBackground()
+    .navigationTitle(logs.id)
+    .navigationBarTitleDisplayMode(.inline)
+  }
+  
+  private var content: some View {
+    VStack(spacing: .zero) {
       ProgressMeterView(
         label: "Fasted state hours",
         systemImage: "gauge",
-        amount: 12,
+        amount: FastLog.totalFastedStateToHours(in: Array(logs)),
         min: .zero,
         max: 24
       )
+      .padding()
+      .background(.ultraThinMaterial)
+      .cornerRadius(20)
       .padding()
       
       List {
@@ -42,15 +54,10 @@ struct WeekDetailScreen: View {
             FastLog.delete(atOffsets: indexSet, section: logs, using: viewContext)
           }
         } header: {
-          HStack {
-            Text("Day")
-            Spacer()
-            Text("Fasting time")
-          }
-          .textCase(.none)
+          SectionHeaderView(leftText: "Day", rightText: "Fasting time")
         }
       }
-      .navigationTitle(logs.id)
+      .scrollContentBackground(.hidden)
     }
   }
 }

@@ -64,15 +64,9 @@ struct ActiveWeekScreen: View {
             ForEach(fastLogs) { log in
               ActiveWeekLogsRowView(log: log)
             }
+            .listRowBackground(Color.black)
           } header: {
-            HStack {
-              Text("Fasting times")
-              Spacer()
-              Text("Fasting duration")
-            }
-            .font(.headline)
-            .textCase(.none)
-            .foregroundColor(.black.opacity(0.75))
+            SectionHeaderView(leftText: "Fasting times", rightText: "Fasting duration")
           }
         }
         .scrollContentBackground(.hidden)
@@ -80,7 +74,6 @@ struct ActiveWeekScreen: View {
       
       Spacer()
     }
-    .padding()
   }
 }
 
@@ -103,6 +96,6 @@ struct ActiveWeekScreen_Previews: PreviewProvider {
   static var previews: some View {
     ActiveWeekScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-//      .preferredColorScheme(.dark)
+    //      .preferredColorScheme(.dark)
   }
 }

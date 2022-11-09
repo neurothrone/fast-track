@@ -30,9 +30,9 @@ extension Date {
   
   var inReadableFormat: String {
     self.formatted(Date.FormatStyle()
-      .year(.defaultDigits)
       .month(.abbreviated)
       .day(.defaultDigits)
+      .weekday()
       .hour(.twoDigits(amPM: .abbreviated))
       .minute(.twoDigits))
   }

@@ -46,25 +46,10 @@ struct AllWeeksScreen: View {
           }
         }
       } header: {
-        HStack {
-          Text("Week")
-          Spacer()
-          Text("Fasted state hours")
-        }
-        .textCase(.none)
+        SectionHeaderView(leftText: "Week", rightText: "Fasted state hours")
       }
     }
-  }
-}
-
-extension AllWeeksScreen {
-  private func deleteLog(
-    atOffsets: IndexSet,
-    section: SectionedFetchResults<String, FastLog>.Element
-  ) {
-    guard let index = atOffsets.first else { return }
-    
-    section[index].delete(using: viewContext)
+    .scrollContentBackground(.hidden)
   }
 }
 
