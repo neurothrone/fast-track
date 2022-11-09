@@ -42,13 +42,18 @@ struct ActiveWeekScreen: View {
       Text("Active Week")
         .font(.title)
       
-      Text("Progress Bar Goal ->")
-        .padding(.vertical)
-        .frame(maxWidth: .infinity)
+      ProgressMeterView(
+        label: "Fasted state hours",
+        systemImage: "gauge",
+        amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
+        min: .zero,
+        max: 24
+      )
+      .padding(.vertical)
       
       List {
         ForEach(fastLogs) { log in
-          FastLogsRowView(log: log)
+          ActiveWeekLogsRowView(log: log)
         }
       }
       

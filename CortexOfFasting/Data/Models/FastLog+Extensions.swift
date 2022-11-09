@@ -61,9 +61,14 @@ extension FastLog {
     return totalFastedStateSeconds
   }
   
-  static func totalFastedStateToHours(in fastLogs: [FastLog]) -> String {
+  static func totalFastedStateToHours(in fastLogs: [FastLog]) -> Double {
     let totalFastedStateSeconds = FastLog.totalFastedStateSeconds(in: fastLogs)
-    return String(format: "%.1f", totalFastedStateSeconds / 60.0 / 60.0)
+    return totalFastedStateSeconds / 60.0 / 60.0
+  }
+  
+  static func totalFastedStateToHoursFormatted(in fastLogs: [FastLog]) -> String {
+    let totalFastedStateHours = totalFastedStateToHours(in: fastLogs)
+    return String(format: "%.1f", totalFastedStateHours)
   }
 }
 

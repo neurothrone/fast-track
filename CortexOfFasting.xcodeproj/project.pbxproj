@@ -30,6 +30,8 @@
 		2F100806291A1968004CE72E /* InactiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100805291A1968004CE72E /* InactiveLogView.swift */; };
 		2F100808291A1D50004CE72E /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
 		2F10080D291A3BCF004CE72E /* WeekDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10080C291A3BCF004CE72E /* WeekDetailScreen.swift */; };
+		2F100815291B5468004CE72E /* ActiveWeekLogsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* ActiveWeekLogsRowView.swift */; };
+		2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100817291BD0E2004CE72E /* ProgressMeterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		2F100805291A1968004CE72E /* InactiveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InactiveLogView.swift; sourceTree = "<group>"; };
 		2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		2F10080C291A3BCF004CE72E /* WeekDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDetailScreen.swift; sourceTree = "<group>"; };
+		2F100814291B5468004CE72E /* ActiveWeekLogsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekLogsRowView.swift; sourceTree = "<group>"; };
+		2F100817291BD0E2004CE72E /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2F100816291BD0D7004CE72E /* Components */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F10080F291A3D7F004CE72E /* Info */,
@@ -161,7 +166,7 @@
 				2F1007DD291A0244004CE72E /* ActiveWeekScreen.swift */,
 				2F1007FE291A0F9C004CE72E /* ActiveLogView.swift */,
 				2F100805291A1968004CE72E /* InactiveLogView.swift */,
-				2F100801291A0FC7004CE72E /* FastLogsRowView.swift */,
+				2F100814291B5468004CE72E /* ActiveWeekLogsRowView.swift */,
 			);
 			path = "Active Week";
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			children = (
 				2F1007DF291A0249004CE72E /* AllWeeksScreen.swift */,
 				2F10080C291A3BCF004CE72E /* WeekDetailScreen.swift */,
+				2F100801291A0FC7004CE72E /* FastLogsRowView.swift */,
 			);
 			path = "All Weeks";
 			sourceTree = "<group>";
@@ -188,6 +194,14 @@
 			children = (
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		2F100816291BD0D7004CE72E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F100817291BD0E2004CE72E /* ProgressMeterView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 				2F1007CE291A00C8004CE72E /* ContentView.swift in Sources */,
 				2F100802291A0FC7004CE72E /* FastLogsRowView.swift in Sources */,
 				2F100806291A1968004CE72E /* InactiveLogView.swift in Sources */,
+				2F100815291B5468004CE72E /* ActiveWeekLogsRowView.swift in Sources */,
 				2F1007FA291A0484004CE72E /* URL+Extensions.swift in Sources */,
 				2F1007F4291A0451004CE72E /* Date+Extensions.swift in Sources */,
 				2F100804291A10CB004CE72E /* NSManagedObject+Extensions.swift in Sources */,
@@ -275,6 +290,7 @@
 				2F1007F6291A0464004CE72E /* Collection+Extensions.swift in Sources */,
 				2F1007F1291A03F2004CE72E /* FastLog+Extensions.swift in Sources */,
 				2F1007DE291A0244004CE72E /* ActiveWeekScreen.swift in Sources */,
+				2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */,
 				2F100808291A1D50004CE72E /* DateFormatter+Extensions.swift in Sources */,
 				2F1007E2291A024F004CE72E /* SettingsScreen.swift in Sources */,
 				2F1007F8291A047A004CE72E /* TimeInterval+Extensions.swift in Sources */,
