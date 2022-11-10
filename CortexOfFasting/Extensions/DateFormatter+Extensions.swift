@@ -8,10 +8,10 @@
 import Foundation
 
 extension DateFormatter {
-  static var deviceLocaleFormatter: DateFormatter {
+  static var twentyFourHourFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.locale = .current
-    formatter.setLocalizedDateFormatFromTemplate("dd MMMM YY HH:mm")
+    formatter.setLocalizedDateFormatFromTemplate("EEE, MMM d, HH:mm a")
     return formatter
-  }
+  }()
 }

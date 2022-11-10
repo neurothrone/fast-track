@@ -37,12 +37,13 @@ struct ActiveWeekLogsRowView_Previews: PreviewProvider {
   static var previews: some View {
     let context = CoreDataProvider.preview.viewContext
     let log = FastLog(context: context)
-    log.startedDate = .now.subtracting(minutes: 45)
+    log.startedDate = .now.subtracting(minutes: 620)
     log.stoppedDate = .now
     log.save(using: context)
     
     return ActiveWeekLogsRowView(log: log)
       .environment(\.managedObjectContext, context)
       .padding()
+      .preferredColorScheme(.dark)
   }
 }

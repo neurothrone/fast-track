@@ -29,12 +29,7 @@ extension Date {
   }
   
   var inReadableFormat: String {
-    self.formatted(Date.FormatStyle()
-      .month(.abbreviated)
-      .day(.defaultDigits)
-      .weekday()
-      .hour(.twoDigits(amPM: .abbreviated))
-      .minute(.twoDigits))
+    DateFormatter.twentyFourHourFormatter.string(from: self)
   }
   
   func startOfWeek(using calendar: Calendar = Calendar.current) -> Date {
