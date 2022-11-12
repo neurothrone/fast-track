@@ -24,8 +24,9 @@ extension FastLog {
     return startedDate.distance(to: stoppedDate)
   }
   
-  static var all: NSFetchRequest<FastLog> {
+  static var allCompleted: NSFetchRequest<FastLog> {
     let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
+    request.predicate = NSPredicate(format: "stoppedDate != nil")
     request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]
     return request
   }

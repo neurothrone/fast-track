@@ -34,7 +34,7 @@ struct ActiveWeekLogListView: View {
         List {
           Section {
             ForEach(fastLogs) {
-              ActiveWeekLogsRowView(log: $0)
+              FastLogsRowView(log: $0)
             }
             .onDelete(perform: deleteLog)
             .listRowBackground(Color.black)

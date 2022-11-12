@@ -10,11 +10,11 @@ import SwiftUI
 struct AllWeeksScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
-  @FetchRequest(fetchRequest: FastLog.all, animation: .default)
+  @FetchRequest(fetchRequest: FastLog.allCompleted, animation: .default)
   private var fastLogs: FetchedResults<FastLog>
   
   @SectionedFetchRequest(
-    fetchRequest: FastLog.all,
+    fetchRequest: FastLog.allCompleted,
     sectionIdentifier: \FastLog.yearAndWeek,
     animation: .default)
   private var logsPerWeek: SectionedFetchResults<String, FastLog>

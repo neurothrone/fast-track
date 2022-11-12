@@ -38,27 +38,23 @@ struct WeekDetailScreen: View {
       List {
         Section {
           ForEach(logs) { log in
-            HStack {
-              Text(log.startedDate.formatted(Date.FormatStyle()
-                .day()
-                .weekday()
-                .month())
-              )
-              
-              Spacer()
-              
-              Text(log.duration.inHoursAndMinutes)
-            }
+            FastLogsRowView(log: log)
           }
-          .onDelete { indexSet in
-            FastLog.delete(atOffsets: indexSet, section: logs, using: viewContext)
-          }
+          .onDelete(perform: deleteLog)
+          .listRowBackground(Color.black)
+          .listRowSeparatorTint(.white.opacity(0.4))
         } header: {
           SectionHeaderView(leftText: "Day", rightText: "Fasting time")
         }
       }
       .scrollContentBackground(.hidden)
     }
+  }
+}
+
+extension WeekDetailScreen {
+  private func deleteLog(atOffsets: IndexSet) {
+    FastLog.delete(atOffsets: atOffsets, section: logs, using: viewContext)
   }
 }
 
