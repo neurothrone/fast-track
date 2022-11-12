@@ -19,7 +19,7 @@ struct SectionHeaderView: View {
     }
     .font(.headline)
     .textCase(.none)
-    .foregroundColor(.black.opacity(0.75))
+    .foregroundColor(.primary.opacity(0.9))
   }
 }
 

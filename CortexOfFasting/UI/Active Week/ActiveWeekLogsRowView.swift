@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct ActiveWeekLogsRowView: View {
-  @ObservedObject var log: FastLog
+  let log: FastLog
   
   var body: some View {
     VStack(alignment: .leading, spacing: 4) {
       HStack {
         Label(log.startedDate.inReadableFormat, systemImage: "play.fill")
-          .foregroundColor(.mint)
         
         Spacer()
         
         if log.stoppedDate != nil {
           Text(log.duration.inHoursAndMinutes)
             .font(.callout.bold())
-            .foregroundColor(.purple)
+            .foregroundColor(.mint.opacity(0.75))
         }
       }
       
       if let stoppedDate = log.stoppedDate {
         Label(stoppedDate.inReadableFormat, systemImage: "stop.fill")
-          .foregroundColor(.mint.opacity(0.75))
       }
     }
+    .foregroundColor(.mint)
   }
 }
 

@@ -13,11 +13,11 @@ struct InactiveLogView: View {
   var body: some View {
     HStack {
       VStack(alignment: .leading) {
-        Text("No active fast yet. Press the button to start.")
+        Text("No active fast yet. Press the button to begin.")
         
         Button("Start", action: onStartTapped)
           .buttonStyle(.borderedProminent)
-          .tint(.blue)
+          .tint(.purple)
       }
       
       Spacer()

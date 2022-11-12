@@ -30,18 +30,32 @@ extension FastLog {
     return request
   }
   
-  static var allInCurrentWeek: NSFetchRequest<FastLog> {
+  static var allCompletedInCurrentWeek: NSFetchRequest<FastLog> {
     let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
     
     request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]
     
     let calendar = Calendar.current
-    
     let startOfWeek = Date.now.startOfWeek(using: calendar)
     let endOfWeek = calendar.date(byAdding: .day, value: 7, to: startOfWeek) ?? .now
     
-    request.predicate = NSPredicate(format: "startedDate >= %@ AND startedDate < %@", startOfWeek as CVarArg, endOfWeek as CVarArg)
+    let currentWeekPredicate = NSPredicate(format: "startedDate >= %@ AND startedDate < %@", startOfWeek as CVarArg, endOfWeek as CVarArg)
+    let onlyCompletedLogsPredicate = NSPredicate(format: "stoppedDate != nil")
+    let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [
+      currentWeekPredicate,
+      onlyCompletedLogsPredicate]
+    )
     
+    request.predicate = compoundPredicate
+
+    return request
+  }
+  
+  static var firstIncompleteLog: NSFetchRequest<FastLog> {
+    let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
+    request.fetchLimit = 1
+    request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]
+    request.predicate = NSPredicate(format: "stoppedDate == nil")
     return request
   }
   

@@ -17,7 +17,7 @@ struct ActiveLogView: View {
   
   let onStopTapped: () -> Void
   
-  private let timer = Timer.publish(every: 60, on: .main, in: .default).autoconnect()
+  private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
   
   private var duration: TimeInterval {
     log.startedDate.distance(to: currentTime)
@@ -42,23 +42,21 @@ struct ActiveLogView: View {
   private var content: some View {
     HStack {
       VStack(alignment: .leading, spacing: 10) {
-        Text("Started fasting")
-          .bold()
-        Text(log.startedAt)
-        
+        Text(log.startedDate.inReadableFormat)
+
         Button("Stop", action: onStopTapped)
           .buttonStyle(.borderedProminent)
-          .tint(.orange)
+          .tint(.purple)
       }
-      
+
       Spacer()
-      
+
       Text(log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
         .font(.title3.bold())
-        .frame(width: 75, height: 75)
+        .padding()
         .overlay(
-          Circle()
-            .fill(.purple.opacity(0.5))
+          RoundedRectangle(cornerRadius: 20, style: .continuous)
+            .fill(.secondary.opacity(0.5))
         )
     }
     .padding()

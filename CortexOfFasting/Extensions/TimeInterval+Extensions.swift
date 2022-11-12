@@ -18,7 +18,7 @@ extension TimeInterval {
     
     static let inHoursAndMinsDigitalClockStyleFormatter: DateComponentsFormatter = {
       let formatter = DateComponentsFormatter()
-      formatter.allowedUnits = [.hour, .minute]
+      formatter.allowedUnits = [.hour, .minute, .second]
       formatter.unitsStyle = .positional
       formatter.zeroFormattingBehavior = .pad
       return formatter
