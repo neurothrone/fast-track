@@ -40,10 +40,10 @@ extension FastLog {
     let startOfWeek = Date.now.startOfWeek(using: calendar)
     let endOfWeek = calendar.date(byAdding: .day, value: 7, to: startOfWeek) ?? .now
     
-    let currentWeekPredicate = NSPredicate(format: "startedDate >= %@ AND startedDate < %@", startOfWeek as CVarArg, endOfWeek as CVarArg)
+    let datesInRangePredicate = NSPredicate(format: "startedDate >= %@ AND startedDate < %@", startOfWeek as CVarArg, endOfWeek as CVarArg)
     let onlyCompletedLogsPredicate = NSPredicate(format: "stoppedDate != nil")
     let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [
-      currentWeekPredicate,
+      datesInRangePredicate,
       onlyCompletedLogsPredicate]
     )
     
@@ -52,7 +52,7 @@ extension FastLog {
     return request
   }
   
-  static var firstIncompleteLog: NSFetchRequest<FastLog> {
+  static var incompleteLogs: NSFetchRequest<FastLog> {
     let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
     request.fetchLimit = 1
     request.sortDescriptors = [NSSortDescriptor(keyPath: \FastLog.startedDate, ascending: false)]

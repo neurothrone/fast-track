@@ -11,7 +11,7 @@ struct SwipeableLogView: View {
   @Environment(\.managedObjectContext) private var viewContext
   
   @FetchRequest(
-    fetchRequest: FastLog.firstIncompleteLog,
+    fetchRequest: FastLog.incompleteLogs,
     animation: .default
   )
   private var fastLogs: FetchedResults<FastLog>
