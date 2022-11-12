@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SwipeableLogView: View {
   @Environment(\.managedObjectContext) private var viewContext
+  @EnvironmentObject private var dataManager: DataManager
   
   @FetchRequest(
     fetchRequest: FastLog.incompleteLogs,
@@ -27,7 +28,6 @@ struct SwipeableLogView: View {
   
   @State private var startTime: Date = .now
   @State private var currentTime: Date = .now
-  @State private var isTimerRunning = false
   
   private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
   
@@ -35,12 +35,16 @@ struct SwipeableLogView: View {
     startTime.distance(to: currentTime)
   }
   
+  private var isTimerRunning: Bool {
+    dataManager.isTimerRunning
+  }
+  
   var body: some View {
     content
       .onAppear {
         guard let incompleteLog = fastLogs.first else { return }
         
-        isTimerRunning = true
+        dataManager.isTimerRunning = true
         startTime = incompleteLog.startedDate
         currentTime = .now
       }
@@ -164,9 +168,9 @@ extension SwipeableLogView {
         isHidden = true
         
         if direction == .left {
-          isTimerRunning = isTimerRunning ? false : true
+          dataManager.isTimerRunning = isTimerRunning ? false : true
         } else {
-          isTimerRunning = false
+          dataManager.isTimerRunning = false
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -181,6 +185,7 @@ struct SwipeableLogView_Previews: PreviewProvider {
   static var previews: some View {
     SwipeableLogView()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+      .environmentObject(DataManager.shared)
       .padding()
       .linearBackground()
       .preferredColorScheme(.dark)
