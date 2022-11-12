@@ -23,7 +23,8 @@ struct ActiveWeekLogListView: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
         min: .zero,
-        max: 24
+        max: 24,
+        progressColor: .purple
       )
       .padding()
       .background(.ultraThinMaterial)
@@ -46,7 +47,7 @@ struct ActiveWeekLogListView: View {
         .scrollContentBackground(.hidden)
         
       } else {
-        Text("No logs for this week yet...")
+        Text("No logs for this week yet.")
       }
     }
   }

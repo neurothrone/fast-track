@@ -28,7 +28,8 @@ struct WeekDetailScreen: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(logs)),
         min: .zero,
-        max: 24
+        max: 24,
+        progressColor: .purple
       )
       .padding()
       .background(.ultraThinMaterial)

@@ -21,7 +21,6 @@ struct ActiveWeekScreen: View {
     VStack(alignment: .leading, spacing: .zero) {
       SwipeableLogView()
         .padding([.horizontal, .bottom])
-      
       ActiveWeekLogListView()
       
       Spacer()

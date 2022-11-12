@@ -37,14 +37,17 @@ struct AllWeeksScreen: View {
           } label: {
             HStack {
               Text(logsInWeek.id)
-              
+                .foregroundColor(.mint)
+
               Spacer()
-              
+
               Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / 24 h")
+                .foregroundColor(.purple)
             }
             .textCase(.none)
           }
         }
+        .listRowBackground(Color.black)
       } header: {
         SectionHeaderView(leftText: "Week", rightText: "Fasted state hours")
       }
@@ -57,5 +60,6 @@ struct AllWeeksScreen_Previews: PreviewProvider {
   static var previews: some View {
     AllWeeksScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+      .preferredColorScheme(.dark)
   }
 }

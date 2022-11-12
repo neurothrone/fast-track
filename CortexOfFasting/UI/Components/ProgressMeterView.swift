@@ -15,21 +15,23 @@ struct ProgressMeterView: View {
   let min: Double
   let max: Double
   
+  let progressColor: Color
+  
   var body: some View {
     VStack {
       Gauge(value: amount.clamped(to: max), in: min...max) {
         Label(label, systemImage: systemImage)
       } currentValueLabel: {
         Text(amount.formatted(.number))
+          .fontWeight(.heavy)
           .foregroundColor(.purple)
       } minimumValueLabel: {
         Text(min.formatted(.number))
       } maximumValueLabel: {
         Text(max.formatted(.number))
       }
-      .font(.headline)
       .textCase(.none)
-      .tint(.purple)
+      .tint(progressColor)
     }
   }
 }
@@ -41,7 +43,8 @@ struct ProgressMeterView_Previews: PreviewProvider {
       systemImage: "gauge",
       amount: 12.1,
       min: .zero,
-      max: 24
+      max: 24,
+      progressColor: .purple
     )
   }
 }
