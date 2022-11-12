@@ -9,17 +9,21 @@ import SwiftUI
 
 struct SectionHeaderView: View {
   let leftText: String
-  let rightText: String
+  var rightText: String? = nil
   
   var body: some View {
     HStack {
       Text(leftText)
+      
       Spacer()
-      Text(rightText)
+      
+      if let rightText {
+        Text(rightText)
+      }
     }
     .font(.headline)
+    .foregroundColor(.secondary)
     .textCase(.none)
-    .foregroundColor(.primary.opacity(0.9))
   }
 }
 

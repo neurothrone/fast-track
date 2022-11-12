@@ -42,8 +42,7 @@ struct SettingsScreen: View {
       Section {
         
       } header: {
-        Text("Preferences")
-          .textCase(.none)
+        SectionHeaderView(leftText: "Preferences")
       }
       
       Section {
@@ -51,11 +50,7 @@ struct SettingsScreen: View {
           isDeleteDataSheetPresented.toggle()
         }
       } header: {
-//        SectionHeaderView(leftText: "Data", rightText: "")
-        Text("Data")
-          .font(.headline)
-          .foregroundColor(.secondary)
-          .textCase(.none)
+        SectionHeaderView(leftText: "Data")
       }
       .listRowBackground(Color.black)
       
@@ -67,6 +62,6 @@ struct SettingsScreen: View {
 struct SettingsScreen_Previews: PreviewProvider {
   static var previews: some View {
     SettingsScreen()
-      .preferredColorScheme(.dark)
+//      .preferredColorScheme(.dark)
   }
 }
