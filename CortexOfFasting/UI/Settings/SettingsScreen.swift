@@ -34,7 +34,7 @@ struct SettingsScreen: View {
               Label("About", systemImage: "info.circle")
             }
           } label: {
-            Image(systemName: "line.3.horizontal")
+            Image(systemName: "line.3.horizontal.circle")
           }
         }
     }
@@ -43,7 +43,7 @@ struct SettingsScreen: View {
   private var content: some View {
     Form {
       Section {
-        
+
       } header: {
         SectionHeaderView(leftText: "Preferences")
       }
@@ -74,6 +74,6 @@ struct SettingsScreen_Previews: PreviewProvider {
     SettingsScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
       .environmentObject(DataManager.shared)
-//      .preferredColorScheme(.dark)
+      .preferredColorScheme(.dark)
   }
 }
