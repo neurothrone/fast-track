@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SwipeableLogView: View {
+  private enum SwipeDirection {
+    case left, right
+  }
+  
   @Environment(\.managedObjectContext) private var viewContext
   @EnvironmentObject private var dataManager: DataManager
   
@@ -16,10 +20,6 @@ struct SwipeableLogView: View {
     animation: .default
   )
   private var fastLogs: FetchedResults<FastLog>
-  
-  private enum SwipeDirection {
-    case left, right
-  }
   
   @State private var hasSwipedLeft = false
   @State private var hasSwipedRight = false
@@ -56,7 +56,7 @@ struct SwipeableLogView: View {
   }
   
   private var content: some View {
-    HStack(alignment: .firstTextBaseline, spacing: 0) {
+    HStack(alignment: .firstTextBaseline, spacing: .zero) {
       ZStack {
         
         //MARK: - Content
@@ -140,13 +140,13 @@ extension SwipeableLogView {
   
   private func onDragEnded(gesture: DragGesture.Value) {
     withAnimation(.easeInOut) {
-      if (gesture.location.x - gesture.startLocation.x) > 0 {
+      if (gesture.location.x - gesture.startLocation.x) > .zero {
         if hasSwipedRight {
           hasSwipedRight = false
         } else {
           hasSwipedLeft = true
         }
-      } else if (gesture.location.x - gesture.startLocation.x) < 0 {
+      } else if (gesture.location.x - gesture.startLocation.x) < .zero {
         if hasSwipedLeft {
           hasSwipedLeft = false
         } else {

@@ -117,7 +117,6 @@
 				2F1007CB291A00C8004CE72E /* CortexOfFastingApp.swift */,
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
-				2F7B8782291FCC48008E889C /* DataManager.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
 				2F1007E3291A02BD004CE72E /* Data */,
@@ -140,6 +139,7 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2F7B8782291FCC48008E889C /* DataManager.swift */,
 				2F100819291BF084004CE72E /* Tab.swift */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
