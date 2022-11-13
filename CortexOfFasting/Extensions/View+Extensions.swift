@@ -9,7 +9,6 @@ import SwiftUI
 
 extension View {
   func linearBackground() -> some View {
-    
     ZStack {
       LinearGradient(
         colors: [
