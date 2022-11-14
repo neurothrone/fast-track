@@ -74,6 +74,6 @@ struct SettingsScreen_Previews: PreviewProvider {
     SettingsScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
       .environmentObject(DataManager.shared)
-      .preferredColorScheme(.dark)
+//      .preferredColorScheme(.dark)
   }
 }

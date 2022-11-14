@@ -33,6 +33,9 @@ struct AboutSheet: View {
         Text(" \(currentYear)")
       }
       
+      Text("Version \(UIApplication.appVersion)")
+        .foregroundColor(.secondary)
+      
       CustomLinkView(urlString: Constants.Link.svgRepo, text: "App icon by svgrepo.com")
         .padding(.top)
     }
@@ -42,5 +45,6 @@ struct AboutSheet: View {
 struct AboutSheet_Previews: PreviewProvider {
   static var previews: some View {
     AboutSheet()
+      .preferredColorScheme(.dark)
   }
 }
