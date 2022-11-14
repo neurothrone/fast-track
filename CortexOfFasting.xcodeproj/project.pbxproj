@@ -40,6 +40,7 @@
 		2F7B877D291FAA5B008E889C /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
 		2F7B877F291FAB99008E889C /* ActiveWeekLogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877E291FAB99008E889C /* ActiveWeekLogListView.swift */; };
 		2F7B8783291FCC48008E889C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8782291FCC48008E889C /* DataManager.swift */; };
+		2F7B87952922B095008E889C /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87942922B095008E889C /* UIApplication.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		2F7B877C291FAA5B008E889C /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		2F7B877E291FAB99008E889C /* ActiveWeekLogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekLogListView.swift; sourceTree = "<group>"; };
 		2F7B8782291FCC48008E889C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2F7B87942922B095008E889C /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 				2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */,
 				2F1007F9291A0484004CE72E /* URL+Extensions.swift */,
 				2F10081B291BF760004CE72E /* View+Extensions.swift */,
+				2F7B87942922B095008E889C /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				2F1007E2291A024F004CE72E /* SettingsScreen.swift in Sources */,
 				2F7B8743291CC9B0008E889C /* CustomSwipeView.swift in Sources */,
 				2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */,
+				2F7B87952922B095008E889C /* UIApplication.swift in Sources */,
 				2F1007F8291A047A004CE72E /* TimeInterval+Extensions.swift in Sources */,
 				2F1007E0291A0249004CE72E /* AllWeeksScreen.swift in Sources */,
 				2F7B8773291E4AF0008E889C /* SwipeableLogView.swift in Sources */,
