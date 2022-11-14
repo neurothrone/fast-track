@@ -34,7 +34,7 @@ struct SettingsScreen: View {
               Label("About", systemImage: "info.circle")
             }
           } label: {
-            Image(systemName: "line.3.horizontal.circle")
+            Image(systemName: "ellipsis.circle")
           }
         }
     }
