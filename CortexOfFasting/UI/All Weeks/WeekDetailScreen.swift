@@ -15,10 +15,10 @@ struct WeekDetailScreen: View {
   var body: some View {
     NavigationStack {
       content
+        .linearBackground()
+        .navigationTitle(logs.id)
+        .navigationBarTitleDisplayMode(.inline)
     }
-    .linearBackground()
-    .navigationTitle(logs.id)
-    .navigationBarTitleDisplayMode(.inline)
   }
   
   private var content: some View {
@@ -31,7 +31,7 @@ struct WeekDetailScreen: View {
         max: 24,
         progressColor: .purple
       )
-
+      
       Section {
         ForEach(logs) { log in
           LogListRowView(log: log)
@@ -44,6 +44,7 @@ struct WeekDetailScreen: View {
       }
     }
     .scrollContentBackground(.hidden)
+    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 

@@ -53,6 +53,7 @@ struct AllWeeksScreen: View {
       }
     }
     .scrollContentBackground(.hidden)
+    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 

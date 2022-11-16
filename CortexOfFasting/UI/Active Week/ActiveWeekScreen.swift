@@ -47,6 +47,7 @@ struct ActiveWeekScreen: View {
       ActiveWeekLogListView(logs: fastLogs)
     }
     .scrollContentBackground(.hidden)
+    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 

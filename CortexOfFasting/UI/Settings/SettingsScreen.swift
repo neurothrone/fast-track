@@ -59,6 +59,7 @@ struct SettingsScreen: View {
       
     }
     .scrollContentBackground(.hidden)
+    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 
