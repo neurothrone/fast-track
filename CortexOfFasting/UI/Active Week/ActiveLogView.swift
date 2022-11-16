@@ -39,9 +39,12 @@ struct ActiveLogView: View {
       Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
         .font(.title3.bold())
         .padding()
-        .overlay(
+        .frame(width: 140)
+        .background(.ultraThickMaterial)
+        .cornerRadius(20)
+        .background(
           RoundedRectangle(cornerRadius: 20, style: .continuous)
-            .fill(.secondary.opacity(0.5))
+            .fill(.mint.opacity(0.5))
         )
     }
   }
