@@ -9,13 +9,10 @@ import SwiftUI
 
 @main
 struct CortexOfFastingApp: App {
-  @StateObject var dataManager = DataManager.shared
-  
   var body: some Scene {
     WindowGroup {
       ContentView()
         .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
-        .environmentObject(dataManager)
     }
   }
 }

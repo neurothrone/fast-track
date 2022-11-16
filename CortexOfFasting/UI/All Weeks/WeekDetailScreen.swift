@@ -22,8 +22,8 @@ struct WeekDetailScreen: View {
   }
   
   private var content: some View {
-    VStack(spacing: .zero) {
-      ProgressMeterView(
+    List {
+      LogListProgressMeterView(
         label: "Fasted state hours",
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(logs)),
@@ -31,25 +31,19 @@ struct WeekDetailScreen: View {
         max: 24,
         progressColor: .purple
       )
-      .padding()
-      .background(.ultraThinMaterial)
-      .cornerRadius(20)
-      .padding()
-      
-      List {
-        Section {
-          ForEach(logs) { log in
-            FastLogsRowView(log: log)
-          }
-          .onDelete(perform: deleteLog)
-          .listRowBackground(Color.black)
-          .listRowSeparatorTint(.white.opacity(0.4))
-        } header: {
-          SectionHeaderView(leftText: "Day", rightText: "Fasting time")
+
+      Section {
+        ForEach(logs) { log in
+          LogListRowView(log: log)
         }
+        .onDelete(perform: deleteLog)
+        .listRowBackground(Color.black)
+        .listRowSeparatorTint(.white.opacity(0.4))
+      } header: {
+        SectionHeaderView(leftText: "Day", rightText: "Fasting time")
       }
-      .scrollContentBackground(.hidden)
     }
+    .scrollContentBackground(.hidden)
   }
 }
 

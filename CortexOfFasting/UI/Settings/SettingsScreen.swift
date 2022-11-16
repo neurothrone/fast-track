@@ -9,8 +9,7 @@ import SwiftUI
 
 struct SettingsScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
-  @EnvironmentObject private var dataManager: DataManager
-  
+
   @State private var isAboutSheetPresented = false
   @State private var isDeleteDataSheetPresented = false
   
@@ -65,7 +64,7 @@ struct SettingsScreen: View {
 
 extension SettingsScreen {
   private func deleteAllData() {
-    dataManager.deleteAllData(using: viewContext)
+    FastLog.deleteAll(using: viewContext)
   }
 }
 
@@ -73,7 +72,6 @@ struct SettingsScreen_Previews: PreviewProvider {
   static var previews: some View {
     SettingsScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-      .environmentObject(DataManager.shared)
 //      .preferredColorScheme(.dark)
   }
 }

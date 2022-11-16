@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct ActiveWeekScreen: View {
+  @Environment(\.managedObjectContext) private var viewContext
+  
+  @FetchRequest(
+    fetchRequest: FastLog.allCompletedInCurrentWeek,
+    animation: .default
+  )
+  private var fastLogs: FetchedResults<FastLog>
+  
   var body: some View {
     NavigationStack {
       content
@@ -18,13 +26,27 @@ struct ActiveWeekScreen: View {
   }
   
   private var content: some View {
-    VStack(alignment: .leading, spacing: .zero) {
-      SwipeableLogView()
-        .padding([.horizontal, .bottom])
-      ActiveWeekLogListView()
+    List {
+      LogListProgressMeterView(
+        label: "Fasted state hours",
+        systemImage: "gauge",
+        amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
+        min: .zero,
+        max: 24,
+        progressColor: .purple
+      )
       
-      Spacer()
+      Section {
+        SwipeableLogView()
+          .listRowBackground(
+            EmptyView()
+              .background(.ultraThinMaterial)
+          )
+      }
+      
+      ActiveWeekLogListView(logs: fastLogs)
     }
+    .scrollContentBackground(.hidden)
   }
 }
 

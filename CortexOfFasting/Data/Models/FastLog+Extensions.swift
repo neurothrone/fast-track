@@ -41,13 +41,8 @@ extension FastLog {
     let endOfWeek = calendar.date(byAdding: .day, value: 7, to: startOfWeek) ?? .now
     
     let datesInRangePredicate = NSPredicate(format: "startedDate >= %@ AND startedDate < %@", startOfWeek as CVarArg, endOfWeek as CVarArg)
-    let onlyCompletedLogsPredicate = NSPredicate(format: "stoppedDate != nil")
-    let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [
-      datesInRangePredicate,
-      onlyCompletedLogsPredicate]
-    )
-    
-    request.predicate = compoundPredicate
+
+    request.predicate = datesInRangePredicate
 
     return request
   }

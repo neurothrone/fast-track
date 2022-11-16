@@ -10,45 +10,18 @@ import SwiftUI
 struct ActiveWeekLogListView: View {
   @Environment(\.managedObjectContext) private var viewContext
   
-  @FetchRequest(
-    fetchRequest: FastLog.allCompletedInCurrentWeek,
-    animation: .default
-  )
-  private var fastLogs: FetchedResults<FastLog>
+  let logs: FetchedResults<FastLog>
   
   var body: some View {
-    VStack {
-      ProgressMeterView(
-        label: "Fasted state hours",
-        systemImage: "gauge",
-        amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
-        min: .zero,
-        max: 24,
-        progressColor: .purple
-      )
-      .padding()
-      .background(.ultraThinMaterial)
-      .cornerRadius(20)
-      .padding()
-      
-      if fastLogs.isNotEmpty {
-        List {
-          Section {
-            ForEach(fastLogs) {
-              FastLogsRowView(log: $0)
-            }
-            .onDelete(perform: deleteLog)
-            .listRowBackground(Color.black)
-            .listRowSeparatorTint(.white.opacity(0.4))
-          } header: {
-            SectionHeaderView(leftText: "Fasting times", rightText: "Fasting duration")
-          }
-        }
-        .scrollContentBackground(.hidden)
-        
-      } else {
-        Text("No logs for this week yet.")
+    Section {
+      ForEach(logs) {
+        LogListRowView(log: $0)
       }
+      .onDelete(perform: deleteLog)
+      .listRowBackground(Color.black)
+      .listRowSeparatorTint(.white.opacity(0.4))
+    } header: {
+      SectionHeaderView(leftText: "Fasting times", rightText: "Fasting duration")
     }
   }
 }
@@ -57,13 +30,13 @@ extension ActiveWeekLogListView {
   private func deleteLog(atOffsets: IndexSet) {
     guard let index = atOffsets.first else { return }
     
-    fastLogs[index].delete(using: viewContext)
+    logs[index].delete(using: viewContext)
   }
 }
 
-struct ActiveWeekLogListView_Previews: PreviewProvider {
-  static var previews: some View {
-    ActiveWeekLogListView()
-      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-  }
-}
+//struct ActiveWeekLogListView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ActiveWeekLogListView()
+//      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//  }
+//}
