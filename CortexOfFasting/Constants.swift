@@ -10,6 +10,7 @@ import Foundation
 enum Constants {
   struct AppStorage {
     static let selectedTab = "selectedTab"
+    static let datePickerDisplayMode = "datePickerDisplayMode"
   }
   
   struct Link {

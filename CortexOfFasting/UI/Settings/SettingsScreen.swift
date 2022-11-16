@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SettingsScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
+  
+  @AppStorage(Constants.AppStorage.datePickerDisplayMode)
+  private var datePickerDisplayMode: DatePickerDisplayMode = .compact
 
   @State private var isAboutSheetPresented = false
   @State private var isDeleteDataSheetPresented = false
@@ -43,7 +46,16 @@ struct SettingsScreen: View {
   private var content: some View {
     Form {
       Section {
-
+        Picker(selection: $datePickerDisplayMode) {
+          ForEach(DatePickerDisplayMode.allCases) { mode in
+            Text(mode.rawValue)
+              .foregroundColor(.purple)
+          }
+        } label: {
+          Text("Date picker display mode")
+            .foregroundColor(.white)
+        }
+        .pickerStyle(.menu)
       } header: {
         SectionHeaderView(leftText: "Preferences")
       }

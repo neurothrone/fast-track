@@ -10,11 +10,16 @@ import SwiftUI
 struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
+  @AppStorage(Constants.AppStorage.datePickerDisplayMode)
+  private var displayMode: DatePickerDisplayMode = .compact
+  
   @FetchRequest(
     fetchRequest: FastLog.allCompletedInCurrentWeek,
     animation: .default
   )
   private var fastLogs: FetchedResults<FastLog>
+  
+  @State private var isAddManualLogPresented = false
   
   var body: some View {
     NavigationStack {
@@ -22,7 +27,24 @@ struct ActiveWeekScreen: View {
         .linearBackground()
         .navigationTitle("Active Week")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $isAddManualLogPresented) {
+          AddManualLogSheet()
+            .presentationDetents(
+              displayMode == .compact
+              ? [.fraction(0.25), .medium, .large]
+              : [.large]
+            )
+        }
         .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
+        .toolbar {
+          Menu {
+            Button(action: { isAddManualLogPresented.toggle() }) {
+              Label("Add log manually", systemImage: "calendar.badge.plus")
+            }
+          } label: {
+            Image(systemName: "ellipsis.circle")
+          }
+        }
     }
   }
   
