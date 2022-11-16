@@ -25,6 +25,7 @@ struct AllWeeksScreen: View {
         .linearBackground()
         .navigationTitle("All Weeks")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
     }
   }
   
@@ -53,7 +54,6 @@ struct AllWeeksScreen: View {
       }
     }
     .scrollContentBackground(.hidden)
-    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 

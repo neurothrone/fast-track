@@ -22,6 +22,7 @@ struct ActiveWeekScreen: View {
         .linearBackground()
         .navigationTitle("Active Week")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
     }
   }
   
@@ -47,7 +48,6 @@ struct ActiveWeekScreen: View {
       ActiveWeekLogListView(logs: fastLogs)
     }
     .scrollContentBackground(.hidden)
-    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 

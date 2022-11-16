@@ -27,6 +27,7 @@ struct SettingsScreen: View {
           DeleteAllDataSheet(onConfirmDelete: deleteAllData)
             .presentationDetents([.fraction(0.5), .medium, .large])
         }
+        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
         .toolbar {
           Menu {
             Button(action: { isAboutSheetPresented.toggle() }) {
@@ -59,7 +60,6 @@ struct SettingsScreen: View {
       
     }
     .scrollContentBackground(.hidden)
-    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 

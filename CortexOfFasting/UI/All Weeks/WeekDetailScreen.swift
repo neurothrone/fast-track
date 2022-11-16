@@ -18,6 +18,7 @@ struct WeekDetailScreen: View {
         .linearBackground()
         .navigationTitle(logs.id)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
     }
   }
   
@@ -44,7 +45,6 @@ struct WeekDetailScreen: View {
       }
     }
     .scrollContentBackground(.hidden)
-    .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
 }
 
