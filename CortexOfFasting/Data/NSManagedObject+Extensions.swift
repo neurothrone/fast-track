@@ -8,10 +8,6 @@
 import CoreData
 
 extension NSManagedObject {
-  private static var viewContext: NSManagedObjectContext {
-    CoreDataProvider.shared.viewContext
-  }
-  
   func save(using context: NSManagedObjectContext) {
     CoreDataProvider.save(using: context)
   }
