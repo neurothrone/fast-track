@@ -9,14 +9,6 @@ import CoreData
 import SwiftUI
 
 extension FastLog {
-  var startedAt: String {
-    startedDate.formatted()
-  }
-  
-  var stoppedAt: String {
-    stoppedDate?.formatted() ?? ""
-  }
-  
   var duration: TimeInterval {
     guard let stoppedDate = stoppedDate
     else { return .zero }
