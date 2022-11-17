@@ -10,6 +10,9 @@ import SwiftUI
 struct SettingsScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
+  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var datePickerDisplayMode: DatePickerDisplayMode = .compact
 
@@ -46,6 +49,18 @@ struct SettingsScreen: View {
   private var content: some View {
     Form {
       Section {
+        Picker(selection: $weeklyHoursGoal) {
+          ForEach(WeeklyFastingHoursGoal.allCases) { goal in
+            Text(goal.toString)
+              .foregroundColor(.purple)
+          }
+        } label: {
+          Text("Weekly hours goal")
+            .foregroundColor(.white)
+        }
+        .pickerStyle(.menu)
+
+        
         Picker(selection: $datePickerDisplayMode) {
           ForEach(DatePickerDisplayMode.allCases) { mode in
             Text(mode.rawValue)

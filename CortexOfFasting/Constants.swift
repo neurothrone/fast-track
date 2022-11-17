@@ -11,6 +11,7 @@ enum Constants {
   struct AppStorage {
     static let selectedTab = "selectedTab"
     static let datePickerDisplayMode = "datePickerDisplayMode"
+    static let weeklyFastingHoursGoal = "weeklyFastingHoursGoal"
   }
   
   struct Link {
