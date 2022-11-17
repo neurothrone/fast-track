@@ -45,6 +45,7 @@
 		2F7B87A529255E72008E889C /* AddManualLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87A429255E72008E889C /* AddManualLogSheet.swift */; };
 		2F7B87A729256189008E889C /* DatePickerDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */; };
 		2F7B87AB29259F1A008E889C /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87AA29259F1A008E889C /* CustomDatePicker.swift */; };
+		2F7B87BD2926D001008E889C /* WeeklyFastingHoursGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		2F7B87A429255E72008E889C /* AddManualLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddManualLogSheet.swift; sourceTree = "<group>"; };
 		2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDisplayMode.swift; sourceTree = "<group>"; };
 		2F7B87AA29259F1A008E889C /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyFastingHoursGoal.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 			children = (
 				2F100819291BF084004CE72E /* Tab.swift */,
 				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
+				2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F7B8780291FBAAD008E889C /* Shared */,
@@ -371,6 +374,7 @@
 				2F1007F8291A047A004CE72E /* TimeInterval+Extensions.swift in Sources */,
 				2F1007E0291A0249004CE72E /* AllWeeksScreen.swift in Sources */,
 				2F7B8773291E4AF0008E889C /* SwipeableLogView.swift in Sources */,
+				2F7B87BD2926D001008E889C /* WeeklyFastingHoursGoal.swift in Sources */,
 				2F1007E8291A02D6004CE72E /* CoreDataProvider+Extensions.swift in Sources */,
 				2F1007E6291A02D0004CE72E /* CoreDataProvider.swift in Sources */,
 			);
