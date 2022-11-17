@@ -10,6 +10,9 @@ import SwiftUI
 struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
+  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
   
@@ -55,7 +58,7 @@ struct ActiveWeekScreen: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
         min: .zero,
-        max: 24,
+        max: Double(weeklyHoursGoal.hours),
         progressColor: .purple
       )
       

@@ -10,6 +10,9 @@ import SwiftUI
 struct AllWeeksScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
+  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  
   @FetchRequest(fetchRequest: FastLog.allCompleted, animation: .default)
   private var fastLogs: FetchedResults<FastLog>
   
@@ -42,7 +45,7 @@ struct AllWeeksScreen: View {
 
               Spacer()
 
-              Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / 24 h")
+              Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / \(weeklyHoursGoal.hours) h")
                 .foregroundColor(.purple)
             }
             .textCase(.none)

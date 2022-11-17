@@ -10,6 +10,9 @@ import SwiftUI
 struct WeekDetailScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
+  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  
   let logs: SectionedFetchResults<String, FastLog>.Element
   
   var body: some View {
@@ -29,7 +32,7 @@ struct WeekDetailScreen: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(logs)),
         min: .zero,
-        max: 24,
+        max: Double(weeklyHoursGoal.hours),
         progressColor: .purple
       )
       
