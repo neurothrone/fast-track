@@ -33,8 +33,8 @@ private extension Tab {
 }
 
 struct ContentView: View {
-  @AppStorage("selectedTab")
-  var selectedTab: Tab = .activeWeek
+  @AppStorage(Constants.AppStorage.selectedTab)
+  private var selectedTab: Tab = .activeWeek
   
   var body: some View {
     TabView(selection: $selectedTab) {
