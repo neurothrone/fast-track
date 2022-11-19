@@ -16,6 +16,41 @@ extension FastLog {
     return startedDate.distance(to: stoppedDate)
   }
   
+  static func createPartialLog(using context: NSManagedObjectContext) -> FastLog {
+    let newPartialLog = FastLog(context: context)
+    newPartialLog.startedDate = .now
+    newPartialLog.save(using: context)
+    
+    return newPartialLog
+  }
+  
+  static func findLog(withId id: String, using context: NSManagedObjectContext) throws -> FastLog {
+    let request: NSFetchRequest<FastLog> = FastLog.fetchRequest()
+    request.fetchLimit = 1
+    request.predicate = NSPredicate(format: "id = %@", id as CVarArg)
+    
+    do {
+      guard let foundLog = try context.fetch(request).first else {
+        throw Error.notFound
+      }
+      
+      return foundLog
+    } catch {
+      throw Error.notFound
+    }
+  }
+  
+  static func getAllLogs(using context: NSManagedObjectContext) -> [FastLog] {
+    let request: NSFetchRequest<FastLog> = FastLog.fetchRequest()
+    
+    do {
+      return try context.fetch(request).sorted(by: { $0.startedDate > $1.startedDate })
+    } catch let error {
+      print("Couldn't fetch all logs: \(error.localizedDescription)")
+      return []
+    }
+  }
+  
   static var allCompleted: NSFetchRequest<FastLog> {
     let request: NSFetchRequest<FastLog> = NSFetchRequest(entityName: String(describing: FastLog.self))
     request.predicate = NSPredicate(format: "stoppedDate != nil")

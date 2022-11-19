@@ -12,6 +12,7 @@ enum Constants {
     static let selectedTab = "selectedTab"
     static let datePickerDisplayMode = "datePickerDisplayMode"
     static let weeklyFastingHoursGoal = "weeklyFastingHoursGoal"
+    static let isOnboardingPresented = true
   }
   
   struct Link {

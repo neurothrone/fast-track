@@ -5,6 +5,7 @@
 //  Created by Zaid Neurothrone on 2022-11-08.
 //
 
+import AppIntents
 import SwiftUI
 
 struct SettingsScreen: View {
@@ -75,6 +76,13 @@ struct SettingsScreen: View {
         SectionHeaderView(leftText: "Preferences")
       }
       .listRowBackground(Color.black)
+      
+      Section {
+        ShortcutsLink()
+      } header: {
+        SectionHeaderView(leftText: "Productivity")
+      }
+
       
       Section {
         Button("Delete all data", role: .destructive) {
