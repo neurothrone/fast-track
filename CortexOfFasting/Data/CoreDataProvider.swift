@@ -9,12 +9,14 @@ import CoreData
 
 final class CoreDataProvider {
   static let shared: CoreDataProvider = .init()
+#if DEBUG
   static var preview: CoreDataProvider = {
     let provider = CoreDataProvider(inMemory: true)
     let context = provider.container.viewContext
     FastLog.Preview.createSamples(using: context)
     return provider
   }()
+#endif
   
   let container: NSPersistentContainer
   
