@@ -212,7 +212,6 @@
 				2F78B8822939FDCC0041427B /* Info.plist */,
 				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
 				2F7B87C02927BA9F008E889C /* Shortcuts */,
-				2F1007E3291A02BD004CE72E /* Data */,
 				2F1007F2291A044A004CE72E /* Extensions */,
 				2F1007DC291A0239004CE72E /* UI */,
 				2F1007D2291A00C9004CE72E /* Preview Content */,
@@ -392,6 +391,7 @@
 		2FDBB23D293A4DCB00A8A2BF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2F1007E3291A02BD004CE72E /* Data */,
 				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
 			);
 			path = Shared;
