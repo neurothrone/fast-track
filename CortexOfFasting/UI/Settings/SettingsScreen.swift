@@ -79,6 +79,8 @@ struct SettingsScreen: View {
       
       Section {
         ShortcutsLink()
+          .shortcutsLinkStyle(.darkOutline)
+          .listRowBackground(Color.black)
       } header: {
         SectionHeaderView(leftText: "Productivity")
       }
