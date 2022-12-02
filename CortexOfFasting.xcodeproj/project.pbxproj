@@ -52,7 +52,57 @@
 		2F7B87D129280589008E889C /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87D029280589008E889C /* AppShortcuts.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
+		2FDBB1FC293A494B00A8A2BF /* WatchFastTrack Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2FDBB1FB293A494B00A8A2BF /* WatchFastTrack Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2FDBB208293A494C00A8A2BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBB207293A494C00A8A2BF /* Preview Assets.xcassets */; };
+		2FDBB211293A4A3600A8A2BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
+		2FDBB212293A4A3C00A8A2BF /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007CB291A00C8004CE72E /* AppMain.swift */; };
+		2FDBB213293A4A4E00A8A2BF /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
+		2FDBB214293A4A4E00A8A2BF /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100803291A10CB004CE72E /* NSManagedObject+Extensions.swift */; };
+		2FDBB215293A4A4E00A8A2BF /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
+		2FDBB216293A4A5100A8A2BF /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
+		2FDBB217293A4A5500A8A2BF /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
+		2FDBB218293A4A5500A8A2BF /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
+		2FDBB219293A4A5500A8A2BF /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
+		2FDBB21D293A4A6D00A8A2BF /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
+		2FDBB21E293A4A7000A8A2BF /* WeeklyFastingHoursGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */; };
+		2FDBB232293A4AA200A8A2BF /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
+		2FDBB233293A4AA200A8A2BF /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
+		2FDBB234293A4AA200A8A2BF /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
+		2FDBB235293A4AA200A8A2BF /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
+		2FDBB236293A4AA200A8A2BF /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
+		2FDBB237293A4AA200A8A2BF /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
+		2FDBB238293A4AA200A8A2BF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
+		2FDBB23C293A4D9B00A8A2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */; };
+		2FDBB241293A4E9B00A8A2BF /* ActiveWeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB240293A4E9B00A8A2BF /* ActiveWeekScreen.swift */; };
+		2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB242293A4EA600A8A2BF /* AllWeeksScreen.swift */; };
+		2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB244293A4EAD00A8A2BF /* SettingsScreen.swift */; };
+		2FDBB246293A4EC500A8A2BF /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
+		2FDBB247293A4F5800A8A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FDBB1FD293A494B00A8A2BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F1007C0291A00C8004CE72E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FDBB1FA293A494B00A8A2BF;
+			remoteInfo = "WatchFastTrack Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FDBB20B293A494C00A8A2BF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2FDBB1FC293A494B00A8A2BF /* WatchFastTrack Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F1007C8291A00C8004CE72E /* FastTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,10 +153,26 @@
 		2F7B87D029280589008E889C /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
+		2FDBB1F6293A494B00A8A2BF /* WatchFastTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchFastTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDBB1FB293A494B00A8A2BF /* WatchFastTrack Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchFastTrack Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDBB207293A494C00A8A2BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FDBB240293A4E9B00A8A2BF /* ActiveWeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekScreen.swift; sourceTree = "<group>"; };
+		2FDBB242293A4EA600A8A2BF /* AllWeeksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWeeksScreen.swift; sourceTree = "<group>"; };
+		2FDBB244293A4EAD00A8A2BF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		2FDBB249293A4FEC00A8A2BF /* Info watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info watchOS.plist"; sourceTree = "<group>"; };
+		2FDBB24B293A514300A8A2BF /* WatchFastTrack Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchFastTrack Watch App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2F1007C5291A00C8004CE72E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDBB1F8293A494B00A8A2BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,7 +185,9 @@
 		2F1007BF291A00C8004CE72E = {
 			isa = PBXGroup;
 			children = (
+				2FDBB23D293A4DCB00A8A2BF /* Shared */,
 				2F1007CA291A00C8004CE72E /* CortexOfFasting */,
+				2FDBB1FF293A494B00A8A2BF /* WatchFastTrack Watch App */,
 				2F1007C9291A00C8004CE72E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				2F1007C8291A00C8004CE72E /* FastTrack.app */,
+				2FDBB1F6293A494B00A8A2BF /* WatchFastTrack.app */,
+				2FDBB1FB293A494B00A8A2BF /* WatchFastTrack Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,8 +209,8 @@
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
-				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
 				2F78B8822939FDCC0041427B /* Info.plist */,
+				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
 				2F7B87C02927BA9F008E889C /* Shortcuts */,
 				2F1007E3291A02BD004CE72E /* Data */,
 				2F1007F2291A044A004CE72E /* Extensions */,
@@ -161,7 +231,7 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
+				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F7B8780291FBAAD008E889C /* Shared */,
@@ -191,6 +261,7 @@
 				2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */,
 				2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */,
 				2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */,
+				2F7B87C32927FAAC008E889C /* CustomErrors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,7 +354,6 @@
 			children = (
 				2F7B87D029280589008E889C /* AppShortcuts.swift */,
 				2F7B87C12927F7B7008E889C /* FastLogIntents.swift */,
-				2F7B87C32927FAAC008E889C /* CustomErrors.swift */,
 			);
 			path = Shortcuts;
 			sourceTree = "<group>";
@@ -292,10 +362,39 @@
 			isa = PBXGroup;
 			children = (
 				2F100819291BF084004CE72E /* Screen.swift */,
-				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
 				2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		2FDBB1FF293A494B00A8A2BF /* WatchFastTrack Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */,
+				2FDBB240293A4E9B00A8A2BF /* ActiveWeekScreen.swift */,
+				2FDBB242293A4EA600A8A2BF /* AllWeeksScreen.swift */,
+				2FDBB244293A4EAD00A8A2BF /* SettingsScreen.swift */,
+				2FDBB249293A4FEC00A8A2BF /* Info watchOS.plist */,
+				2FDBB24B293A514300A8A2BF /* WatchFastTrack Watch App.entitlements */,
+				2FDBB206293A494C00A8A2BF /* Preview Content */,
+			);
+			path = "WatchFastTrack Watch App";
+			sourceTree = "<group>";
+		};
+		2FDBB206293A494C00A8A2BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBB207293A494C00A8A2BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FDBB23D293A4DCB00A8A2BF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +417,40 @@
 			productReference = 2F1007C8291A00C8004CE72E /* FastTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2FDBB1F5293A494B00A8A2BF /* WatchFastTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDBB20F293A494C00A8A2BF /* Build configuration list for PBXNativeTarget "WatchFastTrack" */;
+			buildPhases = (
+				2FDBB1F4293A494B00A8A2BF /* Resources */,
+				2FDBB20B293A494C00A8A2BF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FDBB1FE293A494B00A8A2BF /* PBXTargetDependency */,
+			);
+			name = WatchFastTrack;
+			productName = WatchFastTrack;
+			productReference = 2FDBB1F6293A494B00A8A2BF /* WatchFastTrack.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2FDBB1FA293A494B00A8A2BF /* WatchFastTrack Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDBB20E293A494C00A8A2BF /* Build configuration list for PBXNativeTarget "WatchFastTrack Watch App" */;
+			buildPhases = (
+				2FDBB1F7293A494B00A8A2BF /* Sources */,
+				2FDBB1F8293A494B00A8A2BF /* Frameworks */,
+				2FDBB1F9293A494B00A8A2BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchFastTrack Watch App";
+			productName = "WatchFastTrack Watch App";
+			productReference = 2FDBB1FB293A494B00A8A2BF /* WatchFastTrack Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -329,6 +462,12 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					2F1007C7291A00C8004CE72E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2FDBB1F5293A494B00A8A2BF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2FDBB1FA293A494B00A8A2BF = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -347,6 +486,8 @@
 			projectRoot = "";
 			targets = (
 				2F1007C7291A00C8004CE72E /* CortexOfFasting */,
+				2FDBB1F5293A494B00A8A2BF /* WatchFastTrack */,
+				2FDBB1FA293A494B00A8A2BF /* WatchFastTrack Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -358,6 +499,22 @@
 			files = (
 				2F1007D4291A00C9004CE72E /* Preview Assets.xcassets in Resources */,
 				2F1007D0291A00C9004CE72E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDBB1F4293A494B00A8A2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDBB1F9293A494B00A8A2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDBB208293A494C00A8A2BF /* Preview Assets.xcassets in Resources */,
+				2FDBB247293A4F5800A8A2BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +571,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FDBB1F7293A494B00A8A2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDBB213293A4A4E00A8A2BF /* CoreDataProvider+Extensions.swift in Sources */,
+				2FDBB238293A4AA200A8A2BF /* DateFormatter+Extensions.swift in Sources */,
+				2FDBB218293A4A5500A8A2BF /* FastLog+CoreDataClass.swift in Sources */,
+				2FDBB232293A4AA200A8A2BF /* Double+Extensions.swift in Sources */,
+				2FDBB233293A4AA200A8A2BF /* TimeInterval+Extensions.swift in Sources */,
+				2FDBB21D293A4A6D00A8A2BF /* Screen.swift in Sources */,
+				2FDBB216293A4A5100A8A2BF /* Entities.xcdatamodeld in Sources */,
+				2FDBB21E293A4A7000A8A2BF /* WeeklyFastingHoursGoal.swift in Sources */,
+				2FDBB212293A4A3C00A8A2BF /* AppMain.swift in Sources */,
+				2FDBB217293A4A5500A8A2BF /* FastLog+Extensions.swift in Sources */,
+				2FDBB215293A4A4E00A8A2BF /* CoreDataProvider.swift in Sources */,
+				2FDBB23C293A4D9B00A8A2BF /* ContentView.swift in Sources */,
+				2FDBB236293A4AA200A8A2BF /* Collection+Extensions.swift in Sources */,
+				2FDBB235293A4AA200A8A2BF /* Date+Extensions.swift in Sources */,
+				2FDBB234293A4AA200A8A2BF /* View+Extensions.swift in Sources */,
+				2FDBB219293A4A5500A8A2BF /* FastLog+Preview.swift in Sources */,
+				2FDBB237293A4AA200A8A2BF /* URL+Extensions.swift in Sources */,
+				2FDBB241293A4E9B00A8A2BF /* ActiveWeekScreen.swift in Sources */,
+				2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */,
+				2FDBB214293A4A4E00A8A2BF /* NSManagedObject+Extensions.swift in Sources */,
+				2FDBB211293A4A3600A8A2BF /* Constants.swift in Sources */,
+				2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */,
+				2FDBB246293A4EC500A8A2BF /* CustomErrors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FDBB1FE293A494B00A8A2BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FDBB1FA293A494B00A8A2BF /* WatchFastTrack Watch App */;
+			targetProxy = 2FDBB1FD293A494B00A8A2BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F1007D5291A00C9004CE72E /* Debug */ = {
@@ -608,6 +803,106 @@
 			};
 			name = Release;
 		};
+		2FDBB209293A494C00A8A2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchFastTrack;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.WatchFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2FDBB20A293A494C00A8A2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchFastTrack;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.WatchFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FDBB20C293A494C00A8A2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "WatchFastTrack Watch App/WatchFastTrack Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchFastTrack Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchFastTrack Watch App/Info watchOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WatchFastTrack;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.WatchFastTrack.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		2FDBB20D293A494C00A8A2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "WatchFastTrack Watch App/WatchFastTrack Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchFastTrack Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchFastTrack Watch App/Info watchOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WatchFastTrack;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.WatchFastTrack.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -625,6 +920,24 @@
 			buildConfigurations = (
 				2F1007D8291A00C9004CE72E /* Debug */,
 				2F1007D9291A00C9004CE72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDBB20E293A494C00A8A2BF /* Build configuration list for PBXNativeTarget "WatchFastTrack Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDBB20C293A494C00A8A2BF /* Debug */,
+				2FDBB20D293A494C00A8A2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDBB20F293A494C00A8A2BF /* Build configuration list for PBXNativeTarget "WatchFastTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDBB209293A494C00A8A2BF /* Debug */,
+				2FDBB20A293A494C00A8A2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
