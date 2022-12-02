@@ -9,7 +9,7 @@ import Foundation
 
 enum Constants {
   struct App {
-    static let name = "Cortex of Fasting"
+    static let name = "FastTrack"
   }
   
   struct SystemImage {
