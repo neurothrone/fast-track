@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F1007C7291A00C8004CE72E"
-               BuildableName = "CortexOfFasting.app"
+               BuildableName = "FastTrack.app"
                BlueprintName = "CortexOfFasting"
                ReferencedContainer = "container:CortexOfFasting.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1007C7291A00C8004CE72E"
-            BuildableName = "CortexOfFasting.app"
+            BuildableName = "FastTrack.app"
             BlueprintName = "CortexOfFasting"
             ReferencedContainer = "container:CortexOfFasting.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1007C7291A00C8004CE72E"
-            BuildableName = "CortexOfFasting.app"
+            BuildableName = "FastTrack.app"
             BlueprintName = "CortexOfFasting"
             ReferencedContainer = "container:CortexOfFasting.xcodeproj">
          </BuildableReference>
