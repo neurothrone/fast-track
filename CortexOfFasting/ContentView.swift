@@ -7,42 +7,17 @@
 
 import SwiftUI
 
-private extension Tab {
-  @ViewBuilder
-  var view: some View {
-    switch self {
-    case .activeWeek:
-      ActiveWeekScreen()
-    case .allWeeks:
-      AllWeeksScreen()
-    case .settings:
-      SettingsScreen()
-    }
-  }
-  
-  var systemImage: String {
-    switch self {
-    case .activeWeek:
-      return "clock"
-    case .allWeeks:
-      return "calendar"
-    case .settings:
-      return "gear"
-    }
-  }
-}
-
 struct ContentView: View {
   @AppStorage(Constants.AppStorage.selectedTab)
-  private var selectedTab: Tab = .activeWeek
+  private var selectedTab: Screen = .activeWeek
   
   var body: some View {
     TabView(selection: $selectedTab) {
       Group {
-        ForEach(Tab.allCases) { tab in
-          tab.view
+        ForEach(Screen.allCases) { screen in
+          screen.view
             .tabItem {
-              Label(tab.rawValue, systemImage: tab.systemImage)
+              Label(screen.rawValue, systemImage: screen.systemImage)
             }
         }
       }
