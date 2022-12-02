@@ -12,8 +12,8 @@ import AppIntents
 //let context = CoreDataProvider.shared.viewContext
 
 struct StartFastingIntent: AppIntent {
-  static var title: LocalizedStringResource = "Start fasting"
-  static var description = IntentDescription("Starts a new active fasting session")
+  static let title: LocalizedStringResource = "Start fasting"
+  static let description = IntentDescription("Starts a new active fasting session")
   static var openAppWhenRun: Bool = false
   
   @MainActor
@@ -37,8 +37,8 @@ struct StartFastingIntent: AppIntent {
 }
 
 struct StopFastingIntent: AppIntent {
-  static var title: LocalizedStringResource = "Stop fasting active log"
-  static var description = IntentDescription("Completes your current active fasting session")
+  static let title: LocalizedStringResource = "Stop fasting"
+  static let description = IntentDescription("Completes your current active fasting session")
   static var openAppWhenRun: Bool = false
   
   @MainActor
@@ -62,8 +62,8 @@ struct StopFastingIntent: AppIntent {
 }
 
 struct ResetFastingIntent: AppIntent {
-  static var title: LocalizedStringResource = "Reset fasting"
-  static var description = IntentDescription("Resets the start time of your active fasting session to now")
+  static let title: LocalizedStringResource = "Reset fasting"
+  static let description = IntentDescription("Resets the start time of your active fasting session to now")
   static var openAppWhenRun: Bool = false
   
   @MainActor

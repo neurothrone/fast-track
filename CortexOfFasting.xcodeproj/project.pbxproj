@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F1007CC291A00C8004CE72E /* CortexOfFastingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007CB291A00C8004CE72E /* CortexOfFastingApp.swift */; };
+		2F1007CC291A00C8004CE72E /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007CB291A00C8004CE72E /* AppMain.swift */; };
 		2F1007CE291A00C8004CE72E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007CD291A00C8004CE72E /* ContentView.swift */; };
 		2F1007D0291A00C9004CE72E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
 		2F1007D4291A00C9004CE72E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007D3291A00C9004CE72E /* Preview Assets.xcassets */; };
@@ -55,8 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F1007C8291A00C8004CE72E /* CortexOfFasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CortexOfFasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1007CB291A00C8004CE72E /* CortexOfFastingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CortexOfFastingApp.swift; sourceTree = "<group>"; };
+		2F1007C8291A00C8004CE72E /* FastTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1007CB291A00C8004CE72E /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F1007CD291A00C8004CE72E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F1007CF291A00C9004CE72E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CortexOfFasting.entitlements; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		2F1007C9291A00C8004CE72E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F1007C8291A00C8004CE72E /* CortexOfFasting.app */,
+				2F1007C8291A00C8004CE72E /* FastTrack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,12 +135,12 @@
 		2F1007CA291A00C8004CE72E /* CortexOfFasting */ = {
 			isa = PBXGroup;
 			children = (
-				2F78B8822939FDCC0041427B /* Info.plist */,
-				2F1007CB291A00C8004CE72E /* CortexOfFastingApp.swift */,
+				2F1007CB291A00C8004CE72E /* AppMain.swift */,
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
+				2F78B8822939FDCC0041427B /* Info.plist */,
 				2F7B87C02927BA9F008E889C /* Shortcuts */,
 				2F1007E3291A02BD004CE72E /* Data */,
 				2F1007F2291A044A004CE72E /* Extensions */,
@@ -307,7 +307,7 @@
 			);
 			name = CortexOfFasting;
 			productName = CortexOfFasting;
-			productReference = 2F1007C8291A00C8004CE72E /* CortexOfFasting.app */;
+			productReference = 2F1007C8291A00C8004CE72E /* FastTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +376,7 @@
 				2F10080D291A3BCF004CE72E /* WeekDetailScreen.swift in Sources */,
 				2F1007EE291A03A5004CE72E /* FastLog+CoreDataClass.swift in Sources */,
 				2F7B87BF2926E4F0008E889C /* SetWeeklyGoalView.swift in Sources */,
-				2F1007CC291A00C8004CE72E /* CortexOfFastingApp.swift in Sources */,
+				2F1007CC291A00C8004CE72E /* AppMain.swift in Sources */,
 				2F7B879F292527F2008E889C /* ActiveLogView.swift in Sources */,
 				2F7B87C22927F7B7008E889C /* FastLogIntents.swift in Sources */,
 				2F7B8777291E4BED008E889C /* AboutSheet.swift in Sources */,
@@ -550,7 +550,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.CortexOfFasting;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FastTrack;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -591,7 +591,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.CortexOfFasting;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FastTrack;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
