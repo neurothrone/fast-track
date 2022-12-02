@@ -12,8 +12,21 @@ public struct AppShortcuts: AppShortcutsProvider {
   public static var appShortcuts: [AppShortcut] {
     AppShortcut(
       intent: StartFastingIntent(),
-      phrases: ["Create log"]
-//      phrases: ["\(.applicationName) start"]
+      phrases: ["Start fasting"],
+      shortTitle: "Start fasting",
+      systemImageName: "clock.badge.checkmark"
+    )
+    AppShortcut(
+      intent: StopFastingIntent(),
+      phrases: ["Stop fasting"],
+      shortTitle: "Stop fasting",
+      systemImageName: "clock.badge.xmark"
+    )
+    AppShortcut(
+      intent: ResetFastingIntent(),
+      phrases: ["Reset fasting"],
+      shortTitle: "Reset fasting",
+      systemImageName: "clock.arrow.circlepath"
     )
   }
 }

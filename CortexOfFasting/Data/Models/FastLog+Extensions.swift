@@ -24,6 +24,16 @@ extension FastLog {
     return newPartialLog
   }
   
+  static func completePartialLog(for log: FastLog, using context: NSManagedObjectContext) {
+    log.stoppedDate = .now
+    log.save(using: context)
+  }
+  
+  static func resetPartialLog(for log: FastLog, using context: NSManagedObjectContext) {
+    log.startedDate = .now
+    log.save(using: context)
+  }
+  
   static func findLog(withId id: String, using context: NSManagedObjectContext) throws -> FastLog {
     let request: NSFetchRequest<FastLog> = FastLog.fetchRequest()
     request.fetchLimit = 1
@@ -72,6 +82,11 @@ extension FastLog {
     request.predicate = datesInRangePredicate
 
     return request
+  }
+  
+  static func getIncompleteLog(using context: NSManagedObjectContext) throws -> FastLog? {
+    let request: NSFetchRequest<FastLog> = incompleteLogs
+    return try context.fetch(request).first
   }
   
   static var incompleteLogs: NSFetchRequest<FastLog> {
