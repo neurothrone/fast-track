@@ -161,9 +161,7 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2F100819291BF084004CE72E /* Screen.swift */,
-				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
-				2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */,
+				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F7B8780291FBAAD008E889C /* Shared */,
@@ -288,6 +286,16 @@
 				2F7B87C32927FAAC008E889C /* CustomErrors.swift */,
 			);
 			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		2FDBB1F3293A2ABD00A8A2BF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2F100819291BF084004CE72E /* Screen.swift */,
+				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
+				2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
