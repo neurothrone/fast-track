@@ -16,35 +16,30 @@ struct SettingsScreen: View {
   
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var datePickerDisplayMode: DatePickerDisplayMode = .compact
-
+  
   @State private var isAboutSheetPresented = false
   @State private var isDeleteDataSheetPresented = false
   
   var body: some View {
-    NavigationStack {
-      content
-        .linearBackground()
-        .navigationTitle("Settings")
-        .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $isAboutSheetPresented) {
-          AboutSheet()
-            .presentationDetents([.fraction(0.25), .medium, .large])
-        }
-        .sheet(isPresented: $isDeleteDataSheetPresented) {
-          DeleteAllDataSheet(onConfirmDelete: deleteAllData)
-            .presentationDetents([.fraction(0.5), .medium, .large])
-        }
-        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
-        .toolbar {
-          Menu {
-            Button(action: { isAboutSheetPresented.toggle() }) {
-              Label("About", systemImage: "info.circle")
-            }
-          } label: {
-            Image(systemName: "ellipsis.circle")
+    content
+      .sheet(isPresented: $isAboutSheetPresented) {
+        AboutSheet()
+          .presentationDetents([.fraction(0.25), .medium, .large])
+      }
+      .sheet(isPresented: $isDeleteDataSheetPresented) {
+        DeleteAllDataSheet(onConfirmDelete: deleteAllData)
+          .presentationDetents([.fraction(0.5), .medium, .large])
+      }
+      .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
+      .toolbar {
+        Menu {
+          Button(action: { isAboutSheetPresented.toggle() }) {
+            Label("About", systemImage: "info.circle")
           }
+        } label: {
+          Image(systemName: "ellipsis.circle")
         }
-    }
+      }
   }
   
   private var content: some View {
@@ -60,7 +55,7 @@ struct SettingsScreen: View {
             .foregroundColor(.white)
         }
         .pickerStyle(.menu)
-
+        
         
         Picker(selection: $datePickerDisplayMode) {
           ForEach(DatePickerDisplayMode.allCases) { mode in
@@ -84,7 +79,7 @@ struct SettingsScreen: View {
       } header: {
         SectionHeaderView(leftText: "Productivity")
       }
-
+      
       
       Section {
         Button("Delete all data", role: .destructive) {
@@ -108,8 +103,12 @@ extension SettingsScreen {
 
 struct SettingsScreen_Previews: PreviewProvider {
   static var previews: some View {
-    SettingsScreen()
-      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-//      .preferredColorScheme(.dark)
+    NavigationStack {
+      SettingsScreen()
+        .linearBackground()
+        .navigationTitle(Screen.allWeeks.rawValue)
+        .navigationBarTitleDisplayMode(.inline)
+        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+    }
   }
 }

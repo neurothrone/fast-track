@@ -23,13 +23,8 @@ struct AllWeeksScreen: View {
   private var logsPerWeek: SectionedFetchResults<String, FastLog>
   
   var body: some View {
-    NavigationStack {
-      content
-        .linearBackground()
-        .navigationTitle("All Weeks")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
-    }
+    content
+      .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
   }
   
   private var content: some View {
@@ -42,9 +37,9 @@ struct AllWeeksScreen: View {
             HStack {
               Text(logsInWeek.id)
                 .foregroundColor(.mint)
-
+              
               Spacer()
-
+              
               Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / \(weeklyHoursGoal.hours) h")
                 .foregroundColor(.purple)
             }
@@ -62,8 +57,12 @@ struct AllWeeksScreen: View {
 
 struct AllWeeksScreen_Previews: PreviewProvider {
   static var previews: some View {
-    AllWeeksScreen()
-      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-      .preferredColorScheme(.dark)
+    NavigationStack {
+      AllWeeksScreen()
+        .linearBackground()
+        .navigationTitle(Screen.allWeeks.rawValue)
+        .navigationBarTitleDisplayMode(.inline)
+        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+    }
   }
 }

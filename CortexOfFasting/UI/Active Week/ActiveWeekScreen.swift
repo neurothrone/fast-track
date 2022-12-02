@@ -25,30 +25,25 @@ struct ActiveWeekScreen: View {
   @State private var isAddManualLogPresented = false
   
   var body: some View {
-    NavigationStack {
-      content
-        .linearBackground()
-        .navigationTitle("Active Week")
-        .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $isAddManualLogPresented) {
-          AddManualLogSheet()
-            .presentationDetents(
-              displayMode == .compact
-              ? [.fraction(0.25), .medium, .large]
-              : [.large]
-            )
-        }
-        .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
-        .toolbar {
-          Menu {
-            Button(action: { isAddManualLogPresented.toggle() }) {
-              Label("Add log manually", systemImage: "calendar.badge.plus")
-            }
-          } label: {
-            Image(systemName: "ellipsis.circle")
+    content
+      .sheet(isPresented: $isAddManualLogPresented) {
+        AddManualLogSheet()
+          .presentationDetents(
+            displayMode == .compact
+            ? [.fraction(0.25), .medium, .large]
+            : [.large]
+          )
+      }
+      .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
+      .toolbar {
+        Menu {
+          Button(action: { isAddManualLogPresented.toggle() }) {
+            Label("Add log manually", systemImage: "calendar.badge.plus")
           }
+        } label: {
+          Image(systemName: "ellipsis.circle")
         }
-    }
+      }
   }
   
   private var content: some View {
@@ -78,8 +73,10 @@ struct ActiveWeekScreen: View {
 
 struct ActiveWeekScreen_Previews: PreviewProvider {
   static var previews: some View {
-    ActiveWeekScreen()
-      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-//          .preferredColorScheme(.dark)
+    NavigationStack {
+      ActiveWeekScreen()
+        .linearBackground()
+        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+    }
   }
 }
