@@ -9,10 +9,6 @@ import SwiftUI
 
 @main
 struct AppMain: App {
-  init() {
-    print("ℹ️ -> \(AppShortcuts.appShortcuts)")
-  }
-  
   var body: some Scene {
     WindowGroup {
       ContentView()
