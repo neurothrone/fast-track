@@ -39,9 +39,14 @@ struct AllWeeksScreen: View {
                 .foregroundColor(.mint)
               
               Spacer()
+
+//              Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / \(weeklyHoursGoal.hours) h")
+//                .foregroundColor(.purple)
               
-              Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / \(weeklyHoursGoal.hours) h")
-                .foregroundColor(.purple)
+              if let first = logsInWeek.first {
+                Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / \(first.week.goal) h")
+                  .foregroundColor(.purple)
+              }
             }
             .textCase(.none)
           }

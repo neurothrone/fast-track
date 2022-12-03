@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SwipeableLogView: View {
   @Environment(\.managedObjectContext) private var viewContext
+  
+  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
 
   @FetchRequest(
     fetchRequest: FastLog.incompleteLogs,
@@ -73,9 +76,10 @@ extension SwipeableLogView {
   }
   
   private func createPartialLog() {
-    let newPartialLog = FastLog(context: viewContext)
-    newPartialLog.startedDate = .now
-    newPartialLog.save(using: viewContext)
+    _ = FastLog.createPartialLog(
+      with: weeklyHoursGoal,
+      using: viewContext
+    )
     
     isTimerRunning = true
   }
@@ -84,15 +88,14 @@ extension SwipeableLogView {
     guard let incompleteLog = incompleteLogs.first else { return }
     
     isTimerRunning = false
-    incompleteLog.stoppedDate = .now
-    incompleteLog.save(using: viewContext)
+    
+    FastLog.completePartialLog(for: incompleteLog, using: viewContext)
   }
   
   private func resetPartialLog() {
     guard let incompleteLog = incompleteLogs.first else { return }
     
-    incompleteLog.startedDate = .now
-    incompleteLog.save(using: viewContext)
+    FastLog.resetPartialLog(for: incompleteLog, using: viewContext)
   }
 }
 

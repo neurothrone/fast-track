@@ -26,19 +26,30 @@ struct ActiveWeekScreen: View {
   
   var body: some View {
     content
+      .onChange(of: weeklyHoursGoal) { newWeeklyGoal in
+        Week.changeWeeklyGoalForActiveWeek(
+          weeklyGoal: newWeeklyGoal,
+          using: viewContext
+        )
+      }
       .sheet(isPresented: $isAddManualLogPresented) {
         AddManualLogSheet()
-          .presentationDetents(
-            displayMode == .compact
-            ? [.fraction(0.25), .medium, .large]
-            : [.large]
-          )
       }
       .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
       .toolbar {
         Menu {
           Button(action: { isAddManualLogPresented.toggle() }) {
             Label("Add log manually", systemImage: "calendar.badge.plus")
+          }
+          
+          Menu {
+            ForEach(WeeklyFastingHoursGoal.allCases) { goal in
+              Button(goal.toString) {
+                weeklyHoursGoal = goal
+              }
+            }
+          } label: {
+            Label("Change Weekly Goal", systemImage: "target")
           }
         } label: {
           Image(systemName: "ellipsis.circle")
