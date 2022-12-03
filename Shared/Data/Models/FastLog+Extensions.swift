@@ -16,10 +16,30 @@ extension FastLog {
     return startedDate.distance(to: stoppedDate)
   }
   
-  static func createPartialLog(using context: NSManagedObjectContext) -> FastLog {
+  static func createManualLog(
+    startedDate: Date,
+    stoppedDate: Date,
+    weeklyGoal: WeeklyFastingHoursGoal = .easy,
+    using context: NSManagedObjectContext
+  ) {
+    let fastLog = FastLog(context: context)
+    fastLog.startedDate = startedDate
+    fastLog.stoppedDate = stoppedDate
+    
+    let week = Week.getOrCreateWeekOf(date: startedDate, with: weeklyGoal, using: context)
+    week.save(using: context)
+  }
+  
+  static func createPartialLog(
+    with weeklyGoal: WeeklyFastingHoursGoal = .easy,
+    using context: NSManagedObjectContext
+  ) -> FastLog {
     let newPartialLog = FastLog(context: context)
     newPartialLog.startedDate = .now
-    newPartialLog.save(using: context)
+    
+    let week = Week.getOrCreateWeekOf(date: newPartialLog.startedDate, with: weeklyGoal, using: context)
+    week.addToLogs(newPartialLog)
+    week.save(using: context)
     
     return newPartialLog
   }

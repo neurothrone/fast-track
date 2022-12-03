@@ -23,6 +23,8 @@ public class FastLog: NSManagedObject {
   @NSManaged public var startedDate: Date
   @NSManaged public var stoppedDate: Date?
   
+  @NSManaged public var week: Week
+  
   public override func awakeFromInsert() {
     super.awakeFromInsert()
     
