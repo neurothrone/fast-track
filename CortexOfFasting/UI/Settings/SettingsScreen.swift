@@ -97,7 +97,7 @@ struct SettingsScreen: View {
 
 extension SettingsScreen {
   private func deleteAllData() {
-    FastLog.deleteAll(using: viewContext)
+    Week.deleteAll(using: viewContext)
   }
 }
 
