@@ -52,7 +52,7 @@ struct ActiveWeekScreen: View {
             Label("Change Weekly Goal", systemImage: "target")
           }
         } label: {
-          Image(systemName: "ellipsis.circle")
+          Image(systemName: "ellipsis.circle.fill")
         }
       }
   }
