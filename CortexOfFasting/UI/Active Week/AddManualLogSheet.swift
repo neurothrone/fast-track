@@ -11,6 +11,9 @@ struct AddManualLogSheet: View {
   @Environment(\.dismiss) private var dismiss
   @Environment(\.managedObjectContext) private var viewContext
   
+  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
   
@@ -50,10 +53,12 @@ struct AddManualLogSheet: View {
 
 extension AddManualLogSheet {
   private func addManualLog() {
-    let log = FastLog(context: viewContext)
-    log.startedDate = startedFastingDate
-    log.stoppedDate = stoppedFastingDate
-    log.save(using: viewContext)
+    FastLog.createManualLog(
+      startedDate: startedFastingDate,
+      stoppedDate: stoppedFastingDate,
+      weeklyGoal: weeklyHoursGoal,
+      using: viewContext
+    )
     
     dismiss()
   }
