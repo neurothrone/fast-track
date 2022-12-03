@@ -84,6 +84,8 @@
 		2FDBB254293A6BA600A8A2BF /* Week+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */; };
 		2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
 		2FDBB257293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
+		2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
+		2FDBB25A293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +173,7 @@
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
+		2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +303,7 @@
 				2F7B877E291FAB99008E889C /* ActiveWeekLogListView.swift */,
 				2F7B879E292527F2008E889C /* ActiveLogView.swift */,
 				2F7B87A429255E72008E889C /* AddManualLogSheet.swift */,
+				2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */,
 			);
 			path = "Active Week";
 			sourceTree = "<group>";
@@ -572,6 +576,7 @@
 				2F1007DE291A0244004CE72E /* ActiveWeekScreen.swift in Sources */,
 				2F7B87A129253367008E889C /* LogListProgressMeterView.swift in Sources */,
 				2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */,
+				2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */,
 				2F100808291A1D50004CE72E /* DateFormatter+Extensions.swift in Sources */,
 				2F1007E2291A024F004CE72E /* SettingsScreen.swift in Sources */,
 				2F7B8743291CC9B0008E889C /* CustomSwipeView.swift in Sources */,
@@ -612,6 +617,7 @@
 				2FDBB241293A4E9B00A8A2BF /* ActiveWeekScreen.swift in Sources */,
 				2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */,
 				2FDBB24F293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */,
+				2FDBB25A293B470E00A8A2BF /* EditLogSheet.swift in Sources */,
 				2FDBB214293A4A4E00A8A2BF /* NSManagedObject+Extensions.swift in Sources */,
 				2FDBB211293A4A3600A8A2BF /* Constants.swift in Sources */,
 				2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */,
