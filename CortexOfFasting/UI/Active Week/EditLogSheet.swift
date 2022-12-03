@@ -21,8 +21,6 @@ struct EditLogSheet: View {
   
   init(log: FastLog) {
     self.log = log
-    self.startedFastingDate = log.startedDate
-    self.stoppedFastingDate = log.stoppedDate ?? .now
   }
   
   private var isFormInvalid: Bool {
@@ -34,17 +32,26 @@ struct EditLogSheet: View {
   var body: some View {
     NavigationStack {
       content
+        .onAppear {
+          self.startedFastingDate = log.startedDate
+          if let stoppedDate = log.stoppedDate {
+            self.stoppedFastingDate = stoppedDate
+          }
+        }
         .linearBackground()
         .navigationTitle("Update Log")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
           ToolbarItem(placement: .navigationBarLeading) {
             Button("Cancel", role: .cancel, action: { dismiss() })
+              .buttonStyle(.borderedProminent)
+              .tint(.gray)
           }
           
           ToolbarItem(placement: .navigationBarTrailing) {
             Button("Update", action: update)
               .disabled(isFormInvalid)
+              .buttonStyle(.borderedProminent)
           }
         }
     }

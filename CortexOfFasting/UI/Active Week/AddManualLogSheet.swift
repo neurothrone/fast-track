@@ -29,10 +29,13 @@ struct AddManualLogSheet: View {
         .toolbar {
           ToolbarItem(placement: .navigationBarLeading) {
             Button("Cancel", role: .cancel, action: { dismiss() })
+              .buttonStyle(.borderedProminent)
+              .tint(.gray)
           }
           
           ToolbarItem(placement: .navigationBarTrailing) {
             Button("Add", action: addManualLog)
+              .buttonStyle(.borderedProminent)
               .disabled(stoppedFastingDate <= startedFastingDate)
           }
         }
