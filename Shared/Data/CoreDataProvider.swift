@@ -22,6 +22,7 @@ final class CoreDataProvider {
     let provider = CoreDataProvider(inMemory: true)
     
     FastLog.Preview.createSamplesForManyWeeks(using: provider.viewContext)
+    FastLog.Preview.createSamplesForCurrentWeek(using: provider.viewContext)
     
     return provider
   }()

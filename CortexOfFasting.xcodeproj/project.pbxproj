@@ -82,6 +82,8 @@
 		2FDBB24F293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
 		2FDBB253293A6BA600A8A2BF /* Week+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */; };
 		2FDBB254293A6BA600A8A2BF /* Week+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */; };
+		2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
+		2FDBB257293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,7 @@
 		2FDBB24B293A514300A8A2BF /* WatchFastTrack Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchFastTrack Watch App.entitlements"; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+Extensions.swift"; sourceTree = "<group>"; };
+		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,7 @@
 				2F1007F9291A0484004CE72E /* URL+Extensions.swift */,
 				2F10081B291BF760004CE72E /* View+Extensions.swift */,
 				2F7B87942922B095008E889C /* UIApplication+Extensions.swift */,
+				2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -548,6 +552,7 @@
 				2F100804291A10CB004CE72E /* NSManagedObject+Extensions.swift in Sources */,
 				2F7B87D129280589008E889C /* AppShortcuts.swift in Sources */,
 				2F10080D291A3BCF004CE72E /* WeekDetailScreen.swift in Sources */,
+				2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */,
 				2F1007EE291A03A5004CE72E /* FastLog+CoreDataClass.swift in Sources */,
 				2F7B87BF2926E4F0008E889C /* SetWeeklyGoalView.swift in Sources */,
 				2F1007CC291A00C8004CE72E /* AppMain.swift in Sources */,
@@ -592,6 +597,7 @@
 				2FDBB233293A4AA200A8A2BF /* TimeInterval+Extensions.swift in Sources */,
 				2FDBB254293A6BA600A8A2BF /* Week+Extensions.swift in Sources */,
 				2FDBB21D293A4A6D00A8A2BF /* Screen.swift in Sources */,
+				2FDBB257293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */,
 				2FDBB216293A4A5100A8A2BF /* Entities.xcdatamodeld in Sources */,
 				2FDBB21E293A4A7000A8A2BF /* WeeklyFastingHoursGoal.swift in Sources */,
 				2FDBB212293A4A3C00A8A2BF /* AppMain.swift in Sources */,
