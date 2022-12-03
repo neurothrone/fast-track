@@ -22,32 +22,38 @@ struct AddManualLogSheet: View {
   
   var body: some View {
     NavigationStack {
-      Form {
-        CustomDatePicker(
-          selection: $startedFastingDate,
-          label: "Started fasting",
-          displayMode: displayMode
-        )
-        
-        CustomDatePicker(
-          selection: $stoppedFastingDate,
-          label: "Stopped fasting",
-          displayMode: displayMode
-        )
-      }
-      .navigationTitle("Add Manual Log")
-      .navigationBarTitleDisplayMode(.inline)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarLeading) {
-          Button("Cancel", role: .cancel, action: { dismiss() })
+      content
+        .linearBackground()
+        .navigationTitle("Add Manual Log")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+          ToolbarItem(placement: .navigationBarLeading) {
+            Button("Cancel", role: .cancel, action: { dismiss() })
+          }
+          
+          ToolbarItem(placement: .navigationBarTrailing) {
+            Button("Add", action: addManualLog)
+              .disabled(stoppedFastingDate <= startedFastingDate)
+          }
         }
-        
-        ToolbarItem(placement: .navigationBarTrailing) {
-          Button("Done", action: addManualLog)
-            .disabled(stoppedFastingDate <= startedFastingDate)
-        }
-      }
     }
+  }
+  
+  private var content: some View {
+    Form {
+      CustomDatePicker(
+        selection: $startedFastingDate,
+        label: "Started fasting",
+        displayMode: displayMode
+      )
+      
+      CustomDatePicker(
+        selection: $stoppedFastingDate,
+        label: "Stopped fasting",
+        displayMode: displayMode
+      )
+    }
+    .scrollContentBackground(.hidden)
   }
 }
 

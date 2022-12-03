@@ -25,34 +25,45 @@ struct EditLogSheet: View {
     self.stoppedFastingDate = log.stoppedDate ?? .now
   }
   
+  private var isFormInvalid: Bool {
+    startedFastingDate > .now ||
+    log.stoppedDate != nil &&
+    stoppedFastingDate <= startedFastingDate
+  }
+  
   var body: some View {
     NavigationStack {
-      Form {
+      content
+        .linearBackground()
+        .navigationTitle("Update Log")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+          ToolbarItem(placement: .navigationBarLeading) {
+            Button("Cancel", role: .cancel, action: { dismiss() })
+          }
+          
+          ToolbarItem(placement: .navigationBarTrailing) {
+            Button("Update", action: update)
+              .disabled(isFormInvalid)
+          }
+        }
+    }
+  }
+  
+  private var content: some View {
+    Form {
+      CustomDatePicker(
+        selection: $startedFastingDate,
+        label: "Started fasting",
+        displayMode: displayMode
+      )
+      
+      if log.stoppedDate != nil {
         CustomDatePicker(
-          selection: $startedFastingDate,
-          label: "Started fasting",
+          selection: $stoppedFastingDate,
+          label: "Stopped fasting",
           displayMode: displayMode
         )
-        
-        if log.stoppedDate != nil {
-          CustomDatePicker(
-            selection: $stoppedFastingDate,
-            label: "Stopped fasting",
-            displayMode: displayMode
-          )
-        }
-      }
-      .navigationTitle("Add Manual Log")
-      .navigationBarTitleDisplayMode(.inline)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarLeading) {
-          Button("Cancel", role: .cancel, action: { dismiss() })
-        }
-        
-        ToolbarItem(placement: .navigationBarTrailing) {
-          Button("Update", action: update)
-            .disabled(stoppedFastingDate <= startedFastingDate)
-        }
       }
     }
   }
