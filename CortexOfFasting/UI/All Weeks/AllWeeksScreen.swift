@@ -9,9 +9,7 @@ import SwiftUI
 
 struct AllWeeksScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
-  
-  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
-  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  @EnvironmentObject private var appState: AppState
   
   @FetchRequest(fetchRequest: FastLog.allCompleted, animation: .default)
   private var fastLogs: FetchedResults<FastLog>
@@ -68,6 +66,7 @@ struct AllWeeksScreen_Previews: PreviewProvider {
         .navigationTitle(Screen.allWeeks.rawValue)
         .navigationBarTitleDisplayMode(.inline)
         .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+        .environmentObject(AppState())
     }
   }
 }

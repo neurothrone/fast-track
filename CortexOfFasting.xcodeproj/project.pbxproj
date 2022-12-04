@@ -86,6 +86,8 @@
 		2FDBB257293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
 		2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
 		2FDBB25A293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
+		2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
+		2FDBB25D293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +176,7 @@
 		2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogSheet.swift; sourceTree = "<group>"; };
+		2FDBB25B293C8A8A00A8A2BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1007CB291A00C8004CE72E /* AppMain.swift */,
+				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
@@ -568,6 +572,7 @@
 				2F10081C291BF760004CE72E /* View+Extensions.swift in Sources */,
 				2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */,
 				2FDBB253293A6BA600A8A2BF /* Week+Extensions.swift in Sources */,
+				2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */,
 				2F7B8779291E4BF3008E889C /* DeleteAllDataSheet.swift in Sources */,
 				2F1007F6291A0464004CE72E /* Collection+Extensions.swift in Sources */,
 				2F1007F1291A03F2004CE72E /* FastLog+Extensions.swift in Sources */,
@@ -618,6 +623,7 @@
 				2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */,
 				2FDBB24F293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */,
 				2FDBB25A293B470E00A8A2BF /* EditLogSheet.swift in Sources */,
+				2FDBB25D293C8A8A00A8A2BF /* AppState.swift in Sources */,
 				2FDBB214293A4A4E00A8A2BF /* NSManagedObject+Extensions.swift in Sources */,
 				2FDBB211293A4A3600A8A2BF /* Constants.swift in Sources */,
 				2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */,
@@ -752,7 +758,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CortexOfFasting/CortexOfFasting.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"CortexOfFasting/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -793,7 +799,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CortexOfFasting/CortexOfFasting.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"CortexOfFasting/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_HARDENED_RUNTIME = YES;

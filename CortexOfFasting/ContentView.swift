@@ -31,6 +31,7 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+      .environmentObject(AppState())
       .preferredColorScheme(.dark)
   }
 }

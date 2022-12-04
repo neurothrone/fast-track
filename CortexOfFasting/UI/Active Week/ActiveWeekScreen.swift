@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
-  
-  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
-  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  @EnvironmentObject private var appState: AppState
   
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
@@ -26,7 +24,8 @@ struct ActiveWeekScreen: View {
   
   var body: some View {
     content
-      .onChange(of: weeklyHoursGoal) { newWeeklyGoal in
+      .onChange(of: appState.weeklyHoursGoal) { newWeeklyGoal in
+//      .onChange(of: weeklyHoursGoal) { newWeeklyGoal in
         Week.changeWeeklyGoalForActiveWeek(
           weeklyGoal: newWeeklyGoal,
           using: viewContext
@@ -45,7 +44,8 @@ struct ActiveWeekScreen: View {
           Menu {
             ForEach(WeeklyFastingHoursGoal.allCases) { goal in
               Button(goal.toString) {
-                weeklyHoursGoal = goal
+                appState.weeklyHoursGoal = goal
+//                weeklyHoursGoal = goal
               }
             }
           } label: {
@@ -64,7 +64,7 @@ struct ActiveWeekScreen: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
         min: .zero,
-        max: Double(weeklyHoursGoal.hours),
+        max: Double(appState.weeklyHoursGoal.hours),
         progressColor: .purple
       )
       
@@ -88,6 +88,7 @@ struct ActiveWeekScreen_Previews: PreviewProvider {
       ActiveWeekScreen()
         .linearBackground()
         .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+        .environmentObject(AppState())
     }
   }
 }

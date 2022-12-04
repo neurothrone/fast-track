@@ -9,6 +9,17 @@ import CoreData
 import Foundation
 
 extension Week {
+  static func getAllWeeks(using context: NSManagedObjectContext) -> [Week] {
+    let request: NSFetchRequest<Week> = Week.fetchRequest()
+    
+    do {
+      return try context.fetch(request)
+    } catch let error {
+      print("❌ -> Failed to fetch Week entities. Error: \(error.localizedDescription)")
+      return []
+    }
+  }
+  
   static func activeWeekRequest(
     date: Date = .now
   ) -> NSFetchRequest<Week> {
@@ -79,12 +90,18 @@ extension Week {
   }
   
   static func deleteAll(using context: NSManagedObjectContext) {
+    //    let weeks = getAllWeeks(using: context)
+    //
+    //    for week in weeks {
+    //      week.delete(using: context)
+    //    }
+    
     let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Week.self))
     let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
     batchDeleteRequest.resultType = .resultTypeObjectIDs
-    
+
     guard let result = try? context.execute(batchDeleteRequest) as? NSBatchDeleteResult else { return }
-    
+
     let changes: [AnyHashable: Any] = [NSDeletedObjectsKey: result.result as! [NSManagedObjectID]]
     NSManagedObjectContext.mergeChanges(fromRemoteContextSave: changes, into: [context])
   }
