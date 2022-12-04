@@ -8,15 +8,8 @@
 import SwiftUI
 
 struct AboutSheet: View {
-  private let currentYear: String
-  
-  init() {
-    let today = Date.now
-    let calendar = Calendar.current
-    let components = calendar.dateComponents([.year], from: today)
-    currentYear = String(components.year ?? 2022)
-  }
-  
+  private let today: Date = .now
+
   var body: some View {
     VStack(spacing: 4) {
       HStack(spacing: 0) {
@@ -30,7 +23,7 @@ struct AboutSheet: View {
       HStack(spacing: 0) {
         Text("Copyright ")
         Image(systemName: "c.circle")
-        Text(" \(currentYear)")
+        Text(" \(today.year)")
       }
       
       Text("Version \(UIApplication.appVersion)")
