@@ -35,4 +35,8 @@ extension Date {
   func startOfWeek(using calendar: Calendar = Calendar.current) -> Date {
     calendar.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!
   }
+  
+  var year: String {
+    DateFormatter.yearFormatter.string(from: self)
+  }
 }
