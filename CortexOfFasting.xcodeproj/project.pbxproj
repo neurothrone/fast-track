@@ -63,7 +63,6 @@
 		2FDBB217293A4A5500A8A2BF /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
 		2FDBB218293A4A5500A8A2BF /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
 		2FDBB219293A4A5500A8A2BF /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
-		2FDBB21D293A4A6D00A8A2BF /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
 		2FDBB21E293A4A7000A8A2BF /* WeeklyFastingHoursGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */; };
 		2FDBB232293A4AA200A8A2BF /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
 		2FDBB233293A4AA200A8A2BF /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
@@ -72,10 +71,6 @@
 		2FDBB236293A4AA200A8A2BF /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
 		2FDBB237293A4AA200A8A2BF /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
 		2FDBB238293A4AA200A8A2BF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
-		2FDBB23C293A4D9B00A8A2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */; };
-		2FDBB241293A4E9B00A8A2BF /* ActiveWeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB240293A4E9B00A8A2BF /* ActiveWeekScreen.swift */; };
-		2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB242293A4EA600A8A2BF /* AllWeeksScreen.swift */; };
-		2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB244293A4EAD00A8A2BF /* SettingsScreen.swift */; };
 		2FDBB246293A4EC500A8A2BF /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
 		2FDBB247293A4F5800A8A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
@@ -87,6 +82,10 @@
 		2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
 		2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
 		2FDBB25E293C9C1800A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
+		2FDBB291293CB7ED00A8A2BF /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */; };
+		2FDBB292293CBE9E00A8A2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */; };
+		2FDBB293293CBFA800A8A2BF /* SwipeableLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */; };
+		2FDBB296293CC2EB00A8A2BF /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879E292527F2008E889C /* ActiveLogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,9 +165,6 @@
 		2FDBB1FB293A494B00A8A2BF /* WatchFastTrack Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchFastTrack Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDBB207293A494C00A8A2BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2FDBB240293A4E9B00A8A2BF /* ActiveWeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekScreen.swift; sourceTree = "<group>"; };
-		2FDBB242293A4EA600A8A2BF /* AllWeeksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWeeksScreen.swift; sourceTree = "<group>"; };
-		2FDBB244293A4EAD00A8A2BF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		2FDBB249293A4FEC00A8A2BF /* Info watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info watchOS.plist"; sourceTree = "<group>"; };
 		2FDBB24B293A514300A8A2BF /* WatchFastTrack Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchFastTrack Watch App.entitlements"; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -176,6 +172,7 @@
 		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogSheet.swift; sourceTree = "<group>"; };
 		2FDBB25B293C8A8A00A8A2BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +238,6 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F7B8780291FBAAD008E889C /* Shared */,
@@ -298,9 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1007DD291A0244004CE72E /* ActiveWeekScreen.swift */,
-				2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */,
 				2F7B877E291FAB99008E889C /* ActiveWeekLogListView.swift */,
-				2F7B879E292527F2008E889C /* ActiveLogView.swift */,
 				2F7B87A429255E72008E889C /* AddManualLogSheet.swift */,
 				2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */,
 			);
@@ -376,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				2F100819291BF084004CE72E /* Screen.swift */,
+				2F7B87A629256189008E889C /* DatePickerDisplayMode.swift */,
 				2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */,
 			);
 			path = Enums;
@@ -385,9 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				2FDBB23B293A4D9B00A8A2BF /* ContentView.swift */,
-				2FDBB240293A4E9B00A8A2BF /* ActiveWeekScreen.swift */,
-				2FDBB242293A4EA600A8A2BF /* AllWeeksScreen.swift */,
-				2FDBB244293A4EAD00A8A2BF /* SettingsScreen.swift */,
+				2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */,
 				2FDBB249293A4FEC00A8A2BF /* Info watchOS.plist */,
 				2FDBB24B293A514300A8A2BF /* WatchFastTrack Watch App.entitlements */,
 				2FDBB206293A494C00A8A2BF /* Preview Content */,
@@ -410,10 +403,20 @@
 				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
+				2FDBB295293CC29400A8A2BF /* UI */,
 				2F1007E3291A02BD004CE72E /* Data */,
 				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		2FDBB295293CC29400A8A2BF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */,
+				2F7B879E292527F2008E889C /* ActiveLogView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,31 +603,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FDBB213293A4A4E00A8A2BF /* CoreDataProvider+Extensions.swift in Sources */,
+				2FDBB296293CC2EB00A8A2BF /* ActiveLogView.swift in Sources */,
 				2FDBB238293A4AA200A8A2BF /* DateFormatter+Extensions.swift in Sources */,
 				2FDBB218293A4A5500A8A2BF /* FastLog+CoreDataClass.swift in Sources */,
+				2FDBB293293CBFA800A8A2BF /* SwipeableLogView.swift in Sources */,
 				2FDBB25E293C9C1800A8A2BF /* AppState.swift in Sources */,
+				2FDBB291293CB7ED00A8A2BF /* ProgressMeterView.swift in Sources */,
 				2FDBB232293A4AA200A8A2BF /* Double+Extensions.swift in Sources */,
 				2FDBB233293A4AA200A8A2BF /* TimeInterval+Extensions.swift in Sources */,
 				2FDBB254293A6BA600A8A2BF /* Week+Extensions.swift in Sources */,
-				2FDBB21D293A4A6D00A8A2BF /* Screen.swift in Sources */,
 				2FDBB257293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */,
 				2FDBB216293A4A5100A8A2BF /* Entities.xcdatamodeld in Sources */,
 				2FDBB21E293A4A7000A8A2BF /* WeeklyFastingHoursGoal.swift in Sources */,
 				2FDBB212293A4A3C00A8A2BF /* AppMain.swift in Sources */,
 				2FDBB217293A4A5500A8A2BF /* FastLog+Extensions.swift in Sources */,
 				2FDBB215293A4A4E00A8A2BF /* CoreDataProvider.swift in Sources */,
-				2FDBB23C293A4D9B00A8A2BF /* ContentView.swift in Sources */,
 				2FDBB236293A4AA200A8A2BF /* Collection+Extensions.swift in Sources */,
 				2FDBB235293A4AA200A8A2BF /* Date+Extensions.swift in Sources */,
 				2FDBB234293A4AA200A8A2BF /* View+Extensions.swift in Sources */,
 				2FDBB219293A4A5500A8A2BF /* FastLog+Preview.swift in Sources */,
 				2FDBB237293A4AA200A8A2BF /* URL+Extensions.swift in Sources */,
-				2FDBB241293A4E9B00A8A2BF /* ActiveWeekScreen.swift in Sources */,
-				2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */,
 				2FDBB24F293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */,
 				2FDBB214293A4A4E00A8A2BF /* NSManagedObject+Extensions.swift in Sources */,
+				2FDBB292293CBE9E00A8A2BF /* ContentView.swift in Sources */,
 				2FDBB211293A4A3600A8A2BF /* Constants.swift in Sources */,
-				2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */,
 				2FDBB246293A4EC500A8A2BF /* CustomErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

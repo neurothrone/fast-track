@@ -20,6 +20,12 @@ struct ActiveWeekScreen: View {
   )
   private var fastLogs: FetchedResults<FastLog>
   
+  @FetchRequest(
+    fetchRequest: Week.activeWeekRequest(),
+    animation: .default
+  )
+  private var activeWeeks: FetchedResults<Week>
+  
   @State private var isAddManualLogPresented = false
   
   var body: some View {
@@ -62,7 +68,9 @@ struct ActiveWeekScreen: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
         min: .zero,
-        max: Double(appState.weeklyHoursGoal.hours),
+        max: Double(
+          activeWeeks.first?.goal ?? Int16(appState.weeklyHoursGoal.hours)
+        ),
         progressColor: .purple
       )
       
