@@ -9,8 +9,22 @@ import SwiftUI
 
 struct AboutSheet: View {
   private let today: Date = .now
-
+  
   var body: some View {
+    NavigationStack {
+      content
+        .padding()
+        .background(
+          .thinMaterial
+        )
+        .cornerRadius(20)
+        .linearBackground()
+    }
+    .navigationTitle("About")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+  
+  private var content: some View {
     VStack(spacing: 4) {
       HStack(spacing: 0) {
         Text("Made with ")
@@ -27,7 +41,7 @@ struct AboutSheet: View {
       }
       
       Text("Version \(UIApplication.appVersion)")
-        .foregroundColor(.secondary)
+        .foregroundColor(.purple)
       
       CustomLinkView(urlString: Constants.Link.svgRepo, text: "App icon by svgrepo.com")
         .padding(.top)
