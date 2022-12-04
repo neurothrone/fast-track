@@ -90,12 +90,6 @@ extension Week {
   }
   
   static func deleteAll(using context: NSManagedObjectContext) {
-    //    let weeks = getAllWeeks(using: context)
-    //
-    //    for week in weeks {
-    //      week.delete(using: context)
-    //    }
-    
     let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Week.self))
     let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
     batchDeleteRequest.resultType = .resultTypeObjectIDs

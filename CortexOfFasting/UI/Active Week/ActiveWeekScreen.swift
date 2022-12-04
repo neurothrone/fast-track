@@ -25,7 +25,6 @@ struct ActiveWeekScreen: View {
   var body: some View {
     content
       .onChange(of: appState.weeklyHoursGoal) { newWeeklyGoal in
-//      .onChange(of: weeklyHoursGoal) { newWeeklyGoal in
         Week.changeWeeklyGoalForActiveWeek(
           weeklyGoal: newWeeklyGoal,
           using: viewContext
@@ -45,7 +44,6 @@ struct ActiveWeekScreen: View {
             ForEach(WeeklyFastingHoursGoal.allCases) { goal in
               Button(goal.toString) {
                 appState.weeklyHoursGoal = goal
-//                weeklyHoursGoal = goal
               }
             }
           } label: {
