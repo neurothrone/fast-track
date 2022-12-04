@@ -85,9 +85,8 @@
 		2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
 		2FDBB257293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
 		2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
-		2FDBB25A293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
 		2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
-		2FDBB25D293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
+		2FDBB25E293C9C1800A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,11 +219,7 @@
 		2F1007CA291A00C8004CE72E /* CortexOfFasting */ = {
 			isa = PBXGroup;
 			children = (
-				2F1007CB291A00C8004CE72E /* AppMain.swift */,
-				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
-				2F7B8774291E4B74008E889C /* Constants.swift */,
-				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F78B8822939FDCC0041427B /* Info.plist */,
 				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
 				2F7B87C02927BA9F008E889C /* Shortcuts */,
@@ -411,6 +406,10 @@
 		2FDBB23D293A4DCB00A8A2BF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2F1007CB291A00C8004CE72E /* AppMain.swift */,
+				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
+				2F7B8774291E4B74008E889C /* Constants.swift */,
+				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F1007E3291A02BD004CE72E /* Data */,
 				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
 			);
@@ -603,6 +602,7 @@
 				2FDBB213293A4A4E00A8A2BF /* CoreDataProvider+Extensions.swift in Sources */,
 				2FDBB238293A4AA200A8A2BF /* DateFormatter+Extensions.swift in Sources */,
 				2FDBB218293A4A5500A8A2BF /* FastLog+CoreDataClass.swift in Sources */,
+				2FDBB25E293C9C1800A8A2BF /* AppState.swift in Sources */,
 				2FDBB232293A4AA200A8A2BF /* Double+Extensions.swift in Sources */,
 				2FDBB233293A4AA200A8A2BF /* TimeInterval+Extensions.swift in Sources */,
 				2FDBB254293A6BA600A8A2BF /* Week+Extensions.swift in Sources */,
@@ -622,8 +622,6 @@
 				2FDBB241293A4E9B00A8A2BF /* ActiveWeekScreen.swift in Sources */,
 				2FDBB245293A4EAD00A8A2BF /* SettingsScreen.swift in Sources */,
 				2FDBB24F293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */,
-				2FDBB25A293B470E00A8A2BF /* EditLogSheet.swift in Sources */,
-				2FDBB25D293C8A8A00A8A2BF /* AppState.swift in Sources */,
 				2FDBB214293A4A4E00A8A2BF /* NSManagedObject+Extensions.swift in Sources */,
 				2FDBB211293A4A3600A8A2BF /* Constants.swift in Sources */,
 				2FDBB243293A4EA600A8A2BF /* AllWeeksScreen.swift in Sources */,

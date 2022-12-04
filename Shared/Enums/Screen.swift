@@ -27,12 +27,18 @@ extension Screen: Identifiable, CaseIterable {
     }
   }
   
-  var view: some View {
+  func view(withLinearBackground: Bool = true) -> some View {
     NavigationStack {
-      self.screen
-        .linearBackground()
-        .navigationTitle(self.rawValue)
-        .navigationBarTitleDisplayMode(.inline)
+      Group {
+        if withLinearBackground {
+          self.screen
+            .linearBackground()
+        } else {
+          self.screen
+        }
+      }
+      .navigationTitle(self.rawValue)
+      .navigationBarTitleDisplayMode(.inline)
     }
   }
   

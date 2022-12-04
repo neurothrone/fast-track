@@ -15,7 +15,7 @@ struct ContentView: View {
     TabView(selection: $selectedTab) {
       Group {
         ForEach(Screen.allCases) { screen in
-          screen.view
+          screen.view()
             .tabItem {
               Label(screen.rawValue, systemImage: screen.systemImage)
             }
