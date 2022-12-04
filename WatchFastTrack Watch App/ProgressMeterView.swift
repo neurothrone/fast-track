@@ -22,9 +22,8 @@ struct ProgressMeterView: View {
   var body: some View {
     VStack {
       Gauge(value: amount.clamped(to: max), in: min...max) {
-        Text(label)
+        Label(label, systemImage: systemImage)
           .foregroundColor(.secondary)
-//        Label(label, systemImage: systemImage)
       } currentValueLabel: {
         Text(amount.formatted(.number))
           .fontWeight(.heavy)
