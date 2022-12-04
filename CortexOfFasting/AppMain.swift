@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AppMain: App {
+  @StateObject var appState: AppState = .init()
+  
   var body: some Scene {
     WindowGroup {
       ContentView()
+        .environmentObject(appState)
         .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
     }
   }
