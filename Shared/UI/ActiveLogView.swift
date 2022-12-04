@@ -31,6 +31,7 @@ struct ActiveLogView: View {
   }
   
   private var content: some View {
+#if os(iOS)
     HStack {
       Text(log.isFault ? "Unknown" : log.startedDate.inReadableFormat)
       
@@ -47,6 +48,43 @@ struct ActiveLogView: View {
             .fill(.mint.opacity(0.5))
         )
     }
+    .frame(maxWidth: .infinity, alignment: .center)
+#elseif os(watchOS)
+    Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
+      .font(.title3.bold())
+      .padding()
+      .frame(maxWidth: .infinity, alignment: .center)
+      .background(
+        RoundedRectangle(cornerRadius: 20, style: .continuous)
+          .fill(.mint.opacity(0.5))
+      )
+      .frame(maxWidth: .infinity, alignment: .center)
+#endif
+    
+//    HStack {
+//      Text(log.isFault ? "Unknown" : log.startedDate.inReadableFormat)
+//      Group {
+//#if os(iOS)
+//        Spacer()
+//
+//        Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
+//          .font(.title3.bold())
+//          .padding()
+//          .frame(width: 140)
+//          .background(.ultraThickMaterial)
+//          .cornerRadius(20)
+//#elseif os(watchOS)
+//        Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
+//          .font(.title3.bold())
+//          .padding()
+//          .frame(maxWidth: .infinity, alignment: .center)
+//#endif
+//      }
+//      .background(
+//        RoundedRectangle(cornerRadius: 20, style: .continuous)
+//          .fill(.mint.opacity(0.5))
+//      )
+//    }
   }
 }
 
