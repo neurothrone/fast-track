@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
-  @EnvironmentObject private var appState: AppState
-  
+
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
   
@@ -20,22 +19,12 @@ struct ActiveWeekScreen: View {
   )
   private var fastLogs: FetchedResults<FastLog>
   
-  @FetchRequest(
-    fetchRequest: Week.activeWeekRequest(),
-    animation: .default
-  )
-  private var activeWeeks: FetchedResults<Week>
-  
   @State private var isAddManualLogPresented = false
+  
+  @StateObject private var connector: WatchConnector = .shared
   
   var body: some View {
     content
-      .onChange(of: appState.weeklyHoursGoal) { newWeeklyGoal in
-        Week.changeWeeklyGoalForActiveWeek(
-          weeklyGoal: newWeeklyGoal,
-          using: viewContext
-        )
-      }
       .sheet(isPresented: $isAddManualLogPresented) {
         AddManualLogSheet()
       }
@@ -48,8 +37,14 @@ struct ActiveWeekScreen: View {
           
           Menu {
             ForEach(WeeklyFastingHoursGoal.allCases) { goal in
-              Button(goal.toString) {
-                appState.weeklyHoursGoal = goal
+              Button {
+                connector.changeWeeklyGoal(goal)
+              } label: {
+                if connector.weeklyGoal == goal {
+                  Label(goal.toString, systemImage: "checkmark")
+                } else {
+                  Text(goal.toString)
+                }
               }
             }
           } label: {
@@ -66,11 +61,9 @@ struct ActiveWeekScreen: View {
       LogListProgressMeterView(
         label: "Fasted state hours",
         systemImage: "gauge",
-        amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
+        amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
-        max: Double(
-          activeWeeks.first?.goal ?? Int16(appState.weeklyHoursGoal.hours)
-        ),
+        max: Double(connector.weeklyGoal.hours),
         progressColor: .purple
       )
       
@@ -94,7 +87,6 @@ struct ActiveWeekScreen_Previews: PreviewProvider {
       ActiveWeekScreen()
         .linearBackground()
         .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-        .environmentObject(AppState())
     }
   }
 }
