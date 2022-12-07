@@ -4,11 +4,5 @@
         <attribute name="id" attributeType="String" defaultValueString=""/>
         <attribute name="startedDate" attributeType="Date" defaultDateTimeInterval="689570640" usesScalarValueType="NO"/>
         <attribute name="stoppedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <relationship name="week" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Week" inverseName="logs" inverseEntity="Week"/>
-    </entity>
-    <entity name="Week" representedClassName="Week" syncable="YES">
-        <attribute name="date" attributeType="Date" defaultDateTimeInterval="691677660" usesScalarValueType="NO"/>
-        <attribute name="goal" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="logs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FastLog" inverseName="week" inverseEntity="FastLog"/>
     </entity>
 </model>

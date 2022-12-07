@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Error: Swift.Error, CustomLocalizedStringResourceConvertible {
+enum CustomError: Swift.Error, CustomLocalizedStringResourceConvertible {
   case notFound,
        coreDataSave,
        unknownId(id: String),
