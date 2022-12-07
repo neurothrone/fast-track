@@ -9,15 +9,12 @@ import SwiftUI
 
 struct AllWeeksScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
-  @EnvironmentObject private var appState: AppState
-  
-  @FetchRequest(fetchRequest: FastLog.allCompleted, animation: .default)
-  private var fastLogs: FetchedResults<FastLog>
-  
+
   @SectionedFetchRequest(
     fetchRequest: FastLog.allCompleted,
     sectionIdentifier: \FastLog.yearAndWeek,
-    animation: .default)
+    animation: .default
+  )
   private var logsPerWeek: SectionedFetchResults<String, FastLog>
   
   var body: some View {
@@ -37,11 +34,9 @@ struct AllWeeksScreen: View {
                 .foregroundColor(.mint)
               
               Spacer()
-
-              if let first = logsInWeek.first {
-                Text("\(FastLog.totalFastedStateToHoursFormatted(in: Array(logsInWeek))) / \(first.week.goal) h")
-                  .foregroundColor(.purple)
-              }
+              
+              Text("\(FastLog.totalFastedStateDurationToHoursFormatted(in: Array(logsInWeek))) h")
+                .foregroundColor(.purple)
             }
             .textCase(.none)
           }
@@ -63,7 +58,6 @@ struct AllWeeksScreen_Previews: PreviewProvider {
         .navigationTitle(Screen.allWeeks.rawValue)
         .navigationBarTitleDisplayMode(.inline)
         .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-        .environmentObject(AppState())
     }
   }
 }
