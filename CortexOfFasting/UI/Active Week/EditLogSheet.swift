@@ -90,8 +90,13 @@ extension EditLogSheet {
   }
 }
 
-//struct EditLogSheet_Previews: PreviewProvider {
-//  static var previews: some View {
-//    EditLogSheet()
-//  }
-//}
+struct EditLogSheet_Previews: PreviewProvider {
+  static var previews: some View {
+    let context = CoreDataProvider.preview.viewContext
+    let log = FastLog(context: context)
+    log.startedDate = .now.subtracting(hours: 12)
+    log.stoppedDate = .now
+    
+    return EditLogSheet(log: log)
+  }
+}
