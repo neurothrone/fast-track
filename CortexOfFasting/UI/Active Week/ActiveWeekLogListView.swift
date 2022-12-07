@@ -62,10 +62,3 @@ extension ActiveWeekLogListView {
     logs[index].delete(using: viewContext)
   }
 }
-
-//struct ActiveWeekLogListView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    ActiveWeekLogListView()
-//      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-//  }
-//}
