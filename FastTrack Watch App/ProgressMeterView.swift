@@ -36,7 +36,11 @@ struct ProgressMeterView: View {
       }
       .textCase(.none)
       .tint(progressColor)
+#if os(iOS)
+      .gaugeStyle(.accessoryCircular)
+#elseif os(watchOS)
       .gaugeStyle(.circular)
+#endif
     }
   }
 }

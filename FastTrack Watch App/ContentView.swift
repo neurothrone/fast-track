@@ -1,27 +1,22 @@
 //
 //  ContentView.swift
-//  WatchFastTrack Watch App
+//  FastTrack Watch App
 //
-//  Created by Zaid Neurothrone on 2022-12-02.
+//  Created by Zaid Neurothrone on 2022-12-06.
 //
 
 import SwiftUI
 
 struct ContentView: View {
   @Environment(\.managedObjectContext) private var viewContext
-  @EnvironmentObject private var appState: AppState
-  
+
   @FetchRequest(
     fetchRequest: FastLog.allCompletedInCurrentWeek,
     animation: .default
   )
   private var fastLogs: FetchedResults<FastLog>
   
-  @FetchRequest(
-    fetchRequest: Week.activeWeekRequest(),
-    animation: .default
-  )
-  private var activeWeeks: FetchedResults<Week>
+  @StateObject private var connector: WatchConnector = .shared
   
   var body: some View {
     NavigationStack {
@@ -37,11 +32,9 @@ struct ContentView: View {
       ProgressMeterView(
         label: "Fasted state hours",
         systemImage: "gauge",
-        amount: FastLog.totalFastedStateToHours(in: Array(fastLogs)),
+        amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
-        max: Double(
-          activeWeeks.first?.goal ?? Int16(appState.weeklyHoursGoal.hours)
-        ),
+        max: Double(connector.weeklyGoal.hours),
         progressColor: .purple
       )
       
@@ -57,6 +50,5 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-      .environmentObject(AppState())
   }
 }
