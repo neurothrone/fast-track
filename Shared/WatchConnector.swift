@@ -13,7 +13,13 @@ final class WatchConnector: NSObject, ObservableObject {
     Constants.AppStorage.weeklyFastingHoursGoal,
     store: UserDefaults(suiteName: CKConfig.sharedAppGroup)
   )
-  var weeklyGoal: WeeklyFastingHoursGoal = .easy
+  private(set) var weeklyGoal: WeeklyFastingHoursGoal = .easy {
+    willSet {
+      DispatchQueue.main.async {
+        self.objectWillChange.send()
+      }
+    }
+  }
   
   static let shared = WatchConnector()
   
