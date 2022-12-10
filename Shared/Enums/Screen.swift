@@ -27,6 +27,19 @@ extension Screen: Identifiable, CaseIterable {
     }
   }
   
+  @ViewBuilder
+  var screen: some View {
+    switch self {
+    case .activeWeek:
+      ActiveWeekScreen()
+    case .allWeeks:
+      AllWeeksScreen()
+    case .settings:
+      SettingsScreen()
+    }
+  }
+
+#if os(iOS)
   func view(withLinearBackground: Bool = true) -> some View {
     NavigationStack {
       Group {
@@ -41,16 +54,5 @@ extension Screen: Identifiable, CaseIterable {
       .navigationBarTitleDisplayMode(.inline)
     }
   }
-  
-  @ViewBuilder
-  private var screen: some View {
-    switch self {
-    case .activeWeek:
-      ActiveWeekScreen()
-    case .allWeeks:
-      AllWeeksScreen()
-    case .settings:
-      SettingsScreen()
-    }
-  }
+#endif
 }
