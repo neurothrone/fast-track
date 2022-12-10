@@ -9,7 +9,7 @@
 //
 //final class AppState: ObservableObject {
 //  @AppStorage(Constants.AppStorage.weeklyFastingHoursGoal)
-//  var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy {
+//  private(set) var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy {
 //    willSet {
 //      DispatchQueue.main.async {
 //        self.objectWillChange.send()
