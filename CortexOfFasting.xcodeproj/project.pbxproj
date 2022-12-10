@@ -108,6 +108,7 @@
 		2F8D2A932941452F002AA901 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2A922941452F002AA901 /* Credits.rtf */; };
 		2F8D2B8B294432BC002AA901 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
 		2F8D2B8D29443525002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
+		2F8D2B9229443620002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
@@ -119,7 +120,6 @@
 		2FDBB2AB293E591E00A8A2BF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */; };
 		2FDBB2AE293E591E00A8A2BF /* LockscreenWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB2AD293E591E00A8A2BF /* LockscreenWidgetsBundle.swift */; };
 		2FDBB2B0293E591E00A8A2BF /* LockscreenWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB2AF293E591E00A8A2BF /* LockscreenWidgets.swift */; };
-		2FDBB2B2293E591F00A8A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBB2B1293E591F00A8A2BF /* Assets.xcassets */; };
 		2FDBB2B6293E591F00A8A2BF /* LockscreenWidgets Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2FDBB2A6293E591E00A8A2BF /* LockscreenWidgets Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -242,7 +242,6 @@
 		2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		2FDBB2AD293E591E00A8A2BF /* LockscreenWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenWidgetsBundle.swift; sourceTree = "<group>"; };
 		2FDBB2AF293E591E00A8A2BF /* LockscreenWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenWidgets.swift; sourceTree = "<group>"; };
-		2FDBB2B1293E591F00A8A2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FDBB2B3293E591F00A8A2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -589,7 +588,6 @@
 			children = (
 				2FDBB2AD293E591E00A8A2BF /* LockscreenWidgetsBundle.swift */,
 				2FDBB2AF293E591E00A8A2BF /* LockscreenWidgets.swift */,
-				2FDBB2B1293E591F00A8A2BF /* Assets.xcassets */,
 				2FDBB2B3293E591F00A8A2BF /* Info.plist */,
 				2F2009D1293E79FA0089EDBE /* LockscreenWidgets Extension.entitlements */,
 			);
@@ -749,7 +747,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FDBB2B2293E591F00A8A2BF /* Assets.xcassets in Resources */,
+				2F8D2B9229443620002AA901 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
