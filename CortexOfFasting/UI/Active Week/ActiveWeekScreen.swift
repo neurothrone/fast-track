@@ -20,7 +20,6 @@ struct ActiveWeekScreen: View {
   private var fastLogs: FetchedResults<FastLog>
   
   @State private var isAddManualLogPresented = false
-  
   @StateObject private var connector: WatchConnector = .shared
   
   var body: some View {
