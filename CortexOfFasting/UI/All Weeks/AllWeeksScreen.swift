@@ -18,35 +18,8 @@ struct AllWeeksScreen: View {
   private var logsPerWeek: SectionedFetchResults<String, FastLog>
   
   var body: some View {
-    content
+    LogSectionedListView(logsPerWeek: logsPerWeek)
       .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
-  }
-  
-  private var content: some View {
-    List {
-      Section {
-        ForEach(logsPerWeek) { logsInWeek in
-          NavigationLink {
-            WeekDetailScreen(logs: logsInWeek)
-          } label: {
-            HStack {
-              Text(logsInWeek.id)
-                .foregroundColor(.mint)
-              
-              Spacer()
-              
-              Text("\(FastLog.totalFastedStateDurationToHoursFormatted(in: Array(logsInWeek))) h")
-                .foregroundColor(.purple)
-            }
-            .textCase(.none)
-          }
-        }
-        .listRowBackground(Color.black)
-      } header: {
-        SectionHeaderView(leftText: "Week", rightText: "Fasted state hours")
-      }
-    }
-    .scrollContentBackground(.hidden)
   }
 }
 

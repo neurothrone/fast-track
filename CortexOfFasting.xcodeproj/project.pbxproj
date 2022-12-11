@@ -109,6 +109,29 @@
 		2F8D2B8B294432BC002AA901 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
 		2F8D2B8D29443525002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
 		2F8D2B9229443620002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
+		2F8D2B9329443693002AA901 /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
+		2F8D2B9429443693002AA901 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100803291A10CB004CE72E /* NSManagedObject+Extensions.swift */; };
+		2F8D2B9529443693002AA901 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
+		2F8D2B9629443695002AA901 /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
+		2F8D2B9729443699002AA901 /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
+		2F8D2B9829443699002AA901 /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
+		2F8D2B9929443699002AA901 /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
+		2F8D2B9A29443699002AA901 /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
+		2F8D2B9B294436A8002AA901 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
+		2F8D2B9C294436AF002AA901 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
+		2F8D2B9D294436AF002AA901 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
+		2F8D2B9E294436AF002AA901 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
+		2F8D2B9F294436AF002AA901 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
+		2F8D2BA0294436AF002AA901 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
+		2F8D2BA1294436AF002AA901 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
+		2F8D2BA2294436D3002AA901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
+		2F9C12CC2945BD2F008440EE /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* LogListRowView.swift */; };
+		2F9C12CD2945BD52008440EE /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
+		2F9C12CF2945C199008440EE /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
+		2F9C12D02945C199008440EE /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
+		2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
+		2F9C12D42945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
+		2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
@@ -229,6 +252,8 @@
 		2F8D2A8829412032002AA901 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		2F8D2A90294144E3002AA901 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2F8D2A922941452F002AA901 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSectionedListRowView.swift; sourceTree = "<group>"; };
+		2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSectionedListView.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -327,9 +352,9 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2F7B87A029253367008E889C /* LogListProgressMeterView.swift */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
-				2F7B8780291FBAAD008E889C /* Shared */,
 				2F10080E291A3C41004CE72E /* Settings */,
 				2F7B8781291FBAD1008E889C /* Onboarding */,
 				2F10080F291A3D7F004CE72E /* Info */,
@@ -418,7 +443,6 @@
 			isa = PBXGroup;
 			children = (
 				2F100817291BD0E2004CE72E /* ProgressMeterView.swift */,
-				2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */,
 				2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */,
 				2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */,
 				2F7B877A291E4C37008E889C /* CustomLinkView.swift */,
@@ -435,15 +459,6 @@
 				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
 			);
 			path = Old;
-			sourceTree = "<group>";
-		};
-		2F7B8780291FBAAD008E889C /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				2F100814291B5468004CE72E /* LogListRowView.swift */,
-				2F7B87A029253367008E889C /* LogListProgressMeterView.swift */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		2F7B8781291FBAD1008E889C /* Onboarding */ = {
@@ -539,6 +554,30 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		2F9C12D12945C7C7008440EE /* All Weeks */ = {
+			isa = PBXGroup;
+			children = (
+				2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */,
+				2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */,
+			);
+			path = "All Weeks";
+			sourceTree = "<group>";
+		};
+		2F9C12D52945C81F008440EE /* Active Week */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Active Week";
+			sourceTree = "<group>";
+		};
+		2F9C12D82945CE4B008440EE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		2FDBB1F3293A2ABD00A8A2BF /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +607,10 @@
 		2FDBB295293CC29400A8A2BF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2F100814291B5468004CE72E /* LogListRowView.swift */,
+				2F9C12D52945C81F008440EE /* Active Week */,
+				2F9C12D12945C7C7008440EE /* All Weeks */,
+				2F9C12D82945CE4B008440EE /* Components */,
 				2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */,
 				2F7B879E292527F2008E889C /* ActiveLogView.swift */,
 			);
@@ -765,6 +808,7 @@
 				2F10081A291BF084004CE72E /* Screen.swift in Sources */,
 				2F100815291B5468004CE72E /* LogListRowView.swift in Sources */,
 				2F7B87A529255E72008E889C /* AddManualLogSheet.swift in Sources */,
+				2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */,
 				2F7B8775291E4B74008E889C /* Constants.swift in Sources */,
 				2F7B87C42927FAAC008E889C /* CustomErrors.swift in Sources */,
 				2F1007FA291A0484004CE72E /* URL+Extensions.swift in Sources */,
@@ -773,6 +817,7 @@
 				2F100804291A10CB004CE72E /* NSManagedObject+Extensions.swift in Sources */,
 				2F7B87D129280589008E889C /* AppShortcuts.swift in Sources */,
 				2F10080D291A3BCF004CE72E /* WeekDetailScreen.swift in Sources */,
+				2F9C12CF2945C199008440EE /* LogSectionedListRowView.swift in Sources */,
 				2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */,
 				2F1007EE291A03A5004CE72E /* FastLog+CoreDataClass.swift in Sources */,
 				2F7B87BF2926E4F0008E889C /* SetWeeklyGoalView.swift in Sources */,
@@ -846,12 +891,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F8D2B8B294432BC002AA901 /* Screen.swift in Sources */,
+				2F8D2B9729443699002AA901 /* CustomErrors.swift in Sources */,
+				2F8D2BA0294436AF002AA901 /* Collection+Extensions.swift in Sources */,
+				2F8D2B9929443699002AA901 /* FastLog+CoreDataClass.swift in Sources */,
+				2F8D2B9829443699002AA901 /* FastLog+Preview.swift in Sources */,
+				2F8D2B9F294436AF002AA901 /* Double+Extensions.swift in Sources */,
+				2F8D2BA2294436D3002AA901 /* Constants.swift in Sources */,
+				2F8D2B9629443695002AA901 /* Entities.xcdatamodeld in Sources */,
 				2F8D2A7A29410737002AA901 /* ContentView.swift in Sources */,
 				2F8D2A7829410737002AA901 /* AppMain.swift in Sources */,
+				2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */,
+				2F8D2B9D294436AF002AA901 /* TimeInterval+Extensions.swift in Sources */,
 				2F8D2A8529412026002AA901 /* ActiveWeekScreen.swift in Sources */,
+				2F8D2B9E294436AF002AA901 /* Date+Extensions.swift in Sources */,
+				2F9C12D42945C7D7008440EE /* LogSectionedListView.swift in Sources */,
+				2F9C12D02945C199008440EE /* LogSectionedListRowView.swift in Sources */,
+				2F8D2B9429443693002AA901 /* NSManagedObject+Extensions.swift in Sources */,
 				2F8D2A91294144E3002AA901 /* SettingsView.swift in Sources */,
 				2F8D2A8929412032002AA901 /* SettingsScreen.swift in Sources */,
+				2F9C12CC2945BD2F008440EE /* LogListRowView.swift in Sources */,
 				2F8D2A872941202B002AA901 /* AllWeeksScreen.swift in Sources */,
+				2F8D2B9329443693002AA901 /* CoreDataProvider+Extensions.swift in Sources */,
+				2F8D2B9B294436A8002AA901 /* URL+Extensions.swift in Sources */,
+				2F8D2B9529443693002AA901 /* CoreDataProvider.swift in Sources */,
+				2F8D2B9A29443699002AA901 /* FastLog+Extensions.swift in Sources */,
+				2F9C12CD2945BD52008440EE /* SectionHeaderView.swift in Sources */,
+				2F8D2B9C294436AF002AA901 /* DateFormatter+Extensions.swift in Sources */,
+				2F8D2BA1294436AF002AA901 /* Calendar+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
