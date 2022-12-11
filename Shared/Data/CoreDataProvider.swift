@@ -7,8 +7,6 @@
 
 import CoreData
 
-
-
 final class CoreDataProvider {
   static let shared: CoreDataProvider = .init()
 
@@ -26,11 +24,14 @@ final class CoreDataProvider {
   private lazy var container: NSPersistentCloudKitContainer = {
     let container = NSPersistentCloudKitContainer(name: CKConfig.containerName)
     
+    #if os(macOS)
+    
+    #else
     let storeURL = URL.storeURL(
       for: CKConfig.sharedAppGroup,
       databaseName: CKConfig.containerName
     )
-    
+
     if inMemory {
       container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
     } else {
@@ -48,6 +49,7 @@ final class CoreDataProvider {
         containerIdentifier: CKConfig.cloudContainerID)
       container.persistentStoreDescriptions = [storeDescription]
     }
+#endif
     
     container.loadPersistentStores { store, error in
       if let error = error as NSError? {
