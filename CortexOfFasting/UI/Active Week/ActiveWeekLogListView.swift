@@ -29,18 +29,24 @@ struct ActiveWeekLogListView: View {
   
   var body: some View {
     Section {
-      ForEach(logs) { log in
-        LogListRowView(log: log)
-          .swipeActions(edge: .leading, allowsFullSwipe: false) {
-            Button("Edit") {
-              activeSheet = .edit(log: log)
+      if logs.isEmpty {
+        Text("No logs in active week yet.")
+          .foregroundColor(.mint)
+          .listRowBackground(Color.black)
+      } else {
+        ForEach(logs) { log in
+          LogListRowView(log: log)
+            .swipeActions(edge: .leading, allowsFullSwipe: false) {
+              Button("Edit") {
+                activeSheet = .edit(log: log)
+              }
+              .tint(.orange)
             }
-            .tint(.orange)
-          }
+        }
+        .onDelete(perform: deleteLog)
+        .listRowBackground(Color.black)
+        .listRowSeparatorTint(.white.opacity(0.4))
       }
-      .onDelete(perform: deleteLog)
-      .listRowBackground(Color.black)
-      .listRowSeparatorTint(.white.opacity(0.4))
     } header: {
       SectionHeaderView(leftText: "Fasting times", rightText: "Fasting duration")
     }
