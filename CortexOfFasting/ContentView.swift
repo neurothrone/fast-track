@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @AppStorage(Constants.AppStorage.selectedTab)
+  @AppStorage(Constants.AppStorage.selectedScreen)
   private var selectedTab: Screen = .activeWeek
   
   var body: some View {
