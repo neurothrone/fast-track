@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var selection: Screen?
+  @AppStorage(Constants.AppStorage.selectedScreen)
+  var selectedScreen: Screen?
   
   var body: some View {
     NavigationSplitView {
-      List(selection: $selection) {
+      List(selection: $selectedScreen) {
         Section {
           ForEach(Screen.allCases.filter { $0 != .settings }) { screen in
             Label(screen.rawValue, systemImage: screen.systemImage)
@@ -23,8 +24,8 @@ struct ContentView: View {
       }
       .frame(width: 150)
     } detail: {
-      if let selection {
-        selection.screen
+      if let selectedScreen {
+        selectedScreen.screen
       } else {
         Text("Please select something")
       }
