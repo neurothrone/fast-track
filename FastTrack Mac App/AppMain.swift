@@ -12,6 +12,7 @@ struct AppMain: App {
   var body: some Scene {
     Window("FastTrack", id: "main") {
       ContentView()
+        .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
         .onAppear {
           NSWindow.allowsAutomaticWindowTabbing = false
         }
