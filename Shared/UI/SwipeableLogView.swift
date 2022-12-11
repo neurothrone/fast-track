@@ -98,7 +98,7 @@ struct SwipeableLogView_Previews: PreviewProvider {
     SwipeableLogView()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
       .padding()
-      .linearBackground()
-      .preferredColorScheme(.dark)
+//      .linearBackground()
+//      .preferredColorScheme(.dark)
   }
 }
