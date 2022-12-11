@@ -21,13 +21,17 @@ enum Constants {
   }
   
   struct SystemImage {
+    static let activeWeek = "clock"
+    static let allWeeks = "calendar"
+    static let settings = "gear"
+
     static let startClock = "clock.badge.checkmark"
     static let stopClock = "clock.badge.xmark"
     static let resetClock = "clock.arrow.circlepath"
   }
   
   struct AppStorage {
-    static let selectedTab = "selectedTab"
+    static let selectedScreen = "selectedScreen"
     static let datePickerDisplayMode = "datePickerDisplayMode"
     static let weeklyFastingHoursGoal = "weeklyFastingHoursGoal"
     static let isOnboardingPresented = true

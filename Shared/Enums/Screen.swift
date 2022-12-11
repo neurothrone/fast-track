@@ -19,11 +19,11 @@ extension Screen: Identifiable, CaseIterable {
   var systemImage: String {
     switch self {
     case .activeWeek:
-      return "clock"
+      return Constants.SystemImage.activeWeek
     case .allWeeks:
-      return "calendar"
+      return Constants.SystemImage.allWeeks
     case .settings:
-      return "gear"
+      return Constants.SystemImage.settings
     }
   }
   
