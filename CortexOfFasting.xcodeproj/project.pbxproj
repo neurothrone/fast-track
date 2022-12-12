@@ -132,6 +132,8 @@
 		2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
 		2F9C12D42945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
 		2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
+		2F9C12D92946C025008440EE /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879E292527F2008E889C /* ActiveLogView.swift */; };
+		2F9C12DB2946C594008440EE /* ActiveLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
@@ -254,6 +256,7 @@
 		2F8D2A922941452F002AA901 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSectionedListRowView.swift; sourceTree = "<group>"; };
 		2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSectionedListView.swift; sourceTree = "<group>"; };
+		2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogSectionView.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -523,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */,
+				2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */,
 			);
 			path = "Active Week";
 			sourceTree = "<group>";
@@ -903,7 +907,9 @@
 				2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */,
 				2F8D2B9D294436AF002AA901 /* TimeInterval+Extensions.swift in Sources */,
 				2F8D2A8529412026002AA901 /* ActiveWeekScreen.swift in Sources */,
+				2F9C12D92946C025008440EE /* ActiveLogView.swift in Sources */,
 				2F8D2B9E294436AF002AA901 /* Date+Extensions.swift in Sources */,
+				2F9C12DB2946C594008440EE /* ActiveLogSectionView.swift in Sources */,
 				2F9C12D42945C7D7008440EE /* LogSectionedListView.swift in Sources */,
 				2F9C12D02945C199008440EE /* LogSectionedListRowView.swift in Sources */,
 				2F8D2B9429443693002AA901 /* NSManagedObject+Extensions.swift in Sources */,
