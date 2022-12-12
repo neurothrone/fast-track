@@ -144,9 +144,9 @@
 		2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
 		2FDBB2A9293E591E00A8A2BF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2A8293E591E00A8A2BF /* WidgetKit.framework */; };
 		2FDBB2AB293E591E00A8A2BF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */; };
-		2FDBB2AE293E591E00A8A2BF /* LockscreenWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB2AD293E591E00A8A2BF /* LockscreenWidgetsBundle.swift */; };
-		2FDBB2B0293E591E00A8A2BF /* LockscreenWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB2AF293E591E00A8A2BF /* LockscreenWidgets.swift */; };
-		2FDBB2B6293E591F00A8A2BF /* LockscreenWidgets Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2FDBB2A6293E591E00A8A2BF /* LockscreenWidgets Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2FDBB2AE293E591E00A8A2BF /* AppBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB2AD293E591E00A8A2BF /* AppBundle.swift */; };
+		2FDBB2B0293E591E00A8A2BF /* FastTrackWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB2AF293E591E00A8A2BF /* FastTrackWidgets.swift */; };
+		2FDBB2B6293E591F00A8A2BF /* FastTrack Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2FDBB2A6293E591E00A8A2BF /* FastTrack Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,7 +184,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2FDBB2B6293E591F00A8A2BF /* LockscreenWidgets Extension.appex in Embed Foundation Extensions */,
+				2FDBB2B6293E591F00A8A2BF /* FastTrack Widgets.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 		2F1007CB291A00C8004CE72E /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F1007CD291A00C8004CE72E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F1007CF291A00C9004CE72E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CortexOfFasting.entitlements; sourceTree = "<group>"; };
+		2F1007D1291A00C9004CE72E /* FastTrack iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack iOS.entitlements"; sourceTree = "<group>"; };
 		2F1007D3291A00C9004CE72E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F1007DD291A0244004CE72E /* ActiveWeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekScreen.swift; sourceTree = "<group>"; };
 		2F1007DF291A0249004CE72E /* AllWeeksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWeeksScreen.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		2F100817291BD0E2004CE72E /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
 		2F100819291BF084004CE72E /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		2F10081B291BF760004CE72E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		2F2009D1293E79FA0089EDBE /* LockscreenWidgets Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LockscreenWidgets Extension.entitlements"; sourceTree = "<group>"; };
+		2F2009D1293E79FA0089EDBE /* FastTrack Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Widgets.entitlements"; sourceTree = "<group>"; };
 		2F78B8822939FDCC0041427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeView.swift; sourceTree = "<group>"; };
 		2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLogView.swift; sourceTree = "<group>"; };
@@ -244,12 +244,12 @@
 		2F8D2A12293FF780002AA901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F8D2A19294011C6002AA901 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		2F8D2A3729401F82002AA901 /* FastTrack Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Watch App.entitlements"; sourceTree = "<group>"; };
-		2F8D2A3829401F85002AA901 /* FastTrack-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FastTrack-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2F8D2A3829401F85002AA901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		2F8D2A7529410737002AA901 /* FastTrack Mac App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastTrack Mac App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8D2A7729410737002AA901 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F8D2A7929410737002AA901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F8D2A7E29410738002AA901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2F8D2A8029410738002AA901 /* FastTrack_Mac_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastTrack_Mac_App.entitlements; sourceTree = "<group>"; };
+		2F8D2A8029410738002AA901 /* FastTrack macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack macOS.entitlements"; sourceTree = "<group>"; };
 		2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekScreen.swift; sourceTree = "<group>"; };
 		2F8D2A862941202B002AA901 /* AllWeeksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWeeksScreen.swift; sourceTree = "<group>"; };
 		2F8D2A8829412032002AA901 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
@@ -267,11 +267,11 @@
 		2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogSheet.swift; sourceTree = "<group>"; };
 		2FDBB25B293C8A8A00A8A2BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
-		2FDBB2A6293E591E00A8A2BF /* LockscreenWidgets Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LockscreenWidgets Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDBB2A6293E591E00A8A2BF /* FastTrack Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FastTrack Widgets.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDBB2A8293E591E00A8A2BF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		2FDBB2AD293E591E00A8A2BF /* LockscreenWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenWidgetsBundle.swift; sourceTree = "<group>"; };
-		2FDBB2AF293E591E00A8A2BF /* LockscreenWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenWidgets.swift; sourceTree = "<group>"; };
+		2FDBB2AD293E591E00A8A2BF /* AppBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBundle.swift; sourceTree = "<group>"; };
+		2FDBB2AF293E591E00A8A2BF /* FastTrackWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidgets.swift; sourceTree = "<group>"; };
 		2FDBB2B3293E591F00A8A2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -313,10 +313,10 @@
 			isa = PBXGroup;
 			children = (
 				2FDBB23D293A4DCB00A8A2BF /* Shared */,
-				2F1007CA291A00C8004CE72E /* CortexOfFasting */,
+				2F1007CA291A00C8004CE72E /* FastTrack iOS App */,
 				2F8D2A7629410737002AA901 /* FastTrack Mac App */,
 				2F8D2A00293FF743002AA901 /* FastTrack Watch App */,
-				2FDBB2AC293E591E00A8A2BF /* Lockscreen Widgets */,
+				2FDBB2AC293E591E00A8A2BF /* FastTrack Widgets */,
 				2FDBB2A7293E591E00A8A2BF /* Frameworks */,
 				2F1007C9291A00C8004CE72E /* Products */,
 			);
@@ -326,24 +326,24 @@
 			isa = PBXGroup;
 			children = (
 				2F1007C8291A00C8004CE72E /* FastTrack.app */,
-				2FDBB2A6293E591E00A8A2BF /* LockscreenWidgets Extension.appex */,
+				2FDBB2A6293E591E00A8A2BF /* FastTrack Widgets.appex */,
 				2F8D29FF293FF743002AA901 /* FastTrack Watch App.app */,
 				2F8D2A7529410737002AA901 /* FastTrack Mac App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F1007CA291A00C8004CE72E /* CortexOfFasting */ = {
+		2F1007CA291A00C8004CE72E /* FastTrack iOS App */ = {
 			isa = PBXGroup;
 			children = (
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
 				2F78B8822939FDCC0041427B /* Info.plist */,
-				2F1007D1291A00C9004CE72E /* CortexOfFasting.entitlements */,
+				2F1007D1291A00C9004CE72E /* FastTrack iOS.entitlements */,
 				2F7B87C02927BA9F008E889C /* Shortcuts */,
 				2F1007DC291A0239004CE72E /* UI */,
 				2F1007D2291A00C9004CE72E /* Preview Content */,
 			);
-			path = CortexOfFasting;
+			path = "FastTrack iOS App";
 			sourceTree = "<group>";
 		};
 		2F1007D2291A00C9004CE72E /* Preview Content */ = {
@@ -488,7 +488,7 @@
 			children = (
 				2F8D2A12293FF780002AA901 /* ContentView.swift */,
 				2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */,
-				2F8D2A3829401F85002AA901 /* FastTrack-Watch-App-Info.plist */,
+				2F8D2A3829401F85002AA901 /* Info.plist */,
 				2F8D2A3729401F82002AA901 /* FastTrack Watch App.entitlements */,
 				2F8D2A07293FF744002AA901 /* Preview Content */,
 			);
@@ -507,11 +507,11 @@
 			isa = PBXGroup;
 			children = (
 				2F8D2A7729410737002AA901 /* AppMain.swift */,
-				2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */,
 				2F8D2A7929410737002AA901 /* ContentView.swift */,
+				2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */,
 				2F8D2B9129443549002AA901 /* UI */,
 				2F8D2A922941452F002AA901 /* Credits.rtf */,
-				2F8D2A8029410738002AA901 /* FastTrack_Mac_App.entitlements */,
+				2F8D2A8029410738002AA901 /* FastTrack macOS.entitlements */,
 				2F8D2A7D29410738002AA901 /* Preview Content */,
 			);
 			path = "FastTrack Mac App";
@@ -633,23 +633,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2FDBB2AC293E591E00A8A2BF /* Lockscreen Widgets */ = {
+		2FDBB2AC293E591E00A8A2BF /* FastTrack Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				2FDBB2AD293E591E00A8A2BF /* LockscreenWidgetsBundle.swift */,
-				2FDBB2AF293E591E00A8A2BF /* LockscreenWidgets.swift */,
+				2FDBB2AD293E591E00A8A2BF /* AppBundle.swift */,
+				2FDBB2AF293E591E00A8A2BF /* FastTrackWidgets.swift */,
 				2FDBB2B3293E591F00A8A2BF /* Info.plist */,
-				2F2009D1293E79FA0089EDBE /* LockscreenWidgets Extension.entitlements */,
+				2F2009D1293E79FA0089EDBE /* FastTrack Widgets.entitlements */,
 			);
-			path = "Lockscreen Widgets";
+			path = "FastTrack Widgets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F1007C7291A00C8004CE72E /* CortexOfFasting */ = {
+		2F1007C7291A00C8004CE72E /* FastTrack iOS App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1007D7291A00C9004CE72E /* Build configuration list for PBXNativeTarget "CortexOfFasting" */;
+			buildConfigurationList = 2F1007D7291A00C9004CE72E /* Build configuration list for PBXNativeTarget "FastTrack iOS App" */;
 			buildPhases = (
 				2F1007C4291A00C8004CE72E /* Sources */,
 				2F1007C5291A00C8004CE72E /* Frameworks */,
@@ -663,7 +663,7 @@
 				2FDBB2B5293E591F00A8A2BF /* PBXTargetDependency */,
 				2F8D2A0B293FF744002AA901 /* PBXTargetDependency */,
 			);
-			name = CortexOfFasting;
+			name = "FastTrack iOS App";
 			productName = CortexOfFasting;
 			productReference = 2F1007C8291A00C8004CE72E /* FastTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -702,9 +702,9 @@
 			productReference = 2F8D2A7529410737002AA901 /* FastTrack Mac App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2FDBB2A5293E591E00A8A2BF /* LockscreenWidgets Extension */ = {
+		2FDBB2A5293E591E00A8A2BF /* FastTrack Widgets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FDBB2B7293E591F00A8A2BF /* Build configuration list for PBXNativeTarget "LockscreenWidgets Extension" */;
+			buildConfigurationList = 2FDBB2B7293E591F00A8A2BF /* Build configuration list for PBXNativeTarget "FastTrack Widgets" */;
 			buildPhases = (
 				2FDBB2A2293E591E00A8A2BF /* Sources */,
 				2FDBB2A3293E591E00A8A2BF /* Frameworks */,
@@ -714,9 +714,9 @@
 			);
 			dependencies = (
 			);
-			name = "LockscreenWidgets Extension";
+			name = "FastTrack Widgets";
 			productName = "Lockscreen WidgetsExtension";
-			productReference = 2FDBB2A6293E591E00A8A2BF /* LockscreenWidgets Extension.appex */;
+			productReference = 2FDBB2A6293E591E00A8A2BF /* FastTrack Widgets.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -756,10 +756,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F1007C7291A00C8004CE72E /* CortexOfFasting */,
+				2F1007C7291A00C8004CE72E /* FastTrack iOS App */,
 				2F8D2A7429410737002AA901 /* FastTrack Mac App */,
 				2F8D29FE293FF743002AA901 /* FastTrack Watch App */,
-				2FDBB2A5293E591E00A8A2BF /* LockscreenWidgets Extension */,
+				2FDBB2A5293E591E00A8A2BF /* FastTrack Widgets */,
 			);
 		};
 /* End PBXProject section */
@@ -942,11 +942,11 @@
 				2F6C707D293E60CA0091FC52 /* FastLog+CoreDataClass.swift in Sources */,
 				2F8D2A3B29402454002AA901 /* ProgressMeterView.swift in Sources */,
 				2F6C707C293E60CA0091FC52 /* FastLog+Preview.swift in Sources */,
-				2FDBB2B0293E591E00A8A2BF /* LockscreenWidgets.swift in Sources */,
+				2FDBB2B0293E591E00A8A2BF /* FastTrackWidgets.swift in Sources */,
 				2F6C707A293E60CA0091FC52 /* Week+CoreDataClass.swift in Sources */,
 				2F6C7075293E60BB0091FC52 /* Entities.xcdatamodeld in Sources */,
 				2F6C7083293E62420091FC52 /* TimeInterval+Extensions.swift in Sources */,
-				2FDBB2AE293E591E00A8A2BF /* LockscreenWidgetsBundle.swift in Sources */,
+				2FDBB2AE293E591E00A8A2BF /* AppBundle.swift in Sources */,
 				2F6C7082293E623A0091FC52 /* WeeklyFastingHoursGoal.swift in Sources */,
 				2F6C7078293E60C10091FC52 /* NSManagedObject+Extensions.swift in Sources */,
 				2F6C707B293E60CA0091FC52 /* Week+Extensions.swift in Sources */,
@@ -970,7 +970,7 @@
 		};
 		2FDBB2B5293E591F00A8A2BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2FDBB2A5293E591E00A8A2BF /* LockscreenWidgets Extension */;
+			target = 2FDBB2A5293E591E00A8A2BF /* FastTrack Widgets */;
 			targetProxy = 2FDBB2B4293E591F00A8A2BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1091,15 +1091,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CortexOfFasting/CortexOfFasting.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "FastTrack iOS App/FastTrack iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_ASSET_PATHS = "\"CortexOfFasting/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "FastTrack\\ iOS\\ App/Preview\\ Content";
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CortexOfFasting/Info.plist;
+				INFOPLIST_FILE = "FastTrack iOS App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = FastTrack;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1135,15 +1135,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CortexOfFasting/CortexOfFasting.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "FastTrack iOS App/FastTrack iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_ASSET_PATHS = "\"CortexOfFasting/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "FastTrack\\ iOS\\ App/Preview\\ Content";
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CortexOfFasting/Info.plist;
+				INFOPLIST_FILE = "FastTrack iOS App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = FastTrack;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1185,7 +1185,7 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FastTrack-Watch-App-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FastTrack;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.neurothrone.CortexOfFasting;
@@ -1217,7 +1217,7 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FastTrack-Watch-App-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FastTrack;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.neurothrone.CortexOfFasting;
@@ -1243,7 +1243,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack_Mac_App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1272,7 +1272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack_Mac_App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1301,13 +1301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Lockscreen Widgets/LockscreenWidgets Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Widgets/FastTrack Widgets.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lockscreen Widgets/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Lockscreen Widgets";
+				INFOPLIST_FILE = "FastTrack Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FastTrack Widgets";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1316,7 +1316,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.CortexOfFasting.Lockscreen-Widgets";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.CortexOfFasting.FastTrackWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1331,13 +1331,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Lockscreen Widgets/LockscreenWidgets Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Widgets/FastTrack Widgets.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lockscreen Widgets/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Lockscreen Widgets";
+				INFOPLIST_FILE = "FastTrack Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FastTrack Widgets";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1346,7 +1346,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.CortexOfFasting.Lockscreen-Widgets";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.CortexOfFasting.FastTrackWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1369,7 +1369,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F1007D7291A00C9004CE72E /* Build configuration list for PBXNativeTarget "CortexOfFasting" */ = {
+		2F1007D7291A00C9004CE72E /* Build configuration list for PBXNativeTarget "FastTrack iOS App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F1007D8291A00C9004CE72E /* Debug */,
@@ -1396,7 +1396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FDBB2B7293E591F00A8A2BF /* Build configuration list for PBXNativeTarget "LockscreenWidgets Extension" */ = {
+		2FDBB2B7293E591F00A8A2BF /* Build configuration list for PBXNativeTarget "FastTrack Widgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FDBB2B8293E591F00A8A2BF /* Debug */,

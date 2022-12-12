@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct SetWeeklyGoalView: View {
+  @AppStorage(
+    Constants.AppStorage.weeklyFastingHoursGoal,
+    store: UserDefaults(suiteName: CKConfig.sharedAppGroup)
+  )
+  private var weeklyHoursGoal: WeeklyFastingHoursGoal = .easy
+  
   var body: some View {
     Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
   }

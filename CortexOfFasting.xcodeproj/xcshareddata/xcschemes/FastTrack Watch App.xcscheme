@@ -30,7 +30,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F1007C7291A00C8004CE72E"
                BuildableName = "FastTrack.app"
-               BlueprintName = "CortexOfFasting"
+               BlueprintName = "FastTrack iOS App"
                ReferencedContainer = "container:CortexOfFasting.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -1,11 +1,9 @@
 //
 //  ProgressMeterView.swift
-//  CortexOfFasting
+//  FastTrack Watch App
 //
 //  Created by Zaid Neurothrone on 2022-12-04.
 //
-
-import SwiftUI
 
 import SwiftUI
 

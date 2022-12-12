@@ -1,6 +1,6 @@
 //
-//  LockscreenWidgets.swift
-//  Lockscreen Widgets
+//  FastTrackWidgets.swift
+//  FastTrack Widgets
 //
 //  Created by Zaid Neurothrone on 2022-12-05.
 //
