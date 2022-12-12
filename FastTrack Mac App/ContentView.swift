@@ -14,12 +14,8 @@ struct ContentView: View {
   var body: some View {
     NavigationSplitView {
       List(selection: $selectedScreen) {
-        Section {
-          ForEach(Screen.allCases.filter { $0 != .settings }) { screen in
-            Label(screen.rawValue, systemImage: screen.systemImage)
-          }
-        } header: {
-          Text("Views")
+        ForEach(Screen.allForMac) { screen in
+          Label(screen.rawValue, systemImage: screen.systemImage)
         }
       }
       .frame(width: 150)

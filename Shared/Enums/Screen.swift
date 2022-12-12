@@ -55,4 +55,10 @@ extension Screen: Identifiable, CaseIterable {
     }
   }
 #endif
+  
+#if os(macOS)
+  static var allForMac: [Screen] {
+    Screen.allCases.filter { $0 != .settings }
+  }
+#endif
 }
