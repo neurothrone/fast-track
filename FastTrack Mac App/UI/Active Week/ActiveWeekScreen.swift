@@ -21,14 +21,14 @@ struct ActiveWeekScreen: View {
   var body: some View {
     content
       .toolbar {
-        Button(action: {}) { // addManualLog
+        Button(action: {}) { // TODO: addManualLog
           Label("Add Manual Log", systemImage: "plus")
         }
         
-        Button(role: .destructive, action: {}) { // deleteSelected
+        Button(role: .destructive, action: deleteSelected) {
           Label("Delete", systemImage: "trash")
         }
-        .keyboardShortcut(.delete)
+        .keyboardShortcut(.delete, modifiers: [])
         .disabled(selectedLog == nil)
       }
   }
@@ -48,6 +48,11 @@ struct ActiveWeekScreen: View {
               .alignmentGuide(.listRowSeparatorLeading) { viewDimensions in
                 return .zero
               }
+              .contextMenu {
+                Button("Delete", role: .destructive) {
+                  log.delete(using: viewContext)
+                }
+              }
               .tag(log)
           }
         }
@@ -59,9 +64,16 @@ struct ActiveWeekScreen: View {
   }
 }
 
+extension ActiveWeekScreen {
+  private func deleteSelected() {
+    if let selectedLog {
+      selectedLog.delete(using: viewContext)
+    }
+  }
+}
+
 struct ActiveWeekScreen_Previews: PreviewProvider {
   static var previews: some View {
     ActiveWeekScreen()
-//      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }
