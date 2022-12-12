@@ -34,7 +34,7 @@ struct SettingsScreen: View {
             Label("About", systemImage: "info.circle")
           }
         } label: {
-          Image(systemName: "ellipsis.circle.fill")
+          Image(systemName: "ellipsis.circle")
         }
       }
   }
@@ -49,7 +49,7 @@ struct SettingsScreen: View {
           }
         } label: {
           Text("Date picker display mode")
-            .foregroundColor(.white)
+            .foregroundColor(.mint)
         }
         .pickerStyle(.menu)
       } header: {
