@@ -134,6 +134,7 @@
 		2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
 		2F9C12D92946C025008440EE /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879E292527F2008E889C /* ActiveLogView.swift */; };
 		2F9C12DB2946C594008440EE /* ActiveLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */; };
+		2F9C12DD2946CDD3008440EE /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
@@ -257,6 +258,7 @@
 		2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSectionedListRowView.swift; sourceTree = "<group>"; };
 		2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSectionedListView.swift; sourceTree = "<group>"; };
 		2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogSectionView.swift; sourceTree = "<group>"; };
+		2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 			isa = PBXGroup;
 			children = (
 				2F8D2A7729410737002AA901 /* AppMain.swift */,
+				2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */,
 				2F8D2A7929410737002AA901 /* ContentView.swift */,
 				2F8D2B9129443549002AA901 /* UI */,
 				2F8D2A922941452F002AA901 /* Credits.rtf */,
@@ -918,6 +921,7 @@
 				2F9C12CC2945BD2F008440EE /* LogListRowView.swift in Sources */,
 				2F8D2A872941202B002AA901 /* AllWeeksScreen.swift in Sources */,
 				2F8D2B9329443693002AA901 /* CoreDataProvider+Extensions.swift in Sources */,
+				2F9C12DD2946CDD3008440EE /* MenuBarExtraView.swift in Sources */,
 				2F8D2B9B294436A8002AA901 /* URL+Extensions.swift in Sources */,
 				2F8D2B9529443693002AA901 /* CoreDataProvider.swift in Sources */,
 				2F8D2B9A29443699002AA901 /* FastLog+Extensions.swift in Sources */,

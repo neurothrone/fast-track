@@ -8,13 +8,20 @@
 import SwiftUI
 
 @main
-struct AppMain: App {
+struct AppMain: App {  
+  private let coreDataProvider: CoreDataProvider = .shared
+  
   var body: some Scene {
     Window("FastTrack", id: "main") {
       ContentView()
-        .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
+        .environment(\.managedObjectContext, coreDataProvider.viewContext)
         .onAppear {
           NSWindow.allowsAutomaticWindowTabbing = false
+        }
+        .onReceive(NotificationCenter.default.publisher(
+          for: NSApplication.willTerminateNotification)
+        ) { _ in
+          CoreDataProvider.save(using: coreDataProvider.viewContext)
         }
     }
     .windowResizability(.contentSize)
@@ -24,13 +31,13 @@ struct AppMain: App {
       CommandGroup(replacing: .pasteboard, addition: {})
     }
 
-    MenuBarExtra("FastTrack", systemImage: "fork.knife.circle.fill") {
-      VStack {
-        Button("Start Fasting", action: {})
-        Button("Add Manual Log", action: {})
-      }
+    MenuBarExtra {
+      MenuBarExtraView()
+        .environment(\.managedObjectContext, coreDataProvider.viewContext)
+    } label: {
+      Label("FastTrack", systemImage: "fork.knife")
     }
-    .menuBarExtraStyle(.menu)
+    .menuBarExtraStyle(.window)
     
     Settings(content: SettingsView.init)
   }
