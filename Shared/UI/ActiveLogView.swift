@@ -13,6 +13,11 @@ struct ActiveLogView: View {
   @State private var startTime: Date = .now
   @State private var currentTime: Date = .now
   
+#if os(macOS)
+  // Used to selectively reload the view to refresh duration
+  @State private var id = UUID()
+#endif
+  
   private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
   
   private var duration: TimeInterval {
@@ -22,10 +27,18 @@ struct ActiveLogView: View {
   var body: some View {
     content
       .onAppear {
-        startTime = log.startedDate
+        startTime = log.isFault ? .now : log.startedDate
         currentTime = .now
       }
       .onReceive(timer) { newTime in
+#if os(macOS)
+        // Only if window is visible
+        if NSApp.keyWindow?.isVisible == true {
+          // That’s enough to trigger our body being reloaded.
+          id = UUID()
+        }
+#endif
+        
         currentTime = newTime
       }
   }
@@ -66,6 +79,8 @@ struct ActiveLogView: View {
           RoundedRectangle(cornerRadius: 20, style: .continuous)
             .fill(.mint.opacity(0.5))
         )
+      // That’s enough to tell SwiftUI the Text view has changed, which in turn means it will reload our entire view, but it doesn’t have any effect on the rest of our project.
+        .id(id)
     }
     .frame(maxWidth: .infinity, alignment: .center)
 #elseif os(watchOS)
