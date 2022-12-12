@@ -40,12 +40,12 @@ extension Screen: Identifiable, CaseIterable {
   }
 
 #if os(iOS)
-  func view(withLinearBackground: Bool = true) -> some View {
+  func view(withLinearBackground: Bool = true, colorScheme: ColorScheme = .dark) -> some View {
     NavigationStack {
       Group {
         if withLinearBackground {
           self.screen
-            .linearBackground()
+            .linearBackground(colorScheme: colorScheme)
         } else {
           self.screen
         }
