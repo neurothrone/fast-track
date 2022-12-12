@@ -30,6 +30,7 @@ struct ActiveLogView: View {
       }
   }
   
+  @ViewBuilder
   private var content: some View {
 #if os(iOS)
     HStack {
@@ -49,6 +50,24 @@ struct ActiveLogView: View {
         )
     }
     .frame(maxWidth: .infinity, alignment: .center)
+#elseif os(macOS)
+    HStack {
+      Text(log.isFault ? "Unknown" : log.startedDate.inReadableFormat)
+      
+      Spacer()
+      
+      Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
+        .font(.title3.bold())
+        .padding(.vertical, 5)
+        .padding(.horizontal, 10)
+        .background(.ultraThickMaterial)
+        .cornerRadius(20)
+        .background(
+          RoundedRectangle(cornerRadius: 20, style: .continuous)
+            .fill(.mint.opacity(0.5))
+        )
+    }
+    .frame(maxWidth: .infinity, alignment: .center)
 #elseif os(watchOS)
     Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
       .font(.title3.bold())
@@ -60,31 +79,6 @@ struct ActiveLogView: View {
       )
       .frame(maxWidth: .infinity, alignment: .center)
 #endif
-    
-//    HStack {
-//      Text(log.isFault ? "Unknown" : log.startedDate.inReadableFormat)
-//      Group {
-//#if os(iOS)
-//        Spacer()
-//
-//        Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
-//          .font(.title3.bold())
-//          .padding()
-//          .frame(width: 140)
-//          .background(.ultraThickMaterial)
-//          .cornerRadius(20)
-//#elseif os(watchOS)
-//        Text(log.isFault ? "Unknown" :  log.startedDate.duration(to: currentTime).inHoursAndMinutesDigitalClockStyle)
-//          .font(.title3.bold())
-//          .padding()
-//          .frame(maxWidth: .infinity, alignment: .center)
-//#endif
-//      }
-//      .background(
-//        RoundedRectangle(cornerRadius: 20, style: .continuous)
-//          .fill(.mint.opacity(0.5))
-//      )
-//    }
   }
 }
 
