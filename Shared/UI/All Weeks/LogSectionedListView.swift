@@ -21,10 +21,9 @@ struct LogSectionedListView: View {
 #endif
         } else {
           ForEach(logsPerWeek) { logsInWeek in
-            NavigationLink {
 #if os(iOS)
+            NavigationLink {
               WeekDetailScreen(logs: logsInWeek)
-#endif
             } label: {
               LogSectionedListRowView(
                 yearWeekLabel: logsInWeek.id,
@@ -32,9 +31,13 @@ struct LogSectionedListView: View {
                   in: Array(logsInWeek))
               )
             }
-#if os(iOS)
             .listRowBackground(Color.black)
 #elseif os(macOS)
+            LogSectionedListRowView(
+              yearWeekLabel: logsInWeek.id,
+              totalFastedStateDuration: FastLog.totalFastedStateDurationToHours(
+                in: Array(logsInWeek))
+            )
             .listRowSeparator(.visible)
             .listRowSeparatorTint(.white.opacity(0.2), edges: .all)
             .alignmentGuide(.listRowSeparatorLeading) { viewDimensions in
