@@ -16,8 +16,27 @@ struct ActiveWeekScreen: View {
   )
   private var fastLogs: FetchedResults<FastLog>
   
+  @State private var selectedLog: FastLog?
+  
   var body: some View {
-    List {
+    content
+      .toolbar {
+        Button(action: {}) { // addManualLog
+          Label("Add Manual Log", systemImage: "plus")
+        }
+        
+        Button(role: .destructive, action: {}) { // deleteSelected
+          Label("Delete", systemImage: "trash")
+        }
+        .keyboardShortcut(.delete)
+        .disabled(selectedLog == nil)
+      }
+  }
+  
+  private var content: some View {
+    List(selection: $selectedLog) {
+      ActiveLogSectionView()
+      
       Section {
         if fastLogs.isEmpty {
           Text("No logs in active week yet.")
@@ -29,6 +48,7 @@ struct ActiveWeekScreen: View {
               .alignmentGuide(.listRowSeparatorLeading) { viewDimensions in
                 return .zero
               }
+              .tag(log)
           }
         }
       } header: {
@@ -42,6 +62,6 @@ struct ActiveWeekScreen: View {
 struct ActiveWeekScreen_Previews: PreviewProvider {
   static var previews: some View {
     ActiveWeekScreen()
-      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }

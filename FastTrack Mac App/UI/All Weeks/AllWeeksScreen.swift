@@ -25,6 +25,6 @@ struct AllWeeksScreen: View {
 struct AllWeeksScreen_Previews: PreviewProvider {
   static var previews: some View {
     AllWeeksScreen()
-      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }
