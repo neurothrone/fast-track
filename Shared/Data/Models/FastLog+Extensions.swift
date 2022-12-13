@@ -147,6 +147,22 @@ extension FastLog {
     section[index].delete(using: context)
   }
   
+  static func deleteAll(
+    at section: SectionedFetchResults<String, FastLog>.Element,
+    using context: NSManagedObjectContext
+  ) {
+    section.forEach { log in
+      context.delete(log)
+    }
+    
+    do {
+      try context.save()
+    } catch {
+      context.rollback()
+      print("❌ -> Failed to delete Log on \(#function).")
+    }
+  }
+  
   static func deleteAll(using context: NSManagedObjectContext) {
     let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: FastLog.self))
     let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
