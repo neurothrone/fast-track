@@ -17,19 +17,21 @@ struct ActiveWeekScreen: View {
   private var fastLogs: FetchedResults<FastLog>
   
   @State private var selectedLog: FastLog?
+  @State private var isAddManualLogSheetPresented = false
   
   var body: some View {
     content
+      .sheet(isPresented: $isAddManualLogSheetPresented) {
+        AddManualLogSheet()
+      }
       .toolbar {
-        Button(action: {}) { // TODO: addManualLog
+        Button {
+          isAddManualLogSheetPresented.toggle()
+        } label: {
           Label("Add Manual Log", systemImage: "plus")
         }
         
-        Button(role: .destructive, action: deleteSelected) {
-          Label("Delete", systemImage: "trash")
-        }
-        .keyboardShortcut(.delete, modifiers: [])
-        .disabled(selectedLog == nil)
+        DeleteButtonView(selectedLog: $selectedLog)
       }
   }
   
@@ -61,14 +63,6 @@ struct ActiveWeekScreen: View {
       }
     }
     .listStyle(.plain)
-  }
-}
-
-extension ActiveWeekScreen {
-  private func deleteSelected() {
-    if let selectedLog {
-      selectedLog.delete(using: viewContext)
-    }
   }
 }
 
