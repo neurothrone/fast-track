@@ -11,8 +11,8 @@ struct CKConfig {
   private init() {}
   
   static let containerName = "Entities"
-  static let sharedAppGroup = "group.cortexOfFasting"
-  static let cloudContainerID = "iCloud.cortexOfFasting"
+  static let sharedAppGroup = "group.fastTrack"
+  static let cloudContainerID = "iCloud.fastTrack"
 }
 
 enum Constants {
