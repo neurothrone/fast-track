@@ -28,6 +28,28 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F0AA8B8294B1A8600413753"
+               BuildableName = "FastTrackTests.xctest"
+               BlueprintName = "FastTrackTests"
+               ReferencedContainer = "container:FastTrack.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F0AA8C5294B1A8D00413753"
+               BuildableName = "FastTrackUITests.xctest"
+               BlueprintName = "FastTrackUITests"
+               ReferencedContainer = "container:FastTrack.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
