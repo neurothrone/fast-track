@@ -93,8 +93,7 @@ struct SimpleEntry: TimelineEntry {
 
 struct LogEntry: TimelineEntry {
   var date: Date = .init()
-  var hasActiveLog = false
-  var log: FastLog = .init()
+  var log: FastLog
 }
 
 struct Lockscreen_WidgetsEntryView : View {
