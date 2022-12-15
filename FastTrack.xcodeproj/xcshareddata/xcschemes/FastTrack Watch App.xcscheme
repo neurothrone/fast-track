@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F8D2A7429410737002AA901"
-               BuildableName = "FastTrack Mac App.app"
-               BlueprintName = "FastTrack Mac App"
-               ReferencedContainer = "container:CortexOfFasting.xcodeproj">
+               BlueprintIdentifier = "2F8D29FE293FF743002AA901"
+               BuildableName = "FastTrack Watch App.app"
+               BlueprintName = "FastTrack Watch App"
+               ReferencedContainer = "container:FastTrack.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F1007C7291A00C8004CE72E"
+               BuildableName = "FastTrack.app"
+               BlueprintName = "FastTrack iOS App"
+               ReferencedContainer = "container:FastTrack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +58,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F8D2A7429410737002AA901"
-            BuildableName = "FastTrack Mac App.app"
-            BlueprintName = "FastTrack Mac App"
-            ReferencedContainer = "container:CortexOfFasting.xcodeproj">
+            BlueprintIdentifier = "2F8D29FE293FF743002AA901"
+            BuildableName = "FastTrack Watch App.app"
+            BlueprintName = "FastTrack Watch App"
+            ReferencedContainer = "container:FastTrack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F8D2A7429410737002AA901"
-            BuildableName = "FastTrack Mac App.app"
-            BlueprintName = "FastTrack Mac App"
-            ReferencedContainer = "container:CortexOfFasting.xcodeproj">
+            BlueprintIdentifier = "2F8D29FE293FF743002AA901"
+            BuildableName = "FastTrack Watch App.app"
+            BlueprintName = "FastTrack Watch App"
+            ReferencedContainer = "container:FastTrack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
