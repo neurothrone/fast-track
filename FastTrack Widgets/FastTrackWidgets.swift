@@ -8,6 +8,15 @@
 import WidgetKit
 import SwiftUI
 
+struct SimpleEntry: TimelineEntry {
+  let date: Date
+}
+
+struct LogEntry: TimelineEntry {
+  var date: Date = .init()
+  var log: FastLog
+}
+
 struct Provider: TimelineProvider {
   func placeholder(in context: Context) -> SimpleEntry {
     SimpleEntry(date: Date())
@@ -87,15 +96,6 @@ struct Provider: TimelineProvider {
 //  }
 }
 
-struct SimpleEntry: TimelineEntry {
-  let date: Date
-}
-
-struct LogEntry: TimelineEntry {
-  var date: Date = .init()
-  var log: FastLog
-}
-
 struct Lockscreen_WidgetsEntryView : View {
   @Environment(\.managedObjectContext) private var moc
   @Environment(\.widgetFamily) var widgetFamily
@@ -111,12 +111,6 @@ struct Lockscreen_WidgetsEntryView : View {
     animation: .default
   )
   private var completeLogs: FetchedResults<FastLog>
-  
-//  @FetchRequest(
-//    fetchRequest: Week.activeWeekRequest(),
-//    animation: .default
-//  )
-//  private var activeWeeks: FetchedResults<Week>
 
   var entry: Provider.Entry
   
@@ -221,25 +215,25 @@ struct Lockscreen_Widgets_Previews: PreviewProvider {
         .previewDisplayName("System Small")
         .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
       
-      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
-        .previewContext(WidgetPreviewContext(family: .systemMedium))
-        .previewDisplayName("System Medium")
-        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-      
-      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
-        .previewContext(WidgetPreviewContext(family: .accessoryInline))
-        .previewDisplayName("Inline")
-        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-      
-      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
-        .previewContext(WidgetPreviewContext(family: .accessoryCircular))
-        .previewDisplayName("Circular")
-        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-      
-      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
-        .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
-        .previewDisplayName("Rectangular")
-        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
-    }
+//      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
+//        .previewContext(WidgetPreviewContext(family: .systemMedium))
+//        .previewDisplayName("System Medium")
+//        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      
+//      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
+//        .previewContext(WidgetPreviewContext(family: .accessoryInline))
+//        .previewDisplayName("Inline")
+//        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      
+//      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
+//        .previewContext(WidgetPreviewContext(family: .accessoryCircular))
+//        .previewDisplayName("Circular")
+//        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//      
+//      Lockscreen_WidgetsEntryView(entry: SimpleEntry(date: Date()))
+//        .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+//        .previewDisplayName("Rectangular")
+//        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+//    }
   }
 }

@@ -34,6 +34,30 @@
 		2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100817291BD0E2004CE72E /* ProgressMeterView.swift */; };
 		2F10081A291BF084004CE72E /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
 		2F10081C291BF760004CE72E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
+		2F2D1058294D857400A09971 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2A8293E591E00A8A2BF /* WidgetKit.framework */; };
+		2F2D1059294D857400A09971 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */; };
+		2F2D105C294D857400A09971 /* FastTrackWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */; };
+		2F2D105E294D857400A09971 /* FastTrackWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D105D294D857400A09971 /* FastTrackWidget.swift */; };
+		2F2D1060294D857500A09971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2D105F294D857500A09971 /* Assets.xcassets */; };
+		2F2D1064294D857500A09971 /* FastTrack Widget Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F2D1069294D899100A09971 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
+		2F2D106A294D89AC00A09971 /* WeeklyFastingHoursGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */; };
+		2F2D106B294D8A8600A09971 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
+		2F2D106C294D8A8600A09971 /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
+		2F2D106D294D8A8600A09971 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100803291A10CB004CE72E /* NSManagedObject+Extensions.swift */; };
+		2F2D106E294D8A8800A09971 /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
+		2F2D106F294D8A8D00A09971 /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
+		2F2D1070294D8A8D00A09971 /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
+		2F2D1071294D8A8D00A09971 /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
+		2F2D1072294D8A8D00A09971 /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
+		2F2D1073294D8A9E00A09971 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
+		2F2D1074294D8AA100A09971 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
+		2F2D1075294D8AA600A09971 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
+		2F2D1076294D8AA600A09971 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
+		2F2D1077294D8AA600A09971 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
+		2F2D1078294D8AA600A09971 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
+		2F2D1079294D8AA600A09971 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
+		2F2D107E294D8CD600A09971 /* WidgetProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D107D294D8CD600A09971 /* WidgetProgressMeterView.swift */; };
 		2F7B8743291CC9B0008E889C /* CustomSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */; };
 		2F7B8773291E4AF0008E889C /* SwipeableLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */; };
 		2F7B8775291E4B74008E889C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
@@ -81,49 +105,52 @@
 		2F8D2A392940204B002AA901 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007CB291A00C8004CE72E /* AppMain.swift */; };
 		2F8D2A3A29402294002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
 		2F8D2A4029410410002AA901 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
-		2F8D2A7829410737002AA901 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7729410737002AA901 /* AppMain.swift */; };
-		2F8D2A7A29410737002AA901 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7929410737002AA901 /* ContentView.swift */; };
-		2F8D2A7F29410738002AA901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7E29410738002AA901 /* Preview Assets.xcassets */; };
-		2F8D2A8529412026002AA901 /* ActiveWeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */; };
-		2F8D2A872941202B002AA901 /* AllWeeksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A862941202B002AA901 /* AllWeeksScreen.swift */; };
-		2F8D2A8929412032002AA901 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A8829412032002AA901 /* SettingsScreen.swift */; };
-		2F8D2A91294144E3002AA901 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A90294144E3002AA901 /* SettingsView.swift */; };
-		2F8D2A932941452F002AA901 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2A922941452F002AA901 /* Credits.rtf */; };
-		2F8D2B8B294432BC002AA901 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
-		2F8D2B8D29443525002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
-		2F8D2B9329443693002AA901 /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
-		2F8D2B9429443693002AA901 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100803291A10CB004CE72E /* NSManagedObject+Extensions.swift */; };
-		2F8D2B9529443693002AA901 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
-		2F8D2B9629443695002AA901 /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
-		2F8D2B9729443699002AA901 /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
-		2F8D2B9829443699002AA901 /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
-		2F8D2B9929443699002AA901 /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
-		2F8D2B9A29443699002AA901 /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
-		2F8D2B9B294436A8002AA901 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
-		2F8D2B9C294436AF002AA901 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
-		2F8D2B9D294436AF002AA901 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
-		2F8D2B9E294436AF002AA901 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
-		2F8D2B9F294436AF002AA901 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
-		2F8D2BA0294436AF002AA901 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
-		2F8D2BA1294436AF002AA901 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
-		2F8D2BA2294436D3002AA901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
-		2F9C12CC2945BD2F008440EE /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* LogListRowView.swift */; };
-		2F9C12CD2945BD52008440EE /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2F9C12CF2945C199008440EE /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
-		2F9C12D02945C199008440EE /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
 		2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
-		2F9C12D42945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
-		2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
-		2F9C12D92946C025008440EE /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879E292527F2008E889C /* ActiveLogView.swift */; };
-		2F9C12DB2946C594008440EE /* ActiveLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */; };
-		2F9C12DD2946CDD3008440EE /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */; };
 		2F9C12DF2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DE2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift */; };
 		2F9C12E12947189A008440EE /* ColumnAppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12E02947189A008440EE /* ColumnAppStorage.swift */; };
-		2F9C1300294724C1008440EE /* AddManualLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12FF294724C1008440EE /* AddManualLogSheet.swift */; };
-		2F9C130229472B20008440EE /* OptimalNavigationSplitViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */; };
-		2F9C13EB29487328008440EE /* DeleteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C13EA29487328008440EE /* DeleteButtonView.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
+		2FBDE30F295074F0000A7232 /* CloudUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */; };
+		2FBDE311295074F0000A7232 /* CloudUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */; };
+		2FBDE32629508027000A7232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
+		2FBDE327295081A1000A7232 /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */; };
+		2FBDE328295081A1000A7232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7929410737002AA901 /* ContentView.swift */; };
+		2FBDE329295081A1000A7232 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7729410737002AA901 /* AppMain.swift */; };
+		2FBDE32A295081A1000A7232 /* OptimalNavigationSplitViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */; };
+		2FBDE32B295081AC000A7232 /* DeleteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C13EA29487328008440EE /* DeleteButtonView.swift */; };
+		2FBDE32C295081AC000A7232 /* ActiveLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */; };
+		2FBDE32D295081AC000A7232 /* ActiveWeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */; };
+		2FBDE32E295081AC000A7232 /* AllWeeksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A862941202B002AA901 /* AllWeeksScreen.swift */; };
+		2FBDE32F295081AC000A7232 /* AddManualLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12FF294724C1008440EE /* AddManualLogSheet.swift */; };
+		2FBDE330295081AF000A7232 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A8829412032002AA901 /* SettingsScreen.swift */; };
+		2FBDE331295081AF000A7232 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A90294144E3002AA901 /* SettingsView.swift */; };
+		2FBDE332295081BC000A7232 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
+		2FBDE333295081BC000A7232 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100803291A10CB004CE72E /* NSManagedObject+Extensions.swift */; };
+		2FBDE334295081BC000A7232 /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
+		2FBDE335295081BF000A7232 /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
+		2FBDE336295081C2000A7232 /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
+		2FBDE337295081C2000A7232 /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
+		2FBDE338295081C2000A7232 /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
+		2FBDE339295081C2000A7232 /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
+		2FBDE33A295081CC000A7232 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
+		2FBDE33B295081CC000A7232 /* WeeklyFastingHoursGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */; };
+		2FBDE33C295081D3000A7232 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
+		2FBDE33D295081D3000A7232 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
+		2FBDE33E295081D3000A7232 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
+		2FBDE33F295081D3000A7232 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
+		2FBDE340295081D3000A7232 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
+		2FBDE341295081D9000A7232 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
+		2FBDE342295081D9000A7232 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
+		2FBDE343295081F2000A7232 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
+		2FBDE34429508208000A7232 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
+		2FBDE34529508208000A7232 /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100817291BD0E2004CE72E /* ProgressMeterView.swift */; };
+		2FBDE34629508217000A7232 /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879E292527F2008E889C /* ActiveLogView.swift */; };
+		2FBDE34729508220000A7232 /* CloudUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */; };
+		2FBDE3482950822B000A7232 /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
+		2FBDE3492950822B000A7232 /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
+		2FBDE34A29508231000A7232 /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* LogListRowView.swift */; };
+		2FBDE34B29508287000A7232 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2A922941452F002AA901 /* Credits.rtf */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
 		2FDBB253293A6BA600A8A2BF /* Week+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */; };
 		2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
@@ -145,6 +172,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2F1007C7291A00C8004CE72E;
 			remoteInfo = "FastTrack iOS App";
+		};
+		2F2D1062294D857500A09971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F1007C0291A00C8004CE72E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F2D1056294D857400A09971;
+			remoteInfo = "FastTrack Widget ExtensionExtension";
 		};
 		2F8D2A0A293FF744002AA901 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -173,6 +207,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				2F2D1064294D857500A09971 /* FastTrack Widget Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +247,13 @@
 		2F100819291BF084004CE72E /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		2F10081B291BF760004CE72E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		2F2009D1293E79FA0089EDBE /* FastTrack Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Widgets.entitlements"; sourceTree = "<group>"; };
+		2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FastTrack Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidgetExtensionBundle.swift; sourceTree = "<group>"; };
+		2F2D105D294D857400A09971 /* FastTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidget.swift; sourceTree = "<group>"; };
+		2F2D105F294D857500A09971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F2D1061294D857500A09971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F2D1068294D86CE00A09971 /* FastTrack Widget Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Widget Extension.entitlements"; sourceTree = "<group>"; };
+		2F2D107D294D8CD600A09971 /* WidgetProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProgressMeterView.swift; sourceTree = "<group>"; };
 		2F78B8822939FDCC0041427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeView.swift; sourceTree = "<group>"; };
 		2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLogView.swift; sourceTree = "<group>"; };
@@ -238,11 +280,9 @@
 		2F8D2A19294011C6002AA901 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		2F8D2A3729401F82002AA901 /* FastTrack Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Watch App.entitlements"; sourceTree = "<group>"; };
 		2F8D2A3829401F85002AA901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
-		2F8D2A7529410737002AA901 /* FastTrack Mac App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastTrack Mac App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8D2A7729410737002AA901 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F8D2A7929410737002AA901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F8D2A7E29410738002AA901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2F8D2A8029410738002AA901 /* FastTrack macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack macOS.entitlements"; sourceTree = "<group>"; };
 		2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWeekScreen.swift; sourceTree = "<group>"; };
 		2F8D2A862941202B002AA901 /* AllWeeksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWeeksScreen.swift; sourceTree = "<group>"; };
 		2F8D2A8829412032002AA901 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
@@ -259,6 +299,9 @@
 		2F9C13EA29487328008440EE /* DeleteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonView.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
+		2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudUserDefaults.swift; sourceTree = "<group>"; };
+		2FBDE31729507F80000A7232 /* FastTrack Mac App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastTrack Mac App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBDE32229507F80000A7232 /* FastTrack MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack MacOS.entitlements"; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
@@ -294,6 +337,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F2D1054294D857400A09971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2D1059294D857400A09971 /* SwiftUI.framework in Frameworks */,
+				2F2D1058294D857400A09971 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F8D29FC293FF743002AA901 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8D2A7229410737002AA901 /* Frameworks */ = {
+		2FBDE31429507F80000A7232 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,6 +387,7 @@
 				2F1007CA291A00C8004CE72E /* FastTrack iOS App */,
 				2F8D2A7629410737002AA901 /* FastTrack Mac App */,
 				2F8D2A00293FF743002AA901 /* FastTrack Watch App */,
+				2F2D105A294D857400A09971 /* FastTrack Widget Extension */,
 				2FDBB2AC293E591E00A8A2BF /* FastTrack Widgets */,
 				2F0AA8BA294B1A8600413753 /* FastTrackTests */,
 				2F0AA8C7294B1A8D00413753 /* FastTrackUITests */,
@@ -348,9 +401,10 @@
 			children = (
 				2F1007C8291A00C8004CE72E /* FastTrack.app */,
 				2F8D29FF293FF743002AA901 /* FastTrack Watch App.app */,
-				2F8D2A7529410737002AA901 /* FastTrack Mac App.app */,
 				2F0AA8B9294B1A8600413753 /* FastTrackTests.xctest */,
 				2F0AA8C6294B1A8D00413753 /* FastTrackUITests.xctest */,
+				2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */,
+				2FBDE31729507F80000A7232 /* FastTrack Mac App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -469,7 +523,6 @@
 		2F100816291BD0D7004CE72E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2F100817291BD0E2004CE72E /* ProgressMeterView.swift */,
 				2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */,
 				2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */,
 				2F7B877A291E4C37008E889C /* CustomLinkView.swift */,
@@ -481,11 +534,25 @@
 		2F2009D6293FBD270089EDBE /* Old */ = {
 			isa = PBXGroup;
 			children = (
+				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
+				2F8D2A19294011C6002AA901 /* WatchConnector.swift */,
 				2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */,
 				2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */,
-				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
 			);
 			path = Old;
+			sourceTree = "<group>";
+		};
+		2F2D105A294D857400A09971 /* FastTrack Widget Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */,
+				2F2D105D294D857400A09971 /* FastTrackWidget.swift */,
+				2F2D107D294D8CD600A09971 /* WidgetProgressMeterView.swift */,
+				2F2D105F294D857500A09971 /* Assets.xcassets */,
+				2F2D1061294D857500A09971 /* Info.plist */,
+				2F2D1068294D86CE00A09971 /* FastTrack Widget Extension.entitlements */,
+			);
+			path = "FastTrack Widget Extension";
 			sourceTree = "<group>";
 		};
 		2F7B8781291FBAD1008E889C /* Onboarding */ = {
@@ -530,11 +597,10 @@
 			children = (
 				2F8D2A7729410737002AA901 /* AppMain.swift */,
 				2F8D2A7929410737002AA901 /* ContentView.swift */,
-				2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */,
 				2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */,
+				2FBDE32229507F80000A7232 /* FastTrack MacOS.entitlements */,
 				2F8D2B9129443549002AA901 /* UI */,
 				2F8D2A922941452F002AA901 /* Credits.rtf */,
-				2F8D2A8029410738002AA901 /* FastTrack macOS.entitlements */,
 				2F8D2A7D29410738002AA901 /* Preview Content */,
 			);
 			path = "FastTrack Mac App";
@@ -578,6 +644,7 @@
 		2F8D2B9129443549002AA901 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2FBDE34C2950842B000A7232 /* Sandbox */,
 				2F9C13EA29487328008440EE /* DeleteButtonView.swift */,
 				2F8D2B8E2944353A002AA901 /* Active Week */,
 				2F8D2B8F2944353E002AA901 /* All Weeks */,
@@ -606,9 +673,18 @@
 		2F9C12D82945CE4B008440EE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2F100817291BD0E2004CE72E /* ProgressMeterView.swift */,
 				2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2FBDE34C2950842B000A7232 /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */,
+			);
+			path = Sandbox;
 			sourceTree = "<group>";
 		};
 		2FDBB1F3293A2ABD00A8A2BF /* Enums */ = {
@@ -625,7 +701,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1007CB291A00C8004CE72E /* AppMain.swift */,
-				2F8D2A19294011C6002AA901 /* WatchConnector.swift */,
+				2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F2009D6293FBD270089EDBE /* Old */,
@@ -724,11 +800,29 @@
 			);
 			dependencies = (
 				2F8D2A0B293FF744002AA901 /* PBXTargetDependency */,
+				2F2D1063294D857500A09971 /* PBXTargetDependency */,
 			);
 			name = "FastTrack iOS App";
 			productName = CortexOfFasting;
 			productReference = 2F1007C8291A00C8004CE72E /* FastTrack.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2F2D1056294D857400A09971 /* FastTrack Widget Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2D1067294D857500A09971 /* Build configuration list for PBXNativeTarget "FastTrack Widget Extension" */;
+			buildPhases = (
+				2F2D1053294D857400A09971 /* Sources */,
+				2F2D1054294D857400A09971 /* Frameworks */,
+				2F2D1055294D857400A09971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastTrack Widget Extension";
+			productName = "FastTrack Widget ExtensionExtension";
+			productReference = 2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		2F8D29FE293FF743002AA901 /* FastTrack Watch App */ = {
 			isa = PBXNativeTarget;
@@ -747,21 +841,21 @@
 			productReference = 2F8D29FF293FF743002AA901 /* FastTrack Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F8D2A7429410737002AA901 /* FastTrack Mac App */ = {
+		2FBDE31629507F80000A7232 /* FastTrack Mac App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F8D2A8129410738002AA901 /* Build configuration list for PBXNativeTarget "FastTrack Mac App" */;
+			buildConfigurationList = 2FBDE32329507F80000A7232 /* Build configuration list for PBXNativeTarget "FastTrack Mac App" */;
 			buildPhases = (
-				2F8D2A7129410737002AA901 /* Sources */,
-				2F8D2A7229410737002AA901 /* Frameworks */,
-				2F8D2A7329410737002AA901 /* Resources */,
+				2FBDE31329507F80000A7232 /* Sources */,
+				2FBDE31429507F80000A7232 /* Frameworks */,
+				2FBDE31529507F80000A7232 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "FastTrack Mac App";
-			productName = "FastTrack Mac App";
-			productReference = 2F8D2A7529410737002AA901 /* FastTrack Mac App.app */;
+			productName = FastTrack;
+			productReference = 2FBDE31729507F80000A7232 /* FastTrack Mac App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -771,7 +865,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					2F0AA8B8294B1A8600413753 = {
@@ -785,11 +879,14 @@
 					2F1007C7291A00C8004CE72E = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					2F2D1056294D857400A09971 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					2F8D29FE293FF743002AA901 = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					2F8D2A7429410737002AA901 = {
-						CreatedOnToolsVersion = 14.1;
+					2FBDE31629507F80000A7232 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -807,8 +904,9 @@
 			projectRoot = "";
 			targets = (
 				2F1007C7291A00C8004CE72E /* FastTrack iOS App */,
-				2F8D2A7429410737002AA901 /* FastTrack Mac App */,
+				2FBDE31629507F80000A7232 /* FastTrack Mac App */,
 				2F8D29FE293FF743002AA901 /* FastTrack Watch App */,
+				2F2D1056294D857400A09971 /* FastTrack Widget Extension */,
 				2F0AA8B8294B1A8600413753 /* FastTrackTests */,
 				2F0AA8C5294B1A8D00413753 /* FastTrackUITests */,
 			);
@@ -839,6 +937,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F2D1055294D857400A09971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2D1060294D857500A09971 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F8D29FD293FF743002AA901 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -848,13 +954,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8D2A7329410737002AA901 /* Resources */ = {
+		2FBDE31529507F80000A7232 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8D2A7F29410738002AA901 /* Preview Assets.xcassets in Resources */,
-				2F8D2B8D29443525002AA901 /* Assets.xcassets in Resources */,
-				2F8D2A932941452F002AA901 /* Credits.rtf in Resources */,
+				2FBDE32629508027000A7232 /* Assets.xcassets in Resources */,
+				2FBDE34B29508287000A7232 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +1025,7 @@
 				2F7B877D291FAA5B008E889C /* Double+Extensions.swift in Sources */,
 				2F1007DE291A0244004CE72E /* ActiveWeekScreen.swift in Sources */,
 				2F7B87A129253367008E889C /* LogListProgressMeterView.swift in Sources */,
+				2FBDE30F295074F0000A7232 /* CloudUserDefaults.swift in Sources */,
 				2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */,
 				2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */,
 				2F100808291A1D50004CE72E /* DateFormatter+Extensions.swift in Sources */,
@@ -935,6 +1041,33 @@
 				2F7B87BD2926D001008E889C /* WeeklyFastingHoursGoal.swift in Sources */,
 				2F1007E8291A02D6004CE72E /* CoreDataProvider+Extensions.swift in Sources */,
 				2F1007E6291A02D0004CE72E /* CoreDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2D1053294D857400A09971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2D106A294D89AC00A09971 /* WeeklyFastingHoursGoal.swift in Sources */,
+				2F2D1070294D8A8D00A09971 /* CustomErrors.swift in Sources */,
+				2F2D107E294D8CD600A09971 /* WidgetProgressMeterView.swift in Sources */,
+				2F2D106C294D8A8600A09971 /* CoreDataProvider+Extensions.swift in Sources */,
+				2F2D1074294D8AA100A09971 /* TimeInterval+Extensions.swift in Sources */,
+				2F2D106E294D8A8800A09971 /* Entities.xcdatamodeld in Sources */,
+				2F2D1073294D8A9E00A09971 /* URL+Extensions.swift in Sources */,
+				2F2D105E294D857400A09971 /* FastTrackWidget.swift in Sources */,
+				2F2D105C294D857400A09971 /* FastTrackWidgetExtensionBundle.swift in Sources */,
+				2F2D1078294D8AA600A09971 /* DateFormatter+Extensions.swift in Sources */,
+				2F2D1077294D8AA600A09971 /* Date+Extensions.swift in Sources */,
+				2F2D1076294D8AA600A09971 /* Double+Extensions.swift in Sources */,
+				2F2D106F294D8A8D00A09971 /* FastLog+Extensions.swift in Sources */,
+				2F2D1069294D899100A09971 /* Constants.swift in Sources */,
+				2F2D106B294D8A8600A09971 /* CoreDataProvider.swift in Sources */,
+				2F2D1079294D8AA600A09971 /* Calendar+Extensions.swift in Sources */,
+				2F2D1072294D8A8D00A09971 /* FastLog+Preview.swift in Sources */,
+				2F2D106D294D8A8600A09971 /* NSManagedObject+Extensions.swift in Sources */,
+				2F2D1071294D8A8D00A09971 /* FastLog+CoreDataClass.swift in Sources */,
+				2F2D1075294D8AA600A09971 /* Collection+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,6 +1094,7 @@
 				2F8D2A4029410410002AA901 /* AppState.swift in Sources */,
 				2F8D2A1C29401CB8002AA901 /* ProgressMeterView.swift in Sources */,
 				2F8D2A2729401D2C002AA901 /* SwipeableLogView.swift in Sources */,
+				2FBDE311295074F0000A7232 /* CloudUserDefaults.swift in Sources */,
 				2F8D2A2129401D05002AA901 /* CustomErrors.swift in Sources */,
 				2F8D2A2429401D05002AA901 /* FastLog+Preview.swift in Sources */,
 				2F8D2A3129401D75002AA901 /* Calendar+Extensions.swift in Sources */,
@@ -969,44 +1103,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8D2A7129410737002AA901 /* Sources */ = {
+		2FBDE31329507F80000A7232 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8D2B8B294432BC002AA901 /* Screen.swift in Sources */,
-				2F8D2B9729443699002AA901 /* CustomErrors.swift in Sources */,
-				2F8D2BA0294436AF002AA901 /* Collection+Extensions.swift in Sources */,
-				2F8D2B9929443699002AA901 /* FastLog+CoreDataClass.swift in Sources */,
-				2F8D2B9829443699002AA901 /* FastLog+Preview.swift in Sources */,
-				2F8D2B9F294436AF002AA901 /* Double+Extensions.swift in Sources */,
-				2F8D2BA2294436D3002AA901 /* Constants.swift in Sources */,
-				2F8D2B9629443695002AA901 /* Entities.xcdatamodeld in Sources */,
-				2F8D2A7A29410737002AA901 /* ContentView.swift in Sources */,
-				2F8D2A7829410737002AA901 /* AppMain.swift in Sources */,
-				2F9C12D62945C8C8008440EE /* View+Extensions.swift in Sources */,
-				2F9C130229472B20008440EE /* OptimalNavigationSplitViewSample.swift in Sources */,
-				2F8D2B9D294436AF002AA901 /* TimeInterval+Extensions.swift in Sources */,
-				2F8D2A8529412026002AA901 /* ActiveWeekScreen.swift in Sources */,
-				2F9C12D92946C025008440EE /* ActiveLogView.swift in Sources */,
-				2F8D2B9E294436AF002AA901 /* Date+Extensions.swift in Sources */,
-				2F9C12DB2946C594008440EE /* ActiveLogSectionView.swift in Sources */,
-				2F9C12D42945C7D7008440EE /* LogSectionedListView.swift in Sources */,
-				2F9C12D02945C199008440EE /* LogSectionedListRowView.swift in Sources */,
-				2F8D2B9429443693002AA901 /* NSManagedObject+Extensions.swift in Sources */,
-				2F8D2A91294144E3002AA901 /* SettingsView.swift in Sources */,
-				2F9C1300294724C1008440EE /* AddManualLogSheet.swift in Sources */,
-				2F8D2A8929412032002AA901 /* SettingsScreen.swift in Sources */,
-				2F9C12CC2945BD2F008440EE /* LogListRowView.swift in Sources */,
-				2F8D2A872941202B002AA901 /* AllWeeksScreen.swift in Sources */,
-				2F8D2B9329443693002AA901 /* CoreDataProvider+Extensions.swift in Sources */,
-				2F9C12DD2946CDD3008440EE /* MenuBarExtraView.swift in Sources */,
-				2F8D2B9B294436A8002AA901 /* URL+Extensions.swift in Sources */,
-				2F8D2B9529443693002AA901 /* CoreDataProvider.swift in Sources */,
-				2F8D2B9A29443699002AA901 /* FastLog+Extensions.swift in Sources */,
-				2F9C12CD2945BD52008440EE /* SectionHeaderView.swift in Sources */,
-				2F9C13EB29487328008440EE /* DeleteButtonView.swift in Sources */,
-				2F8D2B9C294436AF002AA901 /* DateFormatter+Extensions.swift in Sources */,
-				2F8D2BA1294436AF002AA901 /* Calendar+Extensions.swift in Sources */,
+				2FBDE32A295081A1000A7232 /* OptimalNavigationSplitViewSample.swift in Sources */,
+				2FBDE32D295081AC000A7232 /* ActiveWeekScreen.swift in Sources */,
+				2FBDE34529508208000A7232 /* ProgressMeterView.swift in Sources */,
+				2FBDE328295081A1000A7232 /* ContentView.swift in Sources */,
+				2FBDE34A29508231000A7232 /* LogListRowView.swift in Sources */,
+				2FBDE342295081D9000A7232 /* TimeInterval+Extensions.swift in Sources */,
+				2FBDE333295081BC000A7232 /* NSManagedObject+Extensions.swift in Sources */,
+				2FBDE343295081F2000A7232 /* Constants.swift in Sources */,
+				2FBDE34629508217000A7232 /* ActiveLogView.swift in Sources */,
+				2FBDE33F295081D3000A7232 /* Collection+Extensions.swift in Sources */,
+				2FBDE34429508208000A7232 /* SectionHeaderView.swift in Sources */,
+				2FBDE329295081A1000A7232 /* AppMain.swift in Sources */,
+				2FBDE335295081BF000A7232 /* Entities.xcdatamodeld in Sources */,
+				2FBDE33B295081CC000A7232 /* WeeklyFastingHoursGoal.swift in Sources */,
+				2FBDE334295081BC000A7232 /* CoreDataProvider+Extensions.swift in Sources */,
+				2FBDE337295081C2000A7232 /* FastLog+Extensions.swift in Sources */,
+				2FBDE339295081C2000A7232 /* CustomErrors.swift in Sources */,
+				2FBDE33D295081D3000A7232 /* Date+Extensions.swift in Sources */,
+				2FBDE32F295081AC000A7232 /* AddManualLogSheet.swift in Sources */,
+				2FBDE32C295081AC000A7232 /* ActiveLogSectionView.swift in Sources */,
+				2FBDE340295081D3000A7232 /* Double+Extensions.swift in Sources */,
+				2FBDE338295081C2000A7232 /* FastLog+CoreDataClass.swift in Sources */,
+				2FBDE327295081A1000A7232 /* MenuBarExtraView.swift in Sources */,
+				2FBDE32B295081AC000A7232 /* DeleteButtonView.swift in Sources */,
+				2FBDE34729508220000A7232 /* CloudUserDefaults.swift in Sources */,
+				2FBDE330295081AF000A7232 /* SettingsScreen.swift in Sources */,
+				2FBDE33E295081D3000A7232 /* Calendar+Extensions.swift in Sources */,
+				2FBDE33A295081CC000A7232 /* Screen.swift in Sources */,
+				2FBDE32E295081AC000A7232 /* AllWeeksScreen.swift in Sources */,
+				2FBDE341295081D9000A7232 /* URL+Extensions.swift in Sources */,
+				2FBDE3482950822B000A7232 /* LogSectionedListRowView.swift in Sources */,
+				2FBDE336295081C2000A7232 /* FastLog+Preview.swift in Sources */,
+				2FBDE331295081AF000A7232 /* SettingsView.swift in Sources */,
+				2FBDE33C295081D3000A7232 /* DateFormatter+Extensions.swift in Sources */,
+				2FBDE3492950822B000A7232 /* LogSectionedListView.swift in Sources */,
+				2FBDE332295081BC000A7232 /* CoreDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1022,6 +1158,11 @@
 			isa = PBXTargetDependency;
 			target = 2F1007C7291A00C8004CE72E /* FastTrack iOS App */;
 			targetProxy = 2F0AA8CC294B1A8D00413753 /* PBXContainerItemProxy */;
+		};
+		2F2D1063294D857500A09971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F2D1056294D857400A09971 /* FastTrack Widget Extension */;
+			targetProxy = 2F2D1062294D857500A09971 /* PBXContainerItemProxy */;
 		};
 		2F8D2A0B293FF744002AA901 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1314,6 +1455,67 @@
 			};
 			name = Release;
 		};
+		2F2D1065294D857500A09971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Widget Extension/FastTrack Widget Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FastTrack Widget Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FastTrack Widget Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.FastTrack.FastTrack-Widget-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F2D1066294D857500A09971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Widget Extension/FastTrack Widget Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FastTrack Widget Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FastTrack Widget Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.FastTrack.FastTrack-Widget-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		2F8D2A0E293FF744002AA901 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1379,16 +1581,17 @@
 			};
 			name = Release;
 		};
-		2F8D2A8229410738002AA901 /* Debug */ = {
+		2FBDE32429507F80000A7232 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack macOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack MacOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "FastTrack\\ Mac\\ App/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "\"FastTrack Mac App/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1400,26 +1603,28 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.FastTrack-Mac-App";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.FastTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		2F8D2A8329410738002AA901 /* Release */ = {
+		2FBDE32529507F80000A7232 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack macOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FastTrack Mac App/FastTrack MacOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "FastTrack\\ Mac\\ App/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "\"FastTrack Mac App/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1431,10 +1636,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.FastTrack-Mac-App";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neurothrone.FastTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1480,6 +1686,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2F2D1067294D857500A09971 /* Build configuration list for PBXNativeTarget "FastTrack Widget Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2D1065294D857500A09971 /* Debug */,
+				2F2D1066294D857500A09971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2F8D2A0D293FF744002AA901 /* Build configuration list for PBXNativeTarget "FastTrack Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1489,11 +1704,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F8D2A8129410738002AA901 /* Build configuration list for PBXNativeTarget "FastTrack Mac App" */ = {
+		2FBDE32329507F80000A7232 /* Build configuration list for PBXNativeTarget "FastTrack Mac App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F8D2A8229410738002AA901 /* Debug */,
-				2F8D2A8329410738002AA901 /* Release */,
+				2FBDE32429507F80000A7232 /* Debug */,
+				2FBDE32529507F80000A7232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
