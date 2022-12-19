@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+let isFirstTimeUsingAppKey = "isFirstTimeUsingAppKey"
 let weeklyGoalKey = "weeklyGoal"
 
 final class CloudUserDefaults: ObservableObject {
@@ -21,6 +22,15 @@ final class CloudUserDefaults: ObservableObject {
     }
   }
   
+  @AppStorage(isFirstTimeUsingAppKey) var isFirstTimeUsingApp: Bool = true {
+    willSet {
+      objectWillChange.send()
+    }
+    didSet {
+      NSUbiquitousKeyValueStore.default.set(isFirstTimeUsingApp, forKey: isFirstTimeUsingAppKey)
+    }
+  }
+  
   private var keyStore: NSUbiquitousKeyValueStore = .default
   
   private init() {}
@@ -28,7 +38,10 @@ final class CloudUserDefaults: ObservableObject {
   //MARK: - Setup
   
   func setUp() {
-    UserDefaults.standard.register(defaults: [weeklyGoalKey: WeeklyFastingHoursGoal.easy.rawValue])
+    UserDefaults.standard.register(defaults: [
+      isFirstTimeUsingAppKey: true,
+      weeklyGoalKey: WeeklyFastingHoursGoal.easy.rawValue
+    ])
     
     registerToEvents()
     
@@ -49,6 +62,7 @@ final class CloudUserDefaults: ObservableObject {
   
   func deleteAllSettings() {
     keyStore.removeObject(forKey: weeklyGoalKey)
+    keyStore.removeObject(forKey: isFirstTimeUsingAppKey)
   }
   
   @objc
@@ -60,22 +74,30 @@ final class CloudUserDefaults: ObservableObject {
     guard let keys = userInfo[NSUbiquitousKeyValueStoreChangedKeysKey] as? [String] else { return }
     
     // Check if any of the keys we care about were updated, and if so use the new value stored under that key.
-    guard keys.contains(weeklyGoalKey) else { return }
+    let hasAnyKeyWeCareAbout = keys.contains(weeklyGoalKey) || keys.contains(isFirstTimeUsingAppKey)
+    guard hasAnyKeyWeCareAbout else { return }
     
     if reasonForChange == NSUbiquitousKeyValueStoreAccountChange {
       // User changed account, so fall back to UserDefaults
       return
     }
     
-    if let weeklyGoalRawValue = keyStore.string(forKey: "weeklyGoal"),
+    if let weeklyGoalRawValue = keyStore.string(forKey: weeklyGoalKey),
        let weeklyGoal = WeeklyFastingHoursGoal(rawValue: weeklyGoalRawValue) {
       
       DispatchQueue.main.async {
         self.weeklyGoal = weeklyGoal
-        print("✅ -> WeeklyGoal was updated on iCloud. Updating the weeklyGoal of this Device")
+//        print("✅ -> WeeklyGoal was updated on iCloud. Updating the weeklyGoal of this Device")
       }
       
       return
+    }
+    
+    let isFirstTimeUsingApp = keyStore.bool(forKey: isFirstTimeUsingAppKey)
+    if isFirstTimeUsingApp {
+      DispatchQueue.main.async {
+        self.isFirstTimeUsingApp = false
+      }
     }
   }
 }
