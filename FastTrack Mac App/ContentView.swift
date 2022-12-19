@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @AppStorage(Constants.AppStorage.selectedScreen)
+  @AppStorage(MyApp.AppStorage.selectedScreen)
   var selectedScreen: Screen?
   
   var body: some View {

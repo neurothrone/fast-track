@@ -34,15 +34,15 @@ struct ActiveLogSectionView: View {
         Menu("Actions") {
           if incompleteLogs.isEmpty {
             Button(action: startFasting) {
-              Label("Start fasting", systemImage: Constants.SystemImage.startClock)
+              Label("Start fasting", systemImage: MyApp.SystemImage.startClock)
             }
           } else {
             Button(action: stopFasting) {
-              Label("Stop fasting", systemImage: Constants.SystemImage.stopClock)
+              Label("Stop fasting", systemImage: MyApp.SystemImage.stopClock)
             }
             
             Button(action: resetFasting) {
-              Label("Reset fasting", systemImage: Constants.SystemImage.resetClock)
+              Label("Reset fasting", systemImage: MyApp.SystemImage.resetClock)
             }
           }
         }
