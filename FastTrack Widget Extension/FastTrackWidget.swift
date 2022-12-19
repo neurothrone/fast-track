@@ -78,8 +78,8 @@ struct FastTrackWidgetExtension: Widget {
 
 struct FastTrackWidgetExtensionEntryView : View {
   @AppStorage(
-    Constants.AppStorage.weeklyFastingHoursGoal,
-    store: UserDefaults(suiteName: CKConfig.sharedAppGroup)
+    MyApp.AppStorage.weeklyFastingHoursGoal,
+    store: UserDefaults(suiteName: MyApp.CKConfig.sharedAppGroup)
   )
   private(set) var weeklyGoal: WeeklyFastingHoursGoal = .easy
   

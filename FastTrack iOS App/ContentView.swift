@@ -11,9 +11,10 @@ struct ContentView: View {
   @Environment(\.colorScheme) var colorScheme
   @Environment(\.horizontalSizeClass) var sizeClass
   
-  @AppStorage(Constants.AppStorage.selectedScreen)
+  @AppStorage(MyApp.AppStorage.selectedScreen)
   private var selectedTab: Screen = .activeWeek
-  
+  @AppStorage("columnVisibility") private var column: NavigationSplitViewVisibility = .doubleColumn
+
   @State private var selectedScreen: Screen? = .activeWeek
   @State private var columnVisibility: NavigationSplitViewVisibility = .doubleColumn
   

@@ -25,7 +25,7 @@ struct CustomLinkView: View {
 struct CustomLinkView_Previews: PreviewProvider {
   static var previews: some View {
     CustomLinkView(
-      urlString: Constants.Link.svgRepo,
+      urlString: MyApp.Link.svgRepo,
       text: "App icon by svgrepo.com"
     )
   }

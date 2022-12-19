@@ -693,8 +693,8 @@
 			isa = PBXGroup;
 			children = (
 				2F1007CB291A00C8004CE72E /* AppMain.swift */,
-				2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */,
 				2F7B8774291E4B74008E889C /* Constants.swift */,
+				2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */,
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F2009D6293FBD270089EDBE /* Old */,
 				2F1007E3291A02BD004CE72E /* Data */,

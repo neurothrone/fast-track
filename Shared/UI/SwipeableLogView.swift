@@ -51,15 +51,15 @@ struct SwipeableLogView: View {
               ? "Stop"
               : "Start",
               systemImage: isTimerRunning
-              ? Constants.SystemImage.stopClock
-              : Constants.SystemImage.startClock
+              ? MyApp.SystemImage.stopClock
+              : MyApp.SystemImage.startClock
         )
       }
       .tint(.purple)
     }
     .swipeActions(edge: .trailing, allowsFullSwipe: false) {
       Button(action: resetPartialLog) {
-        Label("Reset", systemImage: Constants.SystemImage.resetClock)
+        Label("Reset", systemImage: MyApp.SystemImage.resetClock)
       }
       .disabled(!isTimerRunning)
       .tint(.orange)

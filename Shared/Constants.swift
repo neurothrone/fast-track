@@ -7,20 +7,16 @@
 
 import Foundation
 
-struct CKConfig {
-  private init() {}
+enum MyApp {
+  static let name = "FastTrack"
   
-  static let containerName = "Entities"
-  static let sharedAppGroup = "group.fastTrack"
-  static let cloudContainerID = "iCloud.fastTrack"
-}
-
-enum Constants {
-  struct App {
-    static let name = "FastTrack"
+  enum CKConfig {
+    static let containerName = "Entities"
+    static let sharedAppGroup = "group.fastTrack"
+    static let cloudContainerID = "iCloud.fastTrack"
   }
   
-  struct SystemImage {
+  enum SystemImage {
     static let activeWeek = "clock"
     static let allWeeks = "calendar"
     static let settings = "gear"
@@ -30,14 +26,14 @@ enum Constants {
     static let resetClock = "clock.arrow.circlepath"
   }
   
-  struct AppStorage {
+  enum AppStorage {
     static let selectedScreen = "selectedScreen"
     static let datePickerDisplayMode = "datePickerDisplayMode"
     static let weeklyFastingHoursGoal = "weeklyFastingHoursGoal"
     static let isOnboardingPresented = true
   }
   
-  struct Link {
+  enum Link {
     static let svgRepo = "https://www.svgrepo.com/"
   }
 }

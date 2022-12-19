@@ -10,8 +10,8 @@ import WatchConnectivity
 
 final class WatchConnector: NSObject, ObservableObject {
   @AppStorage(
-    Constants.AppStorage.weeklyFastingHoursGoal,
-    store: UserDefaults(suiteName: CKConfig.sharedAppGroup)
+    MyApp.AppStorage.weeklyFastingHoursGoal,
+    store: UserDefaults(suiteName: MyApp.CKConfig.sharedAppGroup)
   )
   private(set) var weeklyGoal: WeeklyFastingHoursGoal = .easy {
     willSet {

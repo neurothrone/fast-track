@@ -22,14 +22,14 @@ final class CoreDataProvider {
   private let inMemory: Bool
   
   private lazy var container: NSPersistentCloudKitContainer = {
-    let container = NSPersistentCloudKitContainer(name: CKConfig.containerName)
+    let container = NSPersistentCloudKitContainer(name: MyApp.CKConfig.containerName)
     
     #if os(macOS)
     
     #else
     let storeURL = URL.storeURL(
-      for: CKConfig.sharedAppGroup,
-      databaseName: CKConfig.containerName
+      for: MyApp.CKConfig.sharedAppGroup,
+      databaseName: MyApp.CKConfig.containerName
     )
 
     if inMemory {
@@ -46,7 +46,7 @@ final class CoreDataProvider {
       )
       
       storeDescription.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(
-        containerIdentifier: CKConfig.cloudContainerID)
+        containerIdentifier: MyApp.CKConfig.cloudContainerID)
       container.persistentStoreDescriptions = [storeDescription]
     }
 #endif

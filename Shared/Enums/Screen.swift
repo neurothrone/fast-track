@@ -18,12 +18,9 @@ extension Screen: Identifiable, CaseIterable {
   
   var systemImage: String {
     switch self {
-    case .activeWeek:
-      return Constants.SystemImage.activeWeek
-    case .allWeeks:
-      return Constants.SystemImage.allWeeks
-    case .settings:
-      return Constants.SystemImage.settings
+    case .activeWeek: return MyApp.SystemImage.activeWeek
+    case .allWeeks: return MyApp.SystemImage.allWeeks
+    case .settings: return MyApp.SystemImage.settings
     }
   }
   

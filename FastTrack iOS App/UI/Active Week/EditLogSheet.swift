@@ -11,7 +11,7 @@ struct EditLogSheet: View {
   @Environment(\.dismiss) private var dismiss
   @Environment(\.managedObjectContext) private var viewContext
   
-  @AppStorage(Constants.AppStorage.datePickerDisplayMode)
+  @AppStorage(MyApp.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
   
   private let log: FastLog

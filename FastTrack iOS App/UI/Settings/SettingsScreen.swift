@@ -11,7 +11,7 @@ import SwiftUI
 struct SettingsScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
-  @AppStorage(Constants.AppStorage.datePickerDisplayMode)
+  @AppStorage(MyApp.AppStorage.datePickerDisplayMode)
   private var datePickerDisplayMode: DatePickerDisplayMode = .compact
   
   @State private var isAboutSheetPresented = false

@@ -22,7 +22,7 @@ struct ContentView: View {
   var body: some View {
     NavigationStack {
       content
-        .navigationTitle(Constants.App.name)
+        .navigationTitle(MyApp.name)
         .navigationBarTitleDisplayMode(.inline)
         .edgesIgnoringSafeArea(.bottom)
     }

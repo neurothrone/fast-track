@@ -11,7 +11,7 @@ struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) var viewContext
   @EnvironmentObject var cloudUserDefaults: CloudUserDefaults
 
-  @AppStorage(Constants.AppStorage.datePickerDisplayMode)
+  @AppStorage(MyApp.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
   
   @FetchRequest(

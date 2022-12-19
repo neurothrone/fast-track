@@ -42,7 +42,7 @@ struct AboutSheet: View {
       Text("Version \(UIApplication.appVersion)")
         .foregroundColor(.purple)
       
-      CustomLinkView(urlString: Constants.Link.svgRepo, text: "App icon by svgrepo.com")
+      CustomLinkView(urlString: MyApp.Link.svgRepo, text: "App icon by svgrepo.com")
         .padding(.top)
     }
   }
