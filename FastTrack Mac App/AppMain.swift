@@ -9,18 +9,18 @@ import SwiftUI
 
 @main
 struct AppMain: App {  
+  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
+  
   private let coreDataProvider: CoreDataProvider = .shared
-  
-  init() {
-    CloudUserDefaults.shared.setUp()
-  }
-  
+
   var body: some Scene {
     Window("FastTrack", id: "main") {
       ContentView()
         .environment(\.managedObjectContext, coreDataProvider.viewContext)
+        .environmentObject(cloudUserDefaults)
         .onAppear {
           NSWindow.allowsAutomaticWindowTabbing = false
+          cloudUserDefaults.setUp()
         }
         .onReceive(NotificationCenter.default.publisher(
           for: NSApplication.willTerminateNotification)
