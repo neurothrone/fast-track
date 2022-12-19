@@ -17,7 +17,7 @@ struct LogListRowView: View {
           log.isFault
           ? "Unknown"
           :  log.startedDate.inReadableFormat,
-          systemImage: "play.fill"
+          systemImage: Constants.SystemImage.startClock
         )
         
         Spacer()
@@ -30,7 +30,7 @@ struct LogListRowView: View {
       }
       
       if let stoppedDate = log.stoppedDate {
-        Label(stoppedDate.inReadableFormat, systemImage: "stop.fill")
+        Label(stoppedDate.inReadableFormat, systemImage: Constants.SystemImage.stopClock)
       }
     }
     .foregroundColor(.mint)
