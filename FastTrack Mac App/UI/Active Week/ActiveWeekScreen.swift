@@ -19,6 +19,8 @@ struct ActiveWeekScreen: View {
   @State private var selectedLog: FastLog?
   @State private var isAddManualLogSheetPresented = false
   
+  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
+  
   var body: some View {
     content
       .sheet(isPresented: $isAddManualLogSheetPresented) {
@@ -37,6 +39,15 @@ struct ActiveWeekScreen: View {
   
   private var content: some View {
     List(selection: $selectedLog) {
+      ProgressMeterView(
+        label: "Fasted state hours",
+        systemImage: "gauge",
+        amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
+        min: .zero,
+        max: Double(cloudUserDefaults.weeklyGoal.hours),
+        progressColor: .purple
+      )
+      
       ActiveLogSectionView()
       
       Section {

@@ -16,7 +16,8 @@ struct ContentView: View {
   )
   private var fastLogs: FetchedResults<FastLog>
   
-  @StateObject private var connector: WatchConnector = .shared
+//  @StateObject private var connector: WatchConnector = .shared
+  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
   
   var body: some View {
     NavigationStack {
@@ -34,7 +35,8 @@ struct ContentView: View {
         systemImage: "gauge",
         amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
-        max: Double(connector.weeklyGoal.hours),
+        max: Double(cloudUserDefaults.weeklyGoal.hours),
+//        max: Double(connector.weeklyGoal.hours),
         progressColor: .purple
       )
       

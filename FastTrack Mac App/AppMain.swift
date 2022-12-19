@@ -11,6 +11,10 @@ import SwiftUI
 struct AppMain: App {  
   private let coreDataProvider: CoreDataProvider = .shared
   
+  init() {
+    CloudUserDefaults.shared.setUp()
+  }
+  
   var body: some Scene {
     Window("FastTrack", id: "main") {
       ContentView()

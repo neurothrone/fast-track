@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct AppMain: App {
+  init() {
+    CloudUserDefaults.shared.setUp()
+  }
+  
   var body: some Scene {
     WindowGroup {
       ContentView()
