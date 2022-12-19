@@ -20,8 +20,6 @@ struct ActiveWeekScreen: View {
   private var fastLogs: FetchedResults<FastLog>
   
   @State private var isAddManualLogPresented = false
-//  @StateObject private var connector: WatchConnector = .shared
-  
   @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
   
   var body: some View {
@@ -40,9 +38,7 @@ struct ActiveWeekScreen: View {
             ForEach(WeeklyFastingHoursGoal.allCases) { goal in
               Button {
                 cloudUserDefaults.weeklyGoal = goal
-//                connector.changeWeeklyGoal(goal)
               } label: {
-//                if connector.weeklyGoal == goal {
                 if cloudUserDefaults.weeklyGoal == goal {
                   Label(goal.toString, systemImage: "checkmark")
                 } else {
@@ -67,7 +63,6 @@ struct ActiveWeekScreen: View {
         amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
         max: Double(cloudUserDefaults.weeklyGoal.hours),
-//        max: Double(connector.weeklyGoal.hours),
         progressColor: .purple
       )
       
