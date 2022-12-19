@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ActiveWeekScreen: View {
-  @Environment(\.managedObjectContext) private var viewContext
+  @Environment(\.managedObjectContext) var viewContext
+  @EnvironmentObject var cloudUserDefaults: CloudUserDefaults
 
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
@@ -20,7 +21,6 @@ struct ActiveWeekScreen: View {
   private var fastLogs: FetchedResults<FastLog>
   
   @State private var isAddManualLogPresented = false
-  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
   
   var body: some View {
     content
@@ -86,6 +86,7 @@ struct ActiveWeekScreen_Previews: PreviewProvider {
       ActiveWeekScreen()
         .linearBackground()
         .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+        .environmentObject(CloudUserDefaults.shared)
     }
   }
 }

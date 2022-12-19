@@ -9,14 +9,28 @@ import SwiftUI
 
 @main
 struct AppMain: App {
-  init() {
-    CloudUserDefaults.shared.setUp()
-  }
+  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
   
   var body: some Scene {
     WindowGroup {
-      ContentView()
-        .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
+      Group {
+#if os(iOS)
+        Group {
+          if cloudUserDefaults.isFirstTimeUsingApp {
+            SetWeeklyGoalView()
+          } else {
+            ContentView()
+              .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
+          }
+        }
+        .environmentObject(cloudUserDefaults)
+#else
+        ContentView()
+          .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
+          .environmentObject(cloudUserDefaults)
+#endif
+      }
+      .onAppear(perform: cloudUserDefaults.setUp)
     }
   }
 }

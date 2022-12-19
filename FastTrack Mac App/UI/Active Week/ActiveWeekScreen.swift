@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ActiveWeekScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
+  @EnvironmentObject private var cloudUserDefaults: CloudUserDefaults
 
   @FetchRequest(
     fetchRequest: FastLog.allCompletedInCurrentWeek,
@@ -17,9 +18,7 @@ struct ActiveWeekScreen: View {
   private var fastLogs: FetchedResults<FastLog>
   
   @State private var selectedLog: FastLog?
-  @State private var isAddManualLogSheetPresented = false
-  
-  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
+  @State private var isAddManualLogSheetPresented = false  
   
   var body: some View {
     content
@@ -80,5 +79,6 @@ struct ActiveWeekScreen: View {
 struct ActiveWeekScreen_Previews: PreviewProvider {
   static var previews: some View {
     ActiveWeekScreen()
+      .environmentObject(CloudUserDefaults.shared)
   }
 }
