@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ActiveWeekScreen: View {
-  @Environment(\.managedObjectContext) private var viewContext
-  @EnvironmentObject private var cloudUserDefaults: CloudUserDefaults
+  @Environment(\.managedObjectContext) var viewContext
+  @EnvironmentObject var cloudUserDefaults: CloudUserDefaults
 
   @FetchRequest(
     fetchRequest: FastLog.allCompletedInCurrentWeek,
@@ -40,17 +40,15 @@ struct ActiveWeekScreen: View {
     List(selection: $selectedLog) {
       ProgressMeterView(
         label: "Fasted state hours",
-        systemImage: "gauge",
+        systemImage: MyApp.SystemImage.target,
         amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
         max: Double(cloudUserDefaults.weeklyGoal.hours),
         progressColor: .purple
       )
-      .padding(.bottom)
-      
-      Divider()
       
       ActiveLogSectionView()
+        .padding(.bottom)
       
       Section {
         if fastLogs.isEmpty {

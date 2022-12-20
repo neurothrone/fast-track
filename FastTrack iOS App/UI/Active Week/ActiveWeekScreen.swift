@@ -59,7 +59,7 @@ struct ActiveWeekScreen: View {
     List {
       LogListProgressMeterView(
         label: "Fasted state hours",
-        systemImage: "gauge",
+        systemImage: MyApp.SystemImage.target,
         amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
         max: Double(cloudUserDefaults.weeklyGoal.hours),

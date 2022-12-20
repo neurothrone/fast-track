@@ -24,6 +24,7 @@ struct ProgressMeterView: View {
           .foregroundColor(.secondary)
       } currentValueLabel: {
         Text(amount.formatted(.number))
+          .font(.headline)
           .fontWeight(.heavy)
           .foregroundColor(.purple)
           .frame(maxWidth: .infinity, alignment: .center)

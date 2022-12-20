@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AllWeeksScreen: View {
-  @Environment(\.managedObjectContext) private var viewContext
+  @Environment(\.managedObjectContext) var viewContext
 
   @SectionedFetchRequest(
     fetchRequest: FastLog.allCompleted,
@@ -25,6 +25,5 @@ struct AllWeeksScreen: View {
 struct AllWeeksScreen_Previews: PreviewProvider {
   static var previews: some View {
     AllWeeksScreen()
-//      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }

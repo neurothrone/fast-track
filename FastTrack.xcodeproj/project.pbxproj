@@ -116,7 +116,6 @@
 		2FBDE327295081A1000A7232 /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */; };
 		2FBDE328295081A1000A7232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7929410737002AA901 /* ContentView.swift */; };
 		2FBDE329295081A1000A7232 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A7729410737002AA901 /* AppMain.swift */; };
-		2FBDE32A295081A1000A7232 /* OptimalNavigationSplitViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */; };
 		2FBDE32B295081AC000A7232 /* DeleteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C13EA29487328008440EE /* DeleteButtonView.swift */; };
 		2FBDE32C295081AC000A7232 /* ActiveLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */; };
 		2FBDE32D295081AC000A7232 /* ActiveWeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */; };
@@ -294,7 +293,6 @@
 		2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
 		2F9C12DE2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationSplitViewVisibility+Extensions.swift"; sourceTree = "<group>"; };
 		2F9C12FF294724C1008440EE /* AddManualLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddManualLogSheet.swift; sourceTree = "<group>"; };
-		2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalNavigationSplitViewSample.swift; sourceTree = "<group>"; };
 		2F9C13EA29487328008440EE /* DeleteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonView.swift; sourceTree = "<group>"; };
 		2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
@@ -611,6 +609,7 @@
 			children = (
 				2F8D2A8429412026002AA901 /* ActiveWeekScreen.swift */,
 				2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */,
+				2F9C13EA29487328008440EE /* DeleteButtonView.swift */,
 				2F9C12FF294724C1008440EE /* AddManualLogSheet.swift */,
 			);
 			path = "Active Week";
@@ -636,8 +635,6 @@
 		2F8D2B9129443549002AA901 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2FBDE34C2950842B000A7232 /* Sandbox */,
-				2F9C13EA29487328008440EE /* DeleteButtonView.swift */,
 				2F8D2B8E2944353A002AA901 /* Active Week */,
 				2F8D2B8F2944353E002AA901 /* All Weeks */,
 				2F8D2B9029443541002AA901 /* Settings */,
@@ -669,14 +666,6 @@
 				2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		2FBDE34C2950842B000A7232 /* Sandbox */ = {
-			isa = PBXGroup;
-			children = (
-				2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */,
-			);
-			path = Sandbox;
 			sourceTree = "<group>";
 		};
 		2FDBB1F3293A2ABD00A8A2BF /* Enums */ = {
@@ -1099,7 +1088,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FBDE32A295081A1000A7232 /* OptimalNavigationSplitViewSample.swift in Sources */,
 				2FBDE32D295081AC000A7232 /* ActiveWeekScreen.swift in Sources */,
 				2FBDE34529508208000A7232 /* ProgressMeterView.swift in Sources */,
 				2FBDE328295081A1000A7232 /* ContentView.swift in Sources */,
