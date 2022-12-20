@@ -54,6 +54,7 @@ struct DeleteAllDataSheet: View {
         RoundedRectangle(cornerRadius: 10)
           .fill(.red.opacity(0.5))
       )
+      .frame(maxWidth: .infinity, alignment: .center)
       
       Slider(value: $sliderValue, in: .zero...maxValue, step: 1)
         .padding(.vertical)
