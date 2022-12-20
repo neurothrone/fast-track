@@ -70,7 +70,7 @@ struct ActiveWeekScreen: View {
         SwipeableLogView()
           .listRowBackground(
             EmptyView()
-              .background(.ultraThinMaterial)
+              .background(.thickMaterial)
           )
       }
       

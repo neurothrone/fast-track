@@ -29,7 +29,7 @@ struct LogListProgressMeterView: View {
       )
       .listRowBackground(
         EmptyView()
-          .background(.ultraThinMaterial)
+          .background(.thickMaterial)
       )
     }
   }

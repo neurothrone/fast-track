@@ -30,7 +30,7 @@ struct ContentView: View {
           }
         }
         .toolbarBackground(.visible, for: .tabBar)
-        .toolbarBackground(.ultraThinMaterial, for: .tabBar)
+        .toolbarBackground(.thickMaterial, for: .tabBar)
       }
     } else {
       NavigationSplitView(columnVisibility: $columnVisibility) {
@@ -60,6 +60,7 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+      .environmentObject(CloudUserDefaults.shared)
       .preferredColorScheme(.dark)
   }
 }
