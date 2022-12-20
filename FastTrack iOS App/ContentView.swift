@@ -12,11 +12,11 @@ struct ContentView: View {
   @Environment(\.horizontalSizeClass) var sizeClass
   
   @AppStorage(MyApp.AppStorage.selectedScreen)
-  private var selectedTab: Screen = .activeWeek
-  @AppStorage("columnVisibility") private var column: NavigationSplitViewVisibility = .doubleColumn
+  var selectedTab: Screen = .activeWeek
+  @AppStorage(MyApp.AppStorage.columnVisibility)
+  var columnVisibility: NavigationSplitViewVisibility = .doubleColumn
 
   @State private var selectedScreen: Screen? = .activeWeek
-  @State private var columnVisibility: NavigationSplitViewVisibility = .doubleColumn
   
   var body: some View {
     if sizeClass == .compact {
@@ -34,14 +34,11 @@ struct ContentView: View {
       }
     } else {
       NavigationSplitView(columnVisibility: $columnVisibility) {
-        List(selection: $selectedScreen) {
-          ForEach(Screen.allCases) { screen in
-            Label(screen.rawValue, systemImage: screen.systemImage)
-              .bold(screen == selectedScreen)
-              .foregroundColor(screen == selectedScreen ? .purple : .white.opacity(0.85))
-          }
-          .listRowBackground(Color.black)
-          .listRowSeparatorTint(.white.opacity(0.4))
+        List(Screen.allCases, selection: $selectedScreen) { screen in
+          Label(screen.rawValue, systemImage: screen.systemImage)
+            .foregroundColor(screen == selectedScreen ? .white : .white.opacity(0.85))
+            .listRowBackground(screen == selectedScreen ? Color.purple : Color.black)
+            .listRowSeparatorTint(.white.opacity(0.4))
         }
         .listStyle(.insetGrouped)
         .scrollContentBackground(.hidden)

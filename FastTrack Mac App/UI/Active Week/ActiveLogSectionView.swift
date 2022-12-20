@@ -47,6 +47,7 @@ struct ActiveLogSectionView: View {
           }
         }
         .menuStyle(.button)
+        .fixedSize()
       }
     }
   }

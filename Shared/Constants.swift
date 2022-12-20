@@ -31,6 +31,7 @@ enum MyApp {
     static let datePickerDisplayMode = "datePickerDisplayMode"
     static let weeklyFastingHoursGoal = "weeklyFastingHoursGoal"
     static let isOnboardingPresented = true
+    static let columnVisibility = "columnVisibility"
   }
   
   enum Link {

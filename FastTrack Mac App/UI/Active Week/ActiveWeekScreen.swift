@@ -46,6 +46,9 @@ struct ActiveWeekScreen: View {
         max: Double(cloudUserDefaults.weeklyGoal.hours),
         progressColor: .purple
       )
+      .padding(.bottom)
+      
+      Divider()
       
       ActiveLogSectionView()
       

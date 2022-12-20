@@ -54,25 +54,6 @@ struct OptimalNavigationSplitViewSample: View {
     } detail: {
       Text("Please select an item")
     }
-//    .navigationSplitViewStyle(.balanced)
-
-//    NavigationSplitView {
-//      List(logs) { log in
-//        NavigationLink(log.startedDate.inReadableFormat, value: log)
-//      }
-//      .navigationDestination(for: FastLog.self) { log in
-//        VStack {
-//          Text(log.startedDate.inReadableFormat)
-//
-//          if let stoppedDate = log.stoppedDate {
-//            Text(stoppedDate.inReadableFormat)
-//            Text(log.duration.inHoursAndMinutes)
-//          }
-//        }
-//      }
-//    } detail: {
-//        Text("Please select a log")
-//    }
   }
 }
 

@@ -108,7 +108,6 @@
 		2F9C12CF2945C199008440EE /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
 		2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
 		2F9C12DF2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DE2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift */; };
-		2F9C12E12947189A008440EE /* ColumnAppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12E02947189A008440EE /* ColumnAppStorage.swift */; };
 		2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DB291BFE1400AF51FD /* SectionHeaderView.swift */; };
 		2FA949DE291C9FE800AF51FD /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA949DD291C9FE800AF51FD /* GradientButtonView.swift */; };
 		2FBDE30F295074F0000A7232 /* CloudUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */; };
@@ -293,7 +292,6 @@
 		2F9C12DA2946C594008440EE /* ActiveLogSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogSectionView.swift; sourceTree = "<group>"; };
 		2F9C12DC2946CDD3008440EE /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
 		2F9C12DE2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationSplitViewVisibility+Extensions.swift"; sourceTree = "<group>"; };
-		2F9C12E02947189A008440EE /* ColumnAppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnAppStorage.swift; sourceTree = "<group>"; };
 		2F9C12FF294724C1008440EE /* AddManualLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddManualLogSheet.swift; sourceTree = "<group>"; };
 		2F9C130129472B20008440EE /* OptimalNavigationSplitViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalNavigationSplitViewSample.swift; sourceTree = "<group>"; };
 		2F9C13EA29487328008440EE /* DeleteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonView.swift; sourceTree = "<group>"; };
@@ -413,7 +411,6 @@
 			isa = PBXGroup;
 			children = (
 				2F1007CD291A00C8004CE72E /* ContentView.swift */,
-				2F9C12E02947189A008440EE /* ColumnAppStorage.swift */,
 				2F78B8822939FDCC0041427B /* Info.plist */,
 				2F1007D1291A00C9004CE72E /* FastTrack iOS.entitlements */,
 				2F1007DC291A0239004CE72E /* UI */,
@@ -433,7 +430,6 @@
 		2F1007DC291A0239004CE72E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2F7B87A029253367008E889C /* LogListProgressMeterView.swift */,
 				2F1007FD291A0F8C004CE72E /* Active Week */,
 				2F10080B291A3BC6004CE72E /* All Weeks */,
 				2F10080E291A3C41004CE72E /* Settings */,
@@ -519,6 +515,7 @@
 				2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */,
 				2F7B877A291E4C37008E889C /* CustomLinkView.swift */,
 				2F7B87AA29259F1A008E889C /* CustomDatePicker.swift */,
+				2F7B87A029253367008E889C /* LogListProgressMeterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1028,7 +1025,6 @@
 				2F7B87952922B095008E889C /* UIApplication+Extensions.swift in Sources */,
 				2F1007F8291A047A004CE72E /* TimeInterval+Extensions.swift in Sources */,
 				2F1007E0291A0249004CE72E /* AllWeeksScreen.swift in Sources */,
-				2F9C12E12947189A008440EE /* ColumnAppStorage.swift in Sources */,
 				2F7B8773291E4AF0008E889C /* SwipeableLogView.swift in Sources */,
 				2F7B87BD2926D001008E889C /* WeeklyFastingHoursGoal.swift in Sources */,
 				2F1007E8291A02D6004CE72E /* CoreDataProvider+Extensions.swift in Sources */,
@@ -1373,6 +1369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "FastTrack iOS App/FastTrack iOS.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
@@ -1419,6 +1416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "FastTrack iOS App/FastTrack iOS.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
