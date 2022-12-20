@@ -9,7 +9,7 @@ import AppIntents
 
 @available(iOS 16, *)
 
-//let context = CoreDataProvider.shared.viewContext
+let context = CoreDataProvider.shared.viewContext
 
 struct StartFastingIntent: AppIntent {
   static let title: LocalizedStringResource = "Start fasting"
@@ -18,9 +18,8 @@ struct StartFastingIntent: AppIntent {
   
   @MainActor
   func perform() async throws -> some IntentResult {
-    let context = CoreDataProvider.shared.viewContext
-    
     let incompleteLog: FastLog?
+    
     do {
       incompleteLog = try FastLog.getIncompleteLog(using: context)
     } catch {
@@ -28,24 +27,23 @@ struct StartFastingIntent: AppIntent {
     }
     
     guard incompleteLog == nil else {
-      return .result(dialog: "There is already an active Fast log. Complete or remove it first.")
+      return .result(dialog: "There is already an active fasting.")
     }
     
     _ = FastLog.createPartialLog(using: context)
-    return .result(dialog: "Your fasting has begun, godspeed!")
+    return .result(dialog: "Your fasting has begun.")
   }
 }
 
 struct StopFastingIntent: AppIntent {
   static let title: LocalizedStringResource = "Stop fasting"
-  static let description = IntentDescription("Completes your current active fasting session")
+  static let description = IntentDescription("Completes your current active fasting")
   static var openAppWhenRun: Bool = false
   
   @MainActor
   func perform() async throws -> some IntentResult {
-    let context = CoreDataProvider.shared.viewContext
-    
     let incompleteLog: FastLog?
+    
     do {
       incompleteLog = try FastLog.getIncompleteLog(using: context)
     } catch {
@@ -54,23 +52,22 @@ struct StopFastingIntent: AppIntent {
     
     if let incompleteLog {
       FastLog.completePartialLog(for: incompleteLog, using: context)
-      return .result(dialog: "Your fasting session is now complete.")
+      return .result(dialog: "You have completed your fasting.")
     } else {
-      return .result(dialog: "No active fasting session found.")
+      return .result(dialog: "No active fasting found.")
     }
   }
 }
 
 struct ResetFastingIntent: AppIntent {
   static let title: LocalizedStringResource = "Reset fasting"
-  static let description = IntentDescription("Resets the start time of your active fasting session to now")
+  static let description = IntentDescription("Resets the start time of your active fasting to now")
   static var openAppWhenRun: Bool = false
   
   @MainActor
   func perform() async throws -> some IntentResult {
-    let context = CoreDataProvider.shared.viewContext
-    
     let incompleteLog: FastLog?
+    
     do {
       incompleteLog = try FastLog.getIncompleteLog(using: context)
     } catch {
@@ -79,9 +76,9 @@ struct ResetFastingIntent: AppIntent {
     
     if let incompleteLog {
       FastLog.resetPartialLog(for: incompleteLog, using: context)
-      return .result(dialog: "The start time of your active fasting session has reset. Godspeed again I guess?")
+      return .result(dialog: "Your fasting start time has been reset to now.")
     } else {
-      return .result(dialog: "No active fasting session found.")
+      return .result(dialog: "No active fasting found.")
     }
   }
 }
