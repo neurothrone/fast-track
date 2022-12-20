@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-  @Environment(\.managedObjectContext) private var viewContext
+  @Environment(\.managedObjectContext) var viewContext
+  @EnvironmentObject var cloudUserDefaults: CloudUserDefaults
 
   @FetchRequest(
     fetchRequest: FastLog.allCompletedInCurrentWeek,
@@ -16,14 +17,20 @@ struct ContentView: View {
   )
   private var fastLogs: FetchedResults<FastLog>
   
-  @StateObject private var cloudUserDefaults: CloudUserDefaults = .shared
-  
   var body: some View {
     NavigationStack {
       content
         .navigationTitle(MyApp.name)
         .navigationBarTitleDisplayMode(.inline)
         .edgesIgnoringSafeArea(.bottom)
+        .toolbar {
+          ToolbarItem(placement: .confirmationAction) {
+            NavigationLink(destination: ChangeWeeklyGoalView()) {
+              Image(systemName: MyApp.SystemImage.target)
+                .foregroundColor(.purple)
+            }
+          }
+        }
     }
   }
   
@@ -31,7 +38,7 @@ struct ContentView: View {
     VStack(alignment: .center, spacing: 20) {
       ProgressMeterView(
         label: "Fasted state hours",
-        systemImage: "gauge",
+        systemImage:  MyApp.SystemImage.gauge,
         amount: FastLog.totalFastedStateDurationToHours(in: Array(fastLogs)),
         min: .zero,
         max: Double(cloudUserDefaults.weeklyGoal.hours),
@@ -50,5 +57,6 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
+      .environmentObject(CloudUserDefaults.shared)
   }
 }

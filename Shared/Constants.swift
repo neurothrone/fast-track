@@ -24,6 +24,10 @@ enum MyApp {
     static let startClock = "clock.badge.checkmark"
     static let stopClock = "clock.badge.xmark"
     static let resetClock = "clock.arrow.circlepath"
+    
+    static let checkmark = "checkmark"
+    static let target = "target"
+    static let gauge = "gauge"
   }
   
   enum AppStorage {

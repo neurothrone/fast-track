@@ -150,6 +150,7 @@
 		2FBDE3492950822B000A7232 /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
 		2FBDE34A29508231000A7232 /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* LogListRowView.swift */; };
 		2FBDE34B29508287000A7232 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2A922941452F002AA901 /* Credits.rtf */; };
+		2FBDE34E2951C62D000A7232 /* ChangeWeeklyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE34D2951C62D000A7232 /* ChangeWeeklyGoalView.swift */; };
 		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
 		2FDBB253293A6BA600A8A2BF /* Week+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */; };
 		2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
@@ -300,6 +301,7 @@
 		2FBDE30E295074F0000A7232 /* CloudUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudUserDefaults.swift; sourceTree = "<group>"; };
 		2FBDE31729507F80000A7232 /* FastTrack Mac App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastTrack Mac App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBDE32229507F80000A7232 /* FastTrack MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack MacOS.entitlements"; sourceTree = "<group>"; };
+		2FBDE34D2951C62D000A7232 /* ChangeWeeklyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWeeklyGoalView.swift; sourceTree = "<group>"; };
 		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
@@ -565,6 +567,7 @@
 			isa = PBXGroup;
 			children = (
 				2F8D2A12293FF780002AA901 /* ContentView.swift */,
+				2FBDE34D2951C62D000A7232 /* ChangeWeeklyGoalView.swift */,
 				2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */,
 				2F8D2A3829401F85002AA901 /* Info.plist */,
 				2F8D2A3729401F82002AA901 /* FastTrack Watch App.entitlements */,
@@ -1071,6 +1074,7 @@
 				2F8D2A13293FF780002AA901 /* ContentView.swift in Sources */,
 				2F8D2A3329401D75002AA901 /* TimeInterval+Extensions.swift in Sources */,
 				2F8D2A1F29401CFF002AA901 /* NSManagedObject+Extensions.swift in Sources */,
+				2FBDE34E2951C62D000A7232 /* ChangeWeeklyGoalView.swift in Sources */,
 				2F8D2A2629401D2C002AA901 /* ActiveLogView.swift in Sources */,
 				2F8D2A3229401D75002AA901 /* Double+Extensions.swift in Sources */,
 				2F8D2A1D29401CFF002AA901 /* CoreDataProvider.swift in Sources */,
