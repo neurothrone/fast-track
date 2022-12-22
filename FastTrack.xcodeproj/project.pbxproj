@@ -34,30 +34,6 @@
 		2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100817291BD0E2004CE72E /* ProgressMeterView.swift */; };
 		2F10081A291BF084004CE72E /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
 		2F10081C291BF760004CE72E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
-		2F2D1058294D857400A09971 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2A8293E591E00A8A2BF /* WidgetKit.framework */; };
-		2F2D1059294D857400A09971 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */; };
-		2F2D105C294D857400A09971 /* FastTrackWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */; };
-		2F2D105E294D857400A09971 /* FastTrackWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D105D294D857400A09971 /* FastTrackWidget.swift */; };
-		2F2D1060294D857500A09971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2D105F294D857500A09971 /* Assets.xcassets */; };
-		2F2D1064294D857500A09971 /* FastTrack Widget Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2F2D1069294D899100A09971 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
-		2F2D106A294D89AC00A09971 /* WeeklyFastingHoursGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87BC2926D001008E889C /* WeeklyFastingHoursGoal.swift */; };
-		2F2D106B294D8A8600A09971 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E5291A02D0004CE72E /* CoreDataProvider.swift */; };
-		2F2D106C294D8A8600A09971 /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E7291A02D6004CE72E /* CoreDataProvider+Extensions.swift */; };
-		2F2D106D294D8A8600A09971 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100803291A10CB004CE72E /* NSManagedObject+Extensions.swift */; };
-		2F2D106E294D8A8800A09971 /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007E9291A02DC004CE72E /* Entities.xcdatamodeld */; };
-		2F2D106F294D8A8D00A09971 /* FastLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F0291A03F2004CE72E /* FastLog+Extensions.swift */; };
-		2F2D1070294D8A8D00A09971 /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87C32927FAAC008E889C /* CustomErrors.swift */; };
-		2F2D1071294D8A8D00A09971 /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007EC291A03A5004CE72E /* FastLog+CoreDataClass.swift */; };
-		2F2D1072294D8A8D00A09971 /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007FB291A06C9004CE72E /* FastLog+Preview.swift */; };
-		2F2D1073294D8A9E00A09971 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F9291A0484004CE72E /* URL+Extensions.swift */; };
-		2F2D1074294D8AA100A09971 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F7291A047A004CE72E /* TimeInterval+Extensions.swift */; };
-		2F2D1075294D8AA600A09971 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F5291A0464004CE72E /* Collection+Extensions.swift */; };
-		2F2D1076294D8AA600A09971 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B877C291FAA5B008E889C /* Double+Extensions.swift */; };
-		2F2D1077294D8AA600A09971 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007F3291A0451004CE72E /* Date+Extensions.swift */; };
-		2F2D1078294D8AA600A09971 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
-		2F2D1079294D8AA600A09971 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
-		2F2D107E294D8CD600A09971 /* WidgetProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D107D294D8CD600A09971 /* WidgetProgressMeterView.swift */; };
 		2F7B8743291CC9B0008E889C /* CustomSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */; };
 		2F7B8773291E4AF0008E889C /* SwipeableLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */; };
 		2F7B8775291E4B74008E889C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
@@ -172,13 +148,6 @@
 			remoteGlobalIDString = 2F1007C7291A00C8004CE72E;
 			remoteInfo = "FastTrack iOS App";
 		};
-		2F2D1062294D857500A09971 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F1007C0291A00C8004CE72E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F2D1056294D857400A09971;
-			remoteInfo = "FastTrack Widget ExtensionExtension";
-		};
 		2F8D2A0A293FF744002AA901 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F1007C0291A00C8004CE72E /* Project object */;
@@ -198,17 +167,6 @@
 				2F8D2A0C293FF744002AA901 /* FastTrack Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2FDBB2BA293E591F00A8A2BF /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				2F2D1064294D857500A09971 /* FastTrack Widget Extension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -246,7 +204,6 @@
 		2F100819291BF084004CE72E /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		2F10081B291BF760004CE72E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		2F2009D1293E79FA0089EDBE /* FastTrack Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Widgets.entitlements"; sourceTree = "<group>"; };
-		2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FastTrack Widget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidgetExtensionBundle.swift; sourceTree = "<group>"; };
 		2F2D105D294D857400A09971 /* FastTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidget.swift; sourceTree = "<group>"; };
 		2F2D105F294D857500A09971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -335,15 +292,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F2D1054294D857400A09971 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F2D1059294D857400A09971 /* SwiftUI.framework in Frameworks */,
-				2F2D1058294D857400A09971 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F8D29FC293FF743002AA901 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,7 +349,6 @@
 				2F8D29FF293FF743002AA901 /* FastTrack Watch App.app */,
 				2F0AA8B9294B1A8600413753 /* FastTrackTests.xctest */,
 				2F0AA8C6294B1A8D00413753 /* FastTrackUITests.xctest */,
-				2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */,
 				2FBDE31729507F80000A7232 /* FastTrack Mac App.app */,
 			);
 			name = Products;
@@ -774,36 +721,17 @@
 				2F1007C4291A00C8004CE72E /* Sources */,
 				2F1007C5291A00C8004CE72E /* Frameworks */,
 				2F1007C6291A00C8004CE72E /* Resources */,
-				2FDBB2BA293E591F00A8A2BF /* Embed Foundation Extensions */,
 				2F8D2A10293FF744002AA901 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2F8D2A0B293FF744002AA901 /* PBXTargetDependency */,
-				2F2D1063294D857500A09971 /* PBXTargetDependency */,
 			);
 			name = "FastTrack iOS App";
 			productName = CortexOfFasting;
 			productReference = 2F1007C8291A00C8004CE72E /* FastTrack.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2F2D1056294D857400A09971 /* FastTrack Widget Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F2D1067294D857500A09971 /* Build configuration list for PBXNativeTarget "FastTrack Widget Extension" */;
-			buildPhases = (
-				2F2D1053294D857400A09971 /* Sources */,
-				2F2D1054294D857400A09971 /* Frameworks */,
-				2F2D1055294D857400A09971 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "FastTrack Widget Extension";
-			productName = "FastTrack Widget ExtensionExtension";
-			productReference = 2F2D1057294D857400A09971 /* FastTrack Widget Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		2F8D29FE293FF743002AA901 /* FastTrack Watch App */ = {
 			isa = PBXNativeTarget;
@@ -860,9 +788,6 @@
 					2F1007C7291A00C8004CE72E = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					2F2D1056294D857400A09971 = {
-						CreatedOnToolsVersion = 14.2;
-					};
 					2F8D29FE293FF743002AA901 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -887,7 +812,6 @@
 				2F1007C7291A00C8004CE72E /* FastTrack iOS App */,
 				2FBDE31629507F80000A7232 /* FastTrack Mac App */,
 				2F8D29FE293FF743002AA901 /* FastTrack Watch App */,
-				2F2D1056294D857400A09971 /* FastTrack Widget Extension */,
 				2F0AA8B8294B1A8600413753 /* FastTrackTests */,
 				2F0AA8C5294B1A8D00413753 /* FastTrackUITests */,
 			);
@@ -915,14 +839,6 @@
 			files = (
 				2F1007D4291A00C9004CE72E /* Preview Assets.xcassets in Resources */,
 				2F1007D0291A00C9004CE72E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F2D1055294D857400A09971 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F2D1060294D857500A09971 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,33 +940,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F2D1053294D857400A09971 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F2D106A294D89AC00A09971 /* WeeklyFastingHoursGoal.swift in Sources */,
-				2F2D1070294D8A8D00A09971 /* CustomErrors.swift in Sources */,
-				2F2D107E294D8CD600A09971 /* WidgetProgressMeterView.swift in Sources */,
-				2F2D106C294D8A8600A09971 /* CoreDataProvider+Extensions.swift in Sources */,
-				2F2D1074294D8AA100A09971 /* TimeInterval+Extensions.swift in Sources */,
-				2F2D106E294D8A8800A09971 /* Entities.xcdatamodeld in Sources */,
-				2F2D1073294D8A9E00A09971 /* URL+Extensions.swift in Sources */,
-				2F2D105E294D857400A09971 /* FastTrackWidget.swift in Sources */,
-				2F2D105C294D857400A09971 /* FastTrackWidgetExtensionBundle.swift in Sources */,
-				2F2D1078294D8AA600A09971 /* DateFormatter+Extensions.swift in Sources */,
-				2F2D1077294D8AA600A09971 /* Date+Extensions.swift in Sources */,
-				2F2D1076294D8AA600A09971 /* Double+Extensions.swift in Sources */,
-				2F2D106F294D8A8D00A09971 /* FastLog+Extensions.swift in Sources */,
-				2F2D1069294D899100A09971 /* Constants.swift in Sources */,
-				2F2D106B294D8A8600A09971 /* CoreDataProvider.swift in Sources */,
-				2F2D1079294D8AA600A09971 /* Calendar+Extensions.swift in Sources */,
-				2F2D1072294D8A8D00A09971 /* FastLog+Preview.swift in Sources */,
-				2F2D106D294D8A8600A09971 /* NSManagedObject+Extensions.swift in Sources */,
-				2F2D1071294D8A8D00A09971 /* FastLog+CoreDataClass.swift in Sources */,
-				2F2D1075294D8AA600A09971 /* Collection+Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F8D29FB293FF743002AA901 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1138,11 +1027,6 @@
 			isa = PBXTargetDependency;
 			target = 2F1007C7291A00C8004CE72E /* FastTrack iOS App */;
 			targetProxy = 2F0AA8CC294B1A8D00413753 /* PBXContainerItemProxy */;
-		};
-		2F2D1063294D857500A09971 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F2D1056294D857400A09971 /* FastTrack Widget Extension */;
-			targetProxy = 2F2D1062294D857500A09971 /* PBXContainerItemProxy */;
 		};
 		2F8D2A0B293FF744002AA901 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1447,67 +1331,6 @@
 			};
 			name = Release;
 		};
-		2F2D1065294D857500A09971 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "FastTrack Widget Extension/FastTrack Widget Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4BP826FJGX;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FastTrack Widget Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "FastTrack Widget Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.FastTrack.FastTrack-Widget-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2F2D1066294D857500A09971 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "FastTrack Widget Extension/FastTrack Widget Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4BP826FJGX;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FastTrack Widget Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "FastTrack Widget Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.FastTrack.FastTrack-Widget-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		2F8D2A0E293FF744002AA901 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1676,15 +1499,6 @@
 			buildConfigurations = (
 				2F1007D8291A00C9004CE72E /* Debug */,
 				2F1007D9291A00C9004CE72E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F2D1067294D857500A09971 /* Build configuration list for PBXNativeTarget "FastTrack Widget Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F2D1065294D857500A09971 /* Debug */,
-				2F2D1066294D857500A09971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
