@@ -203,6 +203,8 @@
 		2F10081B291BF760004CE72E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		2F1A4F502BF8746500808B09 /* FastLogDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLogDTO.swift; sourceTree = "<group>"; };
 		2F1A4F522BF874CF00808B09 /* JSONDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDocument.swift; sourceTree = "<group>"; };
+		2F1A4F552BF889B800808B09 /* PrivacyPolicy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = "<group>"; };
+		2F1A4F562BF88A4B00808B09 /* Support.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Support.md; sourceTree = "<group>"; };
 		2F2009D1293E79FA0089EDBE /* FastTrack Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Widgets.entitlements"; sourceTree = "<group>"; };
 		2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidgetExtensionBundle.swift; sourceTree = "<group>"; };
 		2F2D105D294D857400A09971 /* FastTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidget.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 		2F1007BF291A00C8004CE72E = {
 			isa = PBXGroup;
 			children = (
+				2F1A4F542BF8899200808B09 /* Docs */,
 				2FDBB23D293A4DCB00A8A2BF /* Shared */,
 				2F1007CA291A00C8004CE72E /* FastTrack iOS App */,
 				2F8D2A7629410737002AA901 /* FastTrack Mac App */,
@@ -471,6 +474,15 @@
 				2F1A4F522BF874CF00808B09 /* JSONDocument.swift */,
 			);
 			path = DataTransfer;
+			sourceTree = "<group>";
+		};
+		2F1A4F542BF8899200808B09 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				2F1A4F552BF889B800808B09 /* PrivacyPolicy.md */,
+				2F1A4F562BF88A4B00808B09 /* Support.md */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 		2F2009D6293FBD270089EDBE /* Old */ = {
