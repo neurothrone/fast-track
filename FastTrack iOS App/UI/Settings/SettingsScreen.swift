@@ -17,8 +17,22 @@ struct SettingsScreen: View {
   @State private var isAboutSheetPresented = false
   @State private var isDeleteDataSheetPresented = false
   
+  @State private var isExporting = false
+  @State private var isAlertPresented = false
+  @State private var alertTitle = ""
+  @State private var alertMessage = ""
+  
   var body: some View {
     content
+      .alert(
+        alertTitle,
+        isPresented: $isAlertPresented,
+        actions: {
+          Button("OK", role: .cancel, action: {})
+        }, message: {
+          Text(alertMessage)
+        }
+      )
       .sheet(isPresented: $isAboutSheetPresented) {
         AboutSheet()
           .presentationDetents([.fraction(0.25), .medium, .large])
@@ -67,6 +81,36 @@ struct SettingsScreen: View {
       
       
       Section {
+        Button("Export Logs") {
+          isExporting.toggle()
+        }
+        .tint(.purple)
+        .fileExporter(
+          isPresented: $isExporting,
+          document: JSONDocument(
+            data: FastLogDTO.from(
+              logs: FastLog.getAllLogs(
+                using: viewContext
+              )
+            )
+          ),
+          contentType: .json,
+          defaultFilename: "FastTrack-ExportedData"
+        ) { result in
+            switch result {
+            case .success(_):
+              showAlert(
+                title: "Export Logs",
+                message: "Logs successfully exported."
+              )
+            case .failure(let error):
+              showAlert(
+                title: "Export Logs",
+                message: "Failed to export logs, error: \(error.localizedDescription)."
+              )
+            }
+          }
+        
         Button("Delete all data", role: .destructive) {
           isDeleteDataSheetPresented.toggle()
         }
@@ -83,6 +127,12 @@ struct SettingsScreen: View {
 extension SettingsScreen {
   private func deleteAllData() {
     FastLog.deleteAll(using: viewContext)
+  }
+  
+  private func showAlert(title: String, message: String) {
+    alertTitle = title
+    alertMessage = message
+    isAlertPresented.toggle()
   }
 }
 

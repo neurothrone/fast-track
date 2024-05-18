@@ -34,6 +34,8 @@
 		2F100818291BD0E2004CE72E /* ProgressMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100817291BD0E2004CE72E /* ProgressMeterView.swift */; };
 		2F10081A291BF084004CE72E /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100819291BF084004CE72E /* Screen.swift */; };
 		2F10081C291BF760004CE72E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10081B291BF760004CE72E /* View+Extensions.swift */; };
+		2F1A4F512BF8746500808B09 /* FastLogDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A4F502BF8746500808B09 /* FastLogDTO.swift */; };
+		2F1A4F532BF874CF00808B09 /* JSONDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A4F522BF874CF00808B09 /* JSONDocument.swift */; };
 		2F7B8743291CC9B0008E889C /* CustomSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8742291CC9B0008E889C /* CustomSwipeView.swift */; };
 		2F7B8773291E4AF0008E889C /* SwipeableLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8772291E4AF0008E889C /* SwipeableLogView.swift */; };
 		2F7B8775291E4B74008E889C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8774291E4B74008E889C /* Constants.swift */; };
@@ -203,6 +205,8 @@
 		2F100817291BD0E2004CE72E /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
 		2F100819291BF084004CE72E /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		2F10081B291BF760004CE72E /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		2F1A4F502BF8746500808B09 /* FastLogDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLogDTO.swift; sourceTree = "<group>"; };
+		2F1A4F522BF874CF00808B09 /* JSONDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDocument.swift; sourceTree = "<group>"; };
 		2F2009D1293E79FA0089EDBE /* FastTrack Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack Widgets.entitlements"; sourceTree = "<group>"; };
 		2F2D105B294D857400A09971 /* FastTrackWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidgetExtensionBundle.swift; sourceTree = "<group>"; };
 		2F2D105D294D857400A09971 /* FastTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackWidget.swift; sourceTree = "<group>"; };
@@ -467,6 +471,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		2F1A4F4F2BF8744E00808B09 /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				2F1A4F502BF8746500808B09 /* FastLogDTO.swift */,
+				2F1A4F522BF874CF00808B09 /* JSONDocument.swift */,
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
 		2F2009D6293FBD270089EDBE /* Old */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +647,7 @@
 				2F1007CF291A00C9004CE72E /* Assets.xcassets */,
 				2F2009D6293FBD270089EDBE /* Old */,
 				2F1007E3291A02BD004CE72E /* Data */,
+				2F1A4F4F2BF8744E00808B09 /* DataTransfer */,
 				2FDBB1F3293A2ABD00A8A2BF /* Enums */,
 				2F1007F2291A044A004CE72E /* Extensions */,
 				2F7B87C02927BA9F008E889C /* Shortcuts */,
@@ -893,6 +907,7 @@
 				2F7B87A529255E72008E889C /* AddManualLogSheet.swift in Sources */,
 				2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */,
 				2F7B8775291E4B74008E889C /* Constants.swift in Sources */,
+				2F1A4F512BF8746500808B09 /* FastLogDTO.swift in Sources */,
 				2F7B87C42927FAAC008E889C /* CustomErrors.swift in Sources */,
 				2F1007FA291A0484004CE72E /* URL+Extensions.swift in Sources */,
 				2F1007F4291A0451004CE72E /* Date+Extensions.swift in Sources */,
@@ -904,6 +919,7 @@
 				2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */,
 				2F1007EE291A03A5004CE72E /* FastLog+CoreDataClass.swift in Sources */,
 				2F7B87BF2926E4F0008E889C /* SetWeeklyGoalView.swift in Sources */,
+				2F1A4F532BF874CF00808B09 /* JSONDocument.swift in Sources */,
 				2F1007CC291A00C8004CE72E /* AppMain.swift in Sources */,
 				2F7B879F292527F2008E889C /* ActiveLogView.swift in Sources */,
 				2F7B87C22927F7B7008E889C /* FastLogIntents.swift in Sources */,
