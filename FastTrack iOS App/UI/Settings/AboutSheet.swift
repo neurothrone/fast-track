@@ -28,7 +28,7 @@ struct AboutSheet: View {
         Text("Made with ")
         Image(systemName: "heart.fill")
           .foregroundColor(.purple)
-        Text(" by Zaid Neurothrone")
+        Text(" by Zane Neurothrone")
         
       }
       
