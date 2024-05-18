@@ -1,6 +1,5 @@
 #  FastTrack Privacy Policy
 
-<h2 class="color-prominent-primary mt-4">Privacy Policy</h2>
 <p>
 Zane Neurothrone built the FastTrack: Fast Timer/Tracker app as
 a Free app. This SERVICE is provided by
