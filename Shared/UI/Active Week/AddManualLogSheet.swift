@@ -1,10 +1,3 @@
-//
-//  AddManualLogSheet.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-16.
-//
-
 import SwiftUI
 
 struct AddManualLogSheet: View {

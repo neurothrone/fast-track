@@ -1,10 +1,3 @@
-//
-//  CloudUserDefaults.swift
-//  FastTrack
-//
-//  Created by Zaid Neurothrone on 2022-12-19.
-//
-
 import SwiftUI
 
 let isFirstTimeUsingAppKey = "isFirstTimeUsingAppKey"

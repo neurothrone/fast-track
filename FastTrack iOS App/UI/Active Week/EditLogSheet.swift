@@ -1,10 +1,3 @@
-//
-//  EditLogSheet.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-12-03.
-//
-
 import SwiftUI
 
 struct EditLogSheet: View {

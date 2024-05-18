@@ -1,10 +1,3 @@
-//
-//  LogSectionedListRowView.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-12-11.
-//
-
 import SwiftUI
 
 struct LogSectionedListRowView: View {

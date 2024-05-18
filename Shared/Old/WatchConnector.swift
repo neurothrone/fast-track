@@ -1,10 +1,3 @@
-//
-//  WatchConnector.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-12-07.
-//
-
 import SwiftUI
 import WatchConnectivity
 

@@ -1,10 +1,3 @@
-//
-//  FastTrackWidget.swift
-//  FastTrack Widget Extension
-//
-//  Created by Zaid Neurothrone on 2022-12-17.
-//
-
 import CoreData
 import SwiftUI
 import WidgetKit

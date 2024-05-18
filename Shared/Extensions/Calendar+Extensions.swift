@@ -1,10 +1,3 @@
-//
-//  Calendar+Extensions.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-12-03.
-//
-
 import Foundation
 
 extension Calendar {

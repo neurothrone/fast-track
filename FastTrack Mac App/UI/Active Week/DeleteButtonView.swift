@@ -1,10 +1,3 @@
-//
-//  DeleteButtonView.swift
-//  FastTrack Mac App
-//
-//  Created by Zaid Neurothrone on 2022-12-13.
-//
-
 import SwiftUI
 
 struct DeleteButtonView: View {

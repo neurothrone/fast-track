@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  FastTrack Watch App
-//
-//  Created by Zaid Neurothrone on 2022-12-06.
-//
-
 import SwiftUI
 
 struct ContentView: View {

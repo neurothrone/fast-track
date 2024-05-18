@@ -1,10 +1,3 @@
-//
-//  FastTrackTests.swift
-//  FastTrackTests
-//
-//  Created by Zaid Neurothrone on 2022-12-15.
-//
-
 import XCTest
 
 final class FastTrackTests: XCTestCase {

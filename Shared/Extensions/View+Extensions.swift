@@ -1,10 +1,3 @@
-//
-//  View+Extensions.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-09.
-//
-
 import SwiftUI
 
 extension View {

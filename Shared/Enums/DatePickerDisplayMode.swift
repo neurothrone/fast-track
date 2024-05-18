@@ -1,10 +1,3 @@
-//
-//  DatePickerDisplayMode.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-16.
-//
-
 import Foundation
 
 enum DatePickerDisplayMode: String {

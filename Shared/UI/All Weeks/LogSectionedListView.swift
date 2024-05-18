@@ -1,10 +1,3 @@
-//
-//  LogSectionedListView.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-12-11.
-//
-
 import SwiftUI
 
 //MARK: - Equatable and Hashable conformance so selection is possible on macOS

@@ -1,10 +1,3 @@
-//
-//  ActiveWeekLogListView.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-12.
-//
-
 import SwiftUI
 
 struct ActiveWeekLogListView: View {

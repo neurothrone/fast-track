@@ -1,10 +1,3 @@
-//
-//  NavigationSplitViewVisibility+Extensions.swift
-//  FastTrack iOS App
-//
-//  Created by Zaid Neurothrone on 2022-12-12.
-//
-
 import SwiftUI
 
 // RawRepresentable conformance so it can be used with AppStorage

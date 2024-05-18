@@ -1,10 +1,3 @@
-//
-//  WeeklyFastingHoursGoal.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-17.
-//
-
 enum WeeklyFastingHoursGoal: String {
   case easy
   case normal

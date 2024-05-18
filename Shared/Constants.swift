@@ -1,10 +1,3 @@
-//
-//  Constants.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-11.
-//
-
 import Foundation
 
 enum MyApp {

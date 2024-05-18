@@ -1,10 +1,3 @@
-//
-//  ActiveLogSectionView.swift
-//  FastTrack Mac App
-//
-//  Created by Zaid Neurothrone on 2022-12-12.
-//
-
 import SwiftUI
 
 struct ActiveLogSectionView: View {

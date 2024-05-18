@@ -1,10 +1,3 @@
-//
-//  SetWeeklyGoalView.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-17.
-//
-
 import SwiftUI
 
 struct SetWeeklyGoalView: View {

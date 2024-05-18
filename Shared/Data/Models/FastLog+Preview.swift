@@ -1,10 +1,3 @@
-//
-//  FastLog+Preview.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-08.
-//
-
 import CoreData
 import Foundation
 
@@ -14,10 +7,6 @@ extension FastLog {
       let fastLog = FastLog(context: context)
       fastLog.startedDate = .now.subtracting(hours: 2)
       fastLog.save(using: context)
-      
-//      let week = Week.getOrCreateWeekOf(date: fastLog.startedDate, with: .easy, using: context)
-//      week.addToLogs(fastLog)
-//      week.save(using: context)
     }
     
     static func createSamplesForCurrentWeek(using context: NSManagedObjectContext) {
@@ -28,8 +17,6 @@ extension FastLog {
       let days = calendar.numberOfDaysBetween(startOfWeek, and: today)
       let endOfWeek = calendar.date(byAdding: .day, value: days, to: startOfWeek) ?? today
       
-//      let week = Week.getOrCreateWeekOf(date: today, with: .legendary, using: context)
-      
       let dayDurationInSeconds: TimeInterval = 60 * 60 * 24
       for startedDate in stride(from: startOfWeek, to: endOfWeek, by: dayDurationInSeconds) {
         let fastLog = FastLog(context: context)
@@ -37,11 +24,8 @@ extension FastLog {
         fastLog.startedDate = startedDate
         fastLog.stoppedDate = startedDate.adding(minutes: Int.random(in: 600...1_000))
         
-//        week.addToLogs(fastLog)
         fastLog.save(using: context)
       }
-      
-//      week.save(using: context)
     }
     
     static func createSamplesForWeekOf(
@@ -57,8 +41,6 @@ extension FastLog {
       ) ?? startOfWeek
       let endOfWeek = calendar.date(byAdding: .day, value: 7, to: lastDayOfWeek) ?? lastDayOfWeek
       
-//      let week = Week.getOrCreateWeekOf(date: date, with: weeklyGoal, using: context)
-      
       let dayDurationInSeconds: TimeInterval = 60 * 60 * 24
       for startedDate in stride(from: startOfWeek, to: endOfWeek, by: dayDurationInSeconds) {
         let fastLog = FastLog(context: context)
@@ -67,11 +49,7 @@ extension FastLog {
         fastLog.stoppedDate = startedDate.adding(minutes: Int.random(in: 600...1_000))
         
         fastLog.save(using: context)
-        
-//        week.addToLogs(fastLog)
       }
-      
-//      week.save(using: context)
     }
     
     static func createSamplesForManyWeeks(using context: NSManagedObjectContext) {

@@ -1,10 +1,3 @@
-//
-//  CustomLinkView.swift
-//  CortexOfFasting
-//
-//  Created by Zaid Neurothrone on 2022-11-11.
-//
-
 import SwiftUI
 
 struct CustomLinkView: View {

@@ -82,7 +82,6 @@
 		2F8D2A3429401D75002AA901 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100807291A1D50004CE72E /* DateFormatter+Extensions.swift */; };
 		2F8D2A392940204B002AA901 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007CB291A00C8004CE72E /* AppMain.swift */; };
 		2F8D2A3A29402294002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1007CF291A00C9004CE72E /* Assets.xcassets */; };
-		2F8D2A4029410410002AA901 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
 		2F9C12CF2945C199008440EE /* LogSectionedListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12CE2945C199008440EE /* LogSectionedListRowView.swift */; };
 		2F9C12D32945C7D7008440EE /* LogSectionedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12D22945C7D7008440EE /* LogSectionedListView.swift */; };
 		2F9C12DF2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12DE2947185D008440EE /* NavigationSplitViewVisibility+Extensions.swift */; };
@@ -128,11 +127,8 @@
 		2FBDE34A29508231000A7232 /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F100814291B5468004CE72E /* LogListRowView.swift */; };
 		2FBDE34B29508287000A7232 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2A922941452F002AA901 /* Credits.rtf */; };
 		2FBDE34E2951C62D000A7232 /* ChangeWeeklyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE34D2951C62D000A7232 /* ChangeWeeklyGoalView.swift */; };
-		2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */; };
-		2FDBB253293A6BA600A8A2BF /* Week+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */; };
 		2FDBB256293B43E900A8A2BF /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */; };
 		2FDBB259293B470E00A8A2BF /* EditLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */; };
-		2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBB25B293C8A8A00A8A2BF /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,11 +257,8 @@
 		2FBDE31729507F80000A7232 /* FastTrack Mac App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastTrack Mac App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBDE32229507F80000A7232 /* FastTrack MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FastTrack MacOS.entitlements"; sourceTree = "<group>"; };
 		2FBDE34D2951C62D000A7232 /* ChangeWeeklyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWeeklyGoalView.swift; sourceTree = "<group>"; };
-		2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
-		2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB255293B43E900A8A2BF /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
 		2FDBB258293B470E00A8A2BF /* EditLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogSheet.swift; sourceTree = "<group>"; };
-		2FDBB25B293C8A8A00A8A2BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2FDBB28F293CB7ED00A8A2BF /* ProgressMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterView.swift; sourceTree = "<group>"; };
 		2FDBB2A8293E591E00A8A2BF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2FDBB2AA293E591E00A8A2BF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -483,10 +476,7 @@
 		2F2009D6293FBD270089EDBE /* Old */ = {
 			isa = PBXGroup;
 			children = (
-				2FDBB25B293C8A8A00A8A2BF /* AppState.swift */,
 				2F8D2A19294011C6002AA901 /* WatchConnector.swift */,
-				2FDBB24C293A6B6F00A8A2BF /* Week+CoreDataClass.swift */,
-				2FDBB252293A6BA600A8A2BF /* Week+Extensions.swift */,
 			);
 			path = Old;
 			sourceTree = "<group>";
@@ -901,7 +891,6 @@
 				2F1007CE291A00C8004CE72E /* ContentView.swift in Sources */,
 				2F7B877F291FAB99008E889C /* ActiveWeekLogListView.swift in Sources */,
 				2F7B87AB29259F1A008E889C /* CustomDatePicker.swift in Sources */,
-				2FDBB24E293A6B6F00A8A2BF /* Week+CoreDataClass.swift in Sources */,
 				2F10081A291BF084004CE72E /* Screen.swift in Sources */,
 				2F100815291B5468004CE72E /* LogListRowView.swift in Sources */,
 				2F7B87A529255E72008E889C /* AddManualLogSheet.swift in Sources */,
@@ -929,8 +918,6 @@
 				2F1007FC291A06C9004CE72E /* FastLog+Preview.swift in Sources */,
 				2F10081C291BF760004CE72E /* View+Extensions.swift in Sources */,
 				2FA949DC291BFE1400AF51FD /* SectionHeaderView.swift in Sources */,
-				2FDBB253293A6BA600A8A2BF /* Week+Extensions.swift in Sources */,
-				2FDBB25C293C8A8A00A8A2BF /* AppState.swift in Sources */,
 				2F7B8779291E4BF3008E889C /* DeleteAllDataSheet.swift in Sources */,
 				2F1007F6291A0464004CE72E /* Collection+Extensions.swift in Sources */,
 				2F1007F1291A03F2004CE72E /* FastLog+Extensions.swift in Sources */,
@@ -977,7 +964,6 @@
 				2F8D2A392940204B002AA901 /* AppMain.swift in Sources */,
 				2F8D2A3029401D75002AA901 /* Collection+Extensions.swift in Sources */,
 				2F8D2A2F29401D75002AA901 /* Date+Extensions.swift in Sources */,
-				2F8D2A4029410410002AA901 /* AppState.swift in Sources */,
 				2F8D2A1C29401CB8002AA901 /* ProgressMeterView.swift in Sources */,
 				2F8D2A2729401D2C002AA901 /* SwipeableLogView.swift in Sources */,
 				2FBDE311295074F0000A7232 /* CloudUserDefaults.swift in Sources */,

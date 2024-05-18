@@ -1,10 +1,3 @@
-//
-//  ChangeWeeklyGoalView.swift
-//  FastTrack Watch App
-//
-//  Created by Zaid Neurothrone on 2022-12-20.
-//
-
 import SwiftUI
 
 struct ChangeWeeklyGoalView: View {
